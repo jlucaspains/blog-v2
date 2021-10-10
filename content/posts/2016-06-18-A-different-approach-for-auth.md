@@ -49,7 +49,7 @@ By using above relations, one can expand all permissions a user has.
 
 I'm not going to go too deep in code detailing now cus that's the objective of next post. However, check below examples on how you actually check for permissions in this resource-based authorization.
 
-<script src="https://gist.github.com/jlucaspains/c27e3be8d71804c5cc657ab3d0dab730.js"></script>
+{{< gist jlucaspains c27e3be8d71804c5cc657ab3d0dab730 >}}
 
 Note that in above examples, there is no check for a role, only whether the current user has ''Read'' access to resource ''App.ResourceName''. Roles are only a means to facilitate grouping users with similar access.
 

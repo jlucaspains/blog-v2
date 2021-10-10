@@ -9,7 +9,16 @@
       <link>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 23 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrating from jekyll to Hugo</title>
+      <link>https://lpains.net/posts/2021-10-10-migrating-from-jekyll-to-hugo/</link>
+      <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2021-10-10-migrating-from-jekyll-to-hugo/</guid>
+      <description>Jekyll is great, but I don&amp;#39;t love how hard it is to set it up in windows. For the most part I wrote blog posts blind. I&amp;#39;ve looked for alternatives and settled on Hugo. This is post is about everything that happened during the Jekyll to Hugo conversion.</description>
+    </item>
+    
     <item>
       <title>Environment per PR the old fashioned way</title>
       <link>https://lpains.net/posts/2021-09-23-env-per-pr-no-containers/</link>
@@ -70,7 +79,7 @@
       <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://lpains.net/posts/2020-04-19-xamarin-forms-build-release-for-enterprise/</guid>
-      <description>Having a reliable pipeline that builds your Xamarin Forms apps in multiple configurations is beautiful. In this post, I will show you how to create a yml pipeline to build your iOS and Android app and release it to your Enterprise users.  </description>
+      <description>Having a reliable pipeline that builds your Xamarin Forms apps in multiple configurations is beautiful. In this post, I will show you how to create a yml pipeline to build your iOS and Android app and release it to your Enterprise users.</description>
     </item>
     
     <item>

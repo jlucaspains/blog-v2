@@ -4,7 +4,8 @@ title: "Build and Deploy Xamarin.iOS to Test Flight with Azure DevOps"
 date: 2019-1-31
 comments: true
 sharing: true
-categories: [xamarin-iOS]
+categories: 
+  - xamarin-iOS
 description: Everybody knows how hard it is to work with iOS apps from a windows environment (mostly). I've had to deal with it and here is my experience building and deploying iOS app from a build/release pipeline in Azure DevOps.
 ---
 
@@ -55,7 +56,7 @@ The build pipeline is the heart of this post. I'm assuming you are familiar with
 *Ensuring the info.plist matches your app settings*
 
 
-<script src="https://gist.github.com/jlucaspains/95b366b36bc1f7c229025103c15eeb89.js"></script>
+{{< gist jlucaspains 95b366b36bc1f7c229025103c15eeb89 >}}
 
 6. Install the version of nuget your project needs
 

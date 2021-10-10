@@ -15,15 +15,15 @@ I spent a few too many hours fiddling with Xamarin Form's collection view and mu
 
 If you have a view like this:
 
-<script src="https://gist.github.com/jlucaspains/8a4d851167c1303118db83129161fa08.js"></script>
+{{< gist jlucaspains 8a4d851167c1303118db83129161fa08 >}}
 
 and a View Model like this:
 
-<script src="https://gist.github.com/jlucaspains/7a8e2575e8f4bc5dc81f1a9e24b985b0.js"></script>
+{{< gist jlucaspains 7a8e2575e8f4bc5dc81f1a9e24b985b0 >}}
 
 You'd expect the binding to work, right? No problems. Well, no. It doesn't. The CollectionView will only bind SelectedItems to collections of ``object``. I don't know why the Xamarin team decided to go that route, but it is a quirk that has wasted too many hours. While the view example above is correct, the View Model should look like this:
 
-<script src="https://gist.github.com/jlucaspains/9edcf4756dbbbd1c67a6ad89d0c59c88.js"></script>
+{{< gist jlucaspains 9edcf4756dbbbd1c67a6ad89d0c59c88 >}}
 
 There is some info about this problem [in this GitHub issue](https://github.com/xamarin/Xamarin.Forms/issues/6891#issuecomment-511936153). Also, the quirk is expected to be fixed in .net5 as shown [in this open PR](https://github.com/xamarin/Xamarin.Forms/pull/8323).
 

@@ -36,7 +36,7 @@
 <meta name=twitter:title content="Automatic release notes on Azure DevOps">
 <meta name=twitter:description content="Release notes are one of those things that we typically leave for last. In this post I will show you how to completely forget about it and still get great release notes.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://lpains.net/posts/"},{"@type":"ListItem","position":2,"name":"Automatic release notes on Azure DevOps","item":"https://lpains.net/posts/2020-04-02-automatic-release-notes-azure-devops/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Automatic release notes on Azure DevOps","name":"Automatic release notes on Azure DevOps","description":"Release notes are one of those things that we typically leave for last. In this post I will show you how to completely forget about it and still get great release notes.","keywords":[],"articleBody":"If you are neck-deep into DevOps using Azure DevOps, chances are that you have your code on a git repository, have PBIs or Stories, are using Pull requests, Builds, and releases. If you are doing all of this good stuff, great! Carry on and I will show you how to get that shiny cherry on top of your cake. If you are not, you can probably benefit from this post too, but you will have to figure out how to do the same using the tools you love.\nWhat I want to do is to automatically generate a markdown file with all work items associated with this release. I also want to accumulate work between environments so work items will only show once on a particular environment.\nPR First, ensure you have a solid branching strategy. I’m quite fond of git flow myself, but anything that uses a PR will work fine.\nI really recommend you use PR policies to ensure that everyone is doing the same. This is what I recommend for most projects:\n Require a minimum number of reviewers:   Check for linked work items. This is key to ensure that release notes are generated   Check for comment resolution   Merge Type  I like squash because it allows the dev to push as many changes as they want but master/develop branch only get a single clean commit     Build  Build Make sure that your build has the Automatically link new work in this build flag turned on.\nRelease The release notes are generated at the release (duh!) and they will be different from each environment used. You will need an extension to generate the release notes. I use this one by Richad Fennel. Below are the configurations that work well for me:\nThe template is markdown with some special notation for variables. Review the extension documentation for more information. In my template, I put the work item name and a link back to the azure devops work item. Uncheck the Generate for only this Release flag to ensure that work items associated with builds without releases or not approved releases are accumulated. Here is a copiable version of the template.\nThe final piece of the puzzle involves publishing your release notes. I recommend having an API endpoint in your app where you can post the release notes. Again, I use powershell to do that:\nAnd here is the powershell code above:\nResult Finally, you can render the uploaded markdown into a html page. Here is what your release notes could look like (style was shamelessly stolen from Visual Studio Code release notes):\nDone That was a lot of little things to consider. However, once you have everything setup, you will never have to write release notes again.\nCheers, Lucas\n","wordCount":"458","inLanguage":"en","datePublished":"2020-04-02T00:00:00Z","dateModified":"2020-04-02T00:00:00Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://lpains.net/posts/2020-04-02-automatic-release-notes-azure-devops/"},"publisher":{"@type":"Organization","name":"Pains.net","logo":{"@type":"ImageObject","url":"https://lpains.net/%3Clink%20/%20abs%20url%3E"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Automatic release notes on Azure DevOps","name":"Automatic release notes on Azure DevOps","description":"Release notes are one of those things that we typically leave for last. In this post I will show you how to completely forget about it and still get great release notes.","keywords":[],"articleBody":"If you are neck-deep into DevOps using Azure DevOps, chances are that you have your code on a git repository, have PBIs or Stories, are using Pull requests, Builds, and releases. If you are doing all of this good stuff, great! Carry on and I will show you how to get that shiny cherry on top of your cake. If you are not, you can probably benefit from this post too, but you will have to figure out how to do the same using the tools you love.\nWhat I want to do is to automatically generate a markdown file with all work items associated with this release. I also want to accumulate work between environments so work items will only show once on a particular environment.\nPR First, ensure you have a solid branching strategy. I’m quite fond of git flow myself, but anything that uses a PR will work fine.\nI really recommend you use PR policies to ensure that everyone is doing the same. This is what I recommend for most projects:\n Require a minimum number of reviewers:   Check for linked work items. This is key to ensure that release notes are generated   Check for comment resolution   Merge Type  I like squash because it allows the dev to push as many changes as they want but master/develop branch only get a single clean commit     Build  Build Make sure that your build has the Automatically link new work in this build flag turned on.\nRelease The release notes are generated at the release (duh!) and they will be different from each environment used. You will need an extension to generate the release notes. I use this one by Richad Fennel. Below are the configurations that work well for me:\nThe template is markdown with some special notation for variables. Review the extension documentation for more information. In my template, I put the work item name and a link back to the azure devops work item. Uncheck the Generate for only this Release flag to ensure that work items associated with builds without releases or not approved releases are accumulated. Here is a copiable version of the template.\n The final piece of the puzzle involves publishing your release notes. I recommend having an API endpoint in your app where you can post the release notes. Again, I use powershell to do that:\nAnd here is the powershell code above:\n Result Finally, you can render the uploaded markdown into a html page. Here is what your release notes could look like (style was shamelessly stolen from Visual Studio Code release notes):\nDone That was a lot of little things to consider. However, once you have everything setup, you will never have to write release notes again.\nCheers, Lucas\n","wordCount":"458","inLanguage":"en","datePublished":"2020-04-02T00:00:00Z","dateModified":"2020-04-02T00:00:00Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://lpains.net/posts/2020-04-02-automatic-release-notes-azure-devops/"},"publisher":{"@type":"Organization","name":"Pains.net","logo":{"@type":"ImageObject","url":"https://lpains.net/%3Clink%20/%20abs%20url%3E"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -91,17 +91,17 @@ Automatic release notes on Azure DevOps
 <ul>
 <li>Require a minimum number of reviewers:</li>
 </ul>
-<p><img loading=lazy src=%7b%7bsite.baseurl%7d%7d/images/posts/PR_number_reviewers.png alt=PR_number_reviewers.png>
+<p><img loading=lazy src=../../images/posts/PR_number_reviewers.png alt=PR_number_reviewers.png>
 </p>
 <ul>
 <li>Check for linked work items. This is key to ensure that release notes are generated</li>
 </ul>
-<p><img loading=lazy src=%7b%7bsite.baseurl%7d%7d/images/posts/PR_workitem.png alt=PR_workitem.png>
+<p><img loading=lazy src=../../images/posts/PR_workitem.png alt=PR_workitem.png>
 </p>
 <ul>
 <li>Check for comment resolution</li>
 </ul>
-<p><img loading=lazy src=%7b%7bsite.baseurl%7d%7d/images/posts/PR_comments.png alt=PR_comments.png>
+<p><img loading=lazy src=../../images/posts/PR_comments.png alt=PR_comments.png>
 </p>
 <ul>
 <li>Merge Type
@@ -110,27 +110,29 @@ Automatic release notes on Azure DevOps
 </ul>
 </li>
 </ul>
-<p><img loading=lazy src=%7b%7bsite.baseurl%7d%7d/images/posts/PR_merge_type.png alt=PR_merge_type.png>
+<p><img loading=lazy src=../../images/posts/PR_merge_type.png alt=PR_merge_type.png>
 </p>
 <ul>
 <li>Build</li>
 </ul>
-<p><img loading=lazy src=%7b%7bsite.baseurl%7d%7d/images/posts/PR_build.png alt=PR_build.png>
+<p><img loading=lazy src=../../images/posts/PR_build.png alt=PR_build.png>
 </p>
 <h2 id=build>Build<a hidden class=anchor aria-hidden=true href=#build>#</a></h2>
 <p>Make sure that your build has the <code>Automatically link new work in this build</code> flag turned on.</p>
 <h2 id=release>Release<a hidden class=anchor aria-hidden=true href=#release>#</a></h2>
 <p>The release notes are generated at the release (duh!) and they will be different from each environment used. You will need an extension to generate the release notes. I use <a href="https://marketplace.visualstudio.com/items?itemName=richardfennellBM.BM-VSTS-XplatGenerateReleaseNotes&targetId=a7a780bd-ad1c-4875-bc30-030f9dba7f75">this one by Richad Fennel</a>. Below are the configurations that work well for me:</p>
-<p><img loading=lazy src=%7b%7bsite.baseurl%7d%7d/images/posts/GenerateReleaseNotes.png alt=GenerateReleaseNotes.png>
+<p><img loading=lazy src=../../images/posts/GenerateReleaseNotes.png alt=GenerateReleaseNotes.png>
 </p>
 <p>The template is markdown with some special notation for variables. Review the extension documentation for more information. In my template, I put the work item name and a link back to the azure devops work item. Uncheck the Generate for only this Release flag to ensure that work items associated with builds without releases or not approved releases are accumulated. Here is a copiable version of the template.</p>
+<script type=application/javascript src=https://gist.github.com/jlucaspains/9560904dd65aae7a74b26a6c5c6e98c0.js></script>
 <p>The final piece of the puzzle involves publishing your release notes. I recommend having an API endpoint in your app where you can post the release notes. Again, I use powershell to do that:</p>
-<p><img loading=lazy src=%7b%7bsite.baseurl%7d%7d/images/posts/PublishReleaseNotes.png alt=PublishReleaseNotes.png>
+<p><img loading=lazy src=../../images/posts/PublishReleaseNotes.png alt=PublishReleaseNotes.png>
 </p>
 <p>And here is the powershell code above:</p>
+<script type=application/javascript src=https://gist.github.com/jlucaspains/e03a32104697c3be3841beb6f304b199.js></script>
 <h2 id=result>Result<a hidden class=anchor aria-hidden=true href=#result>#</a></h2>
 <p>Finally, you can render the uploaded markdown into a html page. Here is what your release notes could look like (style was shamelessly stolen from Visual Studio Code release notes):</p>
-<p><img loading=lazy src=%7b%7bsite.baseurl%7d%7d/images/posts/ReleaseNotesResult.png alt=ReleaseNotesResult.png>
+<p><img loading=lazy src=../../images/posts/ReleaseNotesResult.png alt=ReleaseNotesResult.png>
 </p>
 <h2 id=done>Done<a hidden class=anchor aria-hidden=true href=#done>#</a></h2>
 <p>That was a lot of little things to consider. However, once you have everything setup, you will never have to write release notes again.</p>
@@ -164,7 +166,7 @@ Lucas</p>
 <a target=_blank rel="noopener noreferrer" aria-label="share Automatic release notes on Azure DevOps on telegram" href="https://telegram.me/share/url?text=Automatic%20release%20notes%20on%20Azure%20DevOps&url=https%3a%2f%2flpains.net%2fposts%2f2020-04-02-automatic-release-notes-azure-devops%2f"><svg viewBox="2 2 28 28"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg>
 </a>
 </div>
-</footer>
+</footer><script src=https://utteranc.es/client.js repo=jlucaspains/blog-v2 issue-term=pathname theme=preferred-color-scheme crossorigin=anonymous async></script>
 </article>
 </main>
 <footer class=footer>

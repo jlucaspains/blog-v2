@@ -1,17 +1,14 @@
 ---
 layout: post
 title: "Migrating from jekyll to Hugo"
-date: 2021-10-15
+date: 2021-10-10
 categories:
   - blog
 description: >-
   Jekyll is great, but I don't love how hard it is to set it up in windows. For the most part I wrote blog posts blind. I've looked for alternatives and settled on Hugo. This is post is about everything that happened during the Jekyll to Hugo conversion.
 cover:
-    image: "/images/posts/code.jpg"
-    # can also paste direct link from external site
-    # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
-    alt: "alt test"
-    caption: "Image by Luca Bravo on Unsplash"
+    image: "/images/posts/hugo-logo-wide.png"
+    alt: "Hugo"
 ---
 
 So, the first obvious question is: what's wrong with Jekyll?
@@ -85,14 +82,19 @@ Move your .md files under content folder and check the built result. I only have
 ## 7. Hosting
 I've hosted my blog in github pages since the beginning. It is super convenient and the native support for Jekyll sites is sweet. This is one big difference between Jekyll and Hugo. Hugo is not supported in the same way by github pages. That shouldn't be a big problem though, you can pre-build the site with ``hugo`` command and publish the files generated in ``public`` folder. Alternatively, you can use a github workflow to do the same. See [Hugo documentation](https://gohugo.io/hosting-and-deployment/hosting-on-github/) for using github workflow.
 
-A few of lessons learned here:
+A few lessons learned here:
 
 * Publish your Hugo website to a folder called ``docs``. Github only accepts the root of the repo or ``docs` folder. This will allow you to keep the site code and published result in the same repo.
 * Don't forget to create a .nojekyll file at the root of the ``docs`` folder to tell GitHub that Jekyll compilation is not needed.
-* By default, css and js references in the generate sites are made using `/assets`
+* By default, css and js references in the generate sites are made using absolute URLs. If your site is a sub-directory of the domain (i.e. https://jlucaspains.github.io/blog-v2/) it will not load your css and js correctly. You can fix this by setting the ``relativeURLs: true`` in your site configuration file. Also, you may need to adjust internal links manually.
 
 ## 8. Comments
 I have disabled comments on my blog a long time ago now. The primary reason was because Disqus added many ads to its platform which annoyed me greatly. In case you don't know, I absolutely loathe ads and so I don't put them in my personal work such as my Blog and [Sharp Cooking](http://sharpcooking.net/) app.
 
-It is finally time to try again. This time, I am using [Utterances](https://utteranc.es/).
+It is finally time to try again. This time, I am using [Utterances](https://utteranc.es/). I have only one word for Uterrances. Wow. It works well, looks good, and was the easiest thing to setup.
 
+## Final thoughts
+Hugo was much easier to pick up than I though it would be. I'm very happy with the final result and I had a lot of fun doing it.
+
+Cheers,
+Lucas

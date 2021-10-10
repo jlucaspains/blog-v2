@@ -4,7 +4,9 @@ title: "TFVC to git import alternative"
 date: 2019-2-13
 comments: true
 sharing: true
-categories: [VSTS, git]
+categories: 
+  - VSTS
+  - git
 description: Previously, I've shown how to import source from TFVC to git using git-tfs tool. There is another way to do it right in Azure DevOps and I show it here.
 ---
 

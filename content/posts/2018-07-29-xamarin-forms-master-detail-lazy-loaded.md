@@ -4,7 +4,9 @@ title: "FreshMVVM master/detail page lazy loaded"
 date: 2018-7-29
 comments: true
 sharing: true
-categories: [xamarin-forms, util]
+categories:
+  - xamarin-forms
+  - util
 description: Custom implementation of a lazy loaded master/detail page for FreshMVVM framework. Working coding sample included.
 ---
 
@@ -20,19 +22,19 @@ We need to replace the [FreshMVVM original implementation](https://github.com/ri
 
 LazyLoadedPage class:
 
-<script src="https://gist.github.com/jlucaspains/2e564f2c021f82def8f107f6cd2a792f.js"></script>
+{{< gist jlucaspains 2e564f2c021f82def8f107f6cd2a792f >}}
 
 INavigationContainer implementation:
 
-<script src="https://gist.github.com/jlucaspains/e799b2b019e654b2a59e01474928152a.js"></script>
+{{< gist jlucaspains e799b2b019e654b2a59e01474928152a >}}
 
 MasterPage.xaml:
 
-<script src="https://gist.github.com/jlucaspains/f6ef3e9c1aee12db3dabe3ed1924a4a9.js"></script>
+{{< gist jlucaspains f6ef3e9c1aee12db3dabe3ed1924a4a9 >}}
 
 Usage:
 
-<script src="https://gist.github.com/jlucaspains/96f01ca53a5afd6d39f0e0513fed881c.js"></script>
+{{< gist jlucaspains 96f01ca53a5afd6d39f0e0513fed881c >}}
 
 Here is how the app looks like on Android:
 

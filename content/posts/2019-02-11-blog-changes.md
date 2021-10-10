@@ -4,12 +4,14 @@ title: "Blog Changes"
 date: 2019-2-11
 comments: true
 sharing: true
-categories: [blog]
+categories: 
+  - blog
 description: A round of improvements for this blog occurred. Commenting have been temporarily disabled due to Disqus new policies and SyntaxHighlighter was also replaced with gist for better code snippets and a faster page load.
+cover:
+    image: "/images/posts/slow-blog-before-improvements.jpg"
+    alt: "This blog is so slow..."
+    caption: "This blog is so slow..."
 ---
-
-![Slow blog - improvements needed!]({{ site.url }}/images/posts/slow-blog-before-improvements.jpg)
-*This blog is so slow...*
 
 Recently, I run a [GT Metrix](https://gtmetrix.com/) test on my blog and got an abysmal D score. After some investigation I noticed a few things that need improvement:
 

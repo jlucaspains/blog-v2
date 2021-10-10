@@ -8,11 +8,12 @@ categories:
   - DevOps
   - Xamarin
 description: >-
-  Having a reliable pipeline that builds your Xamarin Forms apps in multiple configurations is beautiful. In this post, I will show you how to create a yml pipeline to build your iOS and Android app and release it to your Enterprise users.  
+  Having a reliable pipeline that builds your Xamarin Forms apps in multiple configurations is beautiful. In this post, I will show you how to create a yml pipeline to build your iOS and Android app and release it to your Enterprise users.
+cover:
+    image: "/images/posts/build-lego.jpg"
+    alt: "Building blocks"
+    caption: "Photo by [Markus Spiske on Unsplash](https://unsplash.com/photos/C0koz3G1I4I)"
 ---
-
-![Building blocks]({{ site.url }}/images/posts/build-lego.jpg)
-*Building Blocks - Photo by [Markus Spiske on Unsplash](https://unsplash.com/photos/C0koz3G1I4I)*
 
 In January last year, I wrote about [building and deploying Xamarin iOS apps using Azure DevOps]({{ site.baseurl }}{% link _posts/2019-1-31-build-deploy-xamarin-ios-azure-devops.md %}). I wanted to write about the Android process but never mustered the energy to do it. Nevertheless, today is the day I will.
 
@@ -31,7 +32,7 @@ I broke the build pipeline in 2 jobs: iOS and Android. Furthermore, each job wil
 
 Here is a heavily annotated build yml file:
 
-<script src="https://gist.github.com/jlucaspains/3d27de10db0e99d7b7593dcb8323cf55.js"></script>
+{{< gist jlucaspains 3d27de10db0e99d7b7593dcb8323cf55 >}}
 
 ## The Release
 There are a few ways to release an enterprise app, however, I'm most familiar with distribution through download from a website, so I will discuss that.

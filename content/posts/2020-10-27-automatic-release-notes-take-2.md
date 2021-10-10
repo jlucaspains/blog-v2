@@ -16,15 +16,15 @@ published: true
 
 The primary difference is that we will use the new [Cross Platform Generate Release Notes](https://github.com/rfennell/AzurePipelines/wiki/GenerateReleaseNotes---Node-based-Cross-Platform-Task) task instead of the original Powershell based task. This updated version offers a little more control via handlebars extensions that can help us filter out the undesired work items. Here is how the task looks like:
 
-![Release Notes Task]({{site.baseurl}}/images/posts/azure-devops-release-notes-new.png)
+![Release Notes Task](/images/posts/azure-devops-release-notes-new.png)
 
 Note that the template is different from before. We use a custom handlebars function that returns a list of work items:
 
-<script src="https://gist.github.com/jlucaspains/a1c52a02748541f4c7794c3bb8c3b714.js"></script>
+{{< gist jlucaspains a1c52a02748541f4c7794c3bb8c3b714 >}}
 
 The handlebars function iterates through the whole list of work items exposed by the release notes task and filter out items that are assigned to open PRs, in other words, PRs with status different from 3.
 
-<script src="https://gist.github.com/jlucaspains/8e7d27c70f702aeef74986c889963eb4.js"></script>
+{{< gist jlucaspains 8e7d27c70f702aeef74986c889963eb4 >}}
 
 You could go a little further. If you have multiple target branches for your PRs, you could filter only those that are relevant to a particular release environment. Additionally, you could use any other information in the work items or PR can be used to further customize your release notes. It is really up to your needs.
 

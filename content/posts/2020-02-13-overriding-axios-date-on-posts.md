@@ -4,12 +4,14 @@ title: "Overriding standard date formatting of axios for post/put/patch"
 date: 2020-02-13
 comments: true
 sharing: true
-categories: [util]
+categories:
+  - util
 description: Working with date and time is very painful. This post demonstrates a simple way to make axios POST/PUT/PATCH requests to automatically send local time instead of UTC to a server.
+cover:
+    image: "/images/posts/Time.png"
+    alt: "Working with time"
+    caption: "Photo by [Aron Visuals on Unsplash](https://unsplash.com/@aronvisuals?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
-
-![Working with time]({{ site.url }}/images/posts/Time.png)
-*Time is painful - Photo by [Aron Visuals on Unsplash](https://unsplash.com/@aronvisuals?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 
 Let's start by pointing out the obvious. It is painful to work with dates. No matter the technology, it is just harder than it should be. 
 
@@ -19,7 +21,7 @@ In reading axios documentation, the recommendation was to provide the [``transfo
 
 The simpler solution to this is to simply overwrite the toJSON function of the Date prototype. Like so:
 
-<script src="https://gist.github.com/jlucaspains/9fd33002e4673dd100f08f36397745ef.js"></script>
+{{< gist jlucaspains 9fd33002e4673dd100f08f36397745ef >}}
 
 This works because internally, the ``JSON.stringify`` function will call ``toJSON``. Objectively, you could do this to any prototype, although none of the other types are as annoying as ``Date`` to work with.
 

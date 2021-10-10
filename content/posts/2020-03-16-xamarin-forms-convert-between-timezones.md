@@ -4,12 +4,15 @@ title: "Xamarin Forms converting from one timezone to another"
 date: 2020-03-16
 comments: true
 sharing: true
-categories: [xamarin, util]
+categories: 
+  - xamarin
+  - util
 description: Yet another post about date and time. Need to convert a date from a specific time zone in Xamarin Forms? No problem, this post will show you exactly how.
+cover:
+    image: "/images/posts/Timezones.jpg"
+    alt: "Timezones"
+    caption: "Photo by [Nasa](https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
-
-![Timezones]({{ site.url }}/images/posts/Timezones.jpg)
-*Timezones - Photo by [Nasa](https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 
 There is a pattern here, I think. I don't like to work with dates and you probably know that by now. Anyway, don't like them, got to work with them. In this episode of Pains against dates, I wanted to write about something very specific that I had the pleasure to troubleshoot last week.
 
@@ -19,7 +22,7 @@ If you get a ``TimeZoneNotFoundException`` chances are that the timezone id is i
 
 Code example that demonstrates the difference:
 
-<script src="https://gist.github.com/jlucaspains/33f6513aea65d33a87e1592db97309c1.js"></script>
+{{< gist jlucaspains 33f6513aea65d33a87e1592db97309c1 >}}
 
 Fun, right?
 

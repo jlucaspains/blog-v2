@@ -25,13 +25,13 @@ This works well because the agent creates proxy configuration variables that the
 
 ## Fixing the self-signed certificate error
 
-![Self Signed Certificate In Chain]({{site.baseurl}}/images/posts/SelfSignedCertificateInChain.png)
+![Self Signed Certificate In Chain](/images/posts/SelfSignedCertificateInChain.png)
 
 The next issue you might find is that your proxy uses self-signed certificates (why? just somebody tell me why!). If this happens, you will get the ``self signed certificate in certificate chain`` error. This happens because your proxy is doing a man in the middle attach on you. Without going into the reasons this would be ok, your proxy is replacing the original cert served to you with a cert of its own. To get rid of this error, you should trust your proxy's cert to let it do its thing.
 
 First, export the cert root CA into a .cer or .pem file. Ensure you select Base 64 instead of DER encoding (I was lazy and reused an old gif from [Install Root CA cert in Android emulator]({{ site.baseurl }}{% link _posts/2018-7-7-install-root-ca-in-android.md %})):
 
-![Export Certificate]({{site.baseurl}}/images/posts/ExportCertificate.gif)
+![Export Certificate](/images/posts/ExportCertificate.gif)
 
 Save the cert file to your build server and set a variable ``NODE_EXTRA_CA_CERTS`` to point to it.
 

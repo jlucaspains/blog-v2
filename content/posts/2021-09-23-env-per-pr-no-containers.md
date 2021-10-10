@@ -6,16 +6,10 @@ categories:
   - DevOps
 description: >-
   If you cannot or will not use containers but still want to have environment per PR, you can still do it with VMs and IIS. I will show you how.
-featured_image: 
-  url: "/images/posts/code.jpg"
-  attribution: Luca Bravo on Unsplash
-  ref: https://unsplash.com/photos/XJXWbfSo2f0
 cover:
     image: "/images/posts/code.jpg"
-    # can also paste direct link from external site
-    # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
     alt: "alt test"
-    caption: "Image by Luca Bravo on Unsplash"
+    caption: "Image by Luca Bravo on [Unsplash](https://unsplash.com/photos/XJXWbfSo2f0)"
 ---
 
 The expectations surrounding app releases have changed greatly in the last several years. From months-long release cycles to release many times in a day. In part, this is made possible by smaller applications powered by micro services and some of the typical technologies employed with these applications. In particular, Containers bring a lot of new capabilities including easier deployments via orchestration tools such as Kubernetes.

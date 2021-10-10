@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Terms of use
+comments: false
 ---
 
 ## Privacy

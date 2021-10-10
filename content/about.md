@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "About"
+comments: false
 ---
 
 I'm Pains, yes that's my real last name, a coder, enthusiast, and sometimes a blogger. I've been coding for way too long now so a day without code is just not a good day. How can it be?
