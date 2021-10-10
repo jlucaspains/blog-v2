@@ -140,3 +140,4 @@ markup:
         style: monokai
 
 publishDir: docs
+relativeURLs: true

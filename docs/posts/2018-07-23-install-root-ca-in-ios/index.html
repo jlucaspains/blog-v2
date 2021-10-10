@@ -11,8 +11,8 @@
 <meta name=google-site-verification content="XYZabc">
 <meta name=yandex-verification content="XYZabc">
 <meta name=msvalidate.01 content="XYZabc">
-<link crossorigin=anonymous href=/assets/css/stylesheet.min.a55403b274160144f1f4fb29543f794f06b1561b637a7408213ef03c48b4999b.css integrity="sha256-pVQDsnQWAUTx9PspVD95TwaxVhtjenQIIT7wPEi0mZs=" rel="preload stylesheet" as=style>
-<script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<link crossorigin=anonymous href=../../assets/css/stylesheet.min.a55403b274160144f1f4fb29543f794f06b1561b637a7408213ef03c48b4999b.css integrity="sha256-pVQDsnQWAUTx9PspVD95TwaxVhtjenQIIT7wPEi0mZs=" rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=../../assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
 <link rel=icon href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
 <link rel=icon type=image/png sizes=16x16 href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
 <link rel=icon type=image/png sizes=32x32 href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
@@ -86,20 +86,20 @@ Install root CA in iOS 11+
 <div class=post-content><p>This post is a follow up to [Install root CA in Android]({% post_url 2018-7-7-install-root-ca-in-android %}).</p>
 <p>The problem is the same here and the solution is somewhat similar too. First, export the CA certificate like explained in the Android specific post.</p>
 <p>Email the certificate as an attachment to an email account you can access via Safari on your device. Only Safari seems to allow the cert to install. Open the attachment and you will see the following prompt.</p>
-<p><img loading=lazy src=/images/posts/iOSSSLProfileInstallConfirmation.png alt="Cert install confirmation">
+<p><img loading=lazy src=../../images/posts/iOSSSLProfileInstallConfirmation.png alt="Cert install confirmation">
 <em>Profile installation prompt</em></p>
 <p>Touch <code>Allow</code>. You may see a message about which device you want to install the certificate. If so, pick the device you need the cert installed.</p>
-<p><img loading=lazy src=/images/posts/iOSSSLProfileDeviceChoice.png alt="Chose a device">
+<p><img loading=lazy src=../../images/posts/iOSSSLProfileDeviceChoice.png alt="Chose a device">
 <em>Chose a device to install profile</em></p>
 <p>Next, an <code>Install Profile</code> page will display with the cert to be imported.</p>
-<p><img loading=lazy src=/images/posts/iOSSSLProfileInstall.png alt="Install profile">
+<p><img loading=lazy src=../../images/posts/iOSSSLProfileInstall.png alt="Install profile">
 <em>Install profile page</em></p>
 <p>Touch <code>Install</code> and provide the device passcode.</p>
-<p><img loading=lazy src=/images/posts/iOSSSLProfileInstallWarning.png alt="Install profile warning">
+<p><img loading=lazy src=../../images/posts/iOSSSLProfileInstallWarning.png alt="Install profile warning">
 <em>Install profile warning. Should you trust this cert?</em></p>
 <p>Another warning will show about risks of installing an unmanaged certificate. If you trust the certificate, go ahead and touch <code>Install</code> again. You&rsquo;re almost done now.</p>
 <p>Lastly, you will need to go to <code>Settings > General > About > Certificate Trust Settings</code> and toggle <code>enable full trust for root certificates</code>. Again, only do this if you trust the certificate origin.</p>
-<p><img loading=lazy src=/images/posts/iOSSSLCertificateTrustSettings.png alt="Install profile certificate trust settings">
+<p><img loading=lazy src=../../images/posts/iOSSSLCertificateTrustSettings.png alt="Install profile certificate trust settings">
 <em>Trusting the certificate as root certificate</em></p>
 <p>All done. You can now navigate SSL websites with certificates issued by the root CA you just installed.</p>
 <p>Cheers!</p>

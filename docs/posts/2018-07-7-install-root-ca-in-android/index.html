@@ -11,8 +11,8 @@
 <meta name=google-site-verification content="XYZabc">
 <meta name=yandex-verification content="XYZabc">
 <meta name=msvalidate.01 content="XYZabc">
-<link crossorigin=anonymous href=/assets/css/stylesheet.min.a55403b274160144f1f4fb29543f794f06b1561b637a7408213ef03c48b4999b.css integrity="sha256-pVQDsnQWAUTx9PspVD95TwaxVhtjenQIIT7wPEi0mZs=" rel="preload stylesheet" as=style>
-<script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<link crossorigin=anonymous href=../../assets/css/stylesheet.min.a55403b274160144f1f4fb29543f794f06b1561b637a7408213ef03c48b4999b.css integrity="sha256-pVQDsnQWAUTx9PspVD95TwaxVhtjenQIIT7wPEi0mZs=" rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=../../assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
 <link rel=icon href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
 <link rel=icon type=image/png sizes=16x16 href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
 <link rel=icon type=image/png sizes=32x32 href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
@@ -84,11 +84,11 @@ Install Root CA cert in Android emulator
 </header>
 <div class=post-content><p>When developing a small Xamarin forms app I wanted the android emulator to connect to an intranet identity provider. That didn&rsquo;t work. The id server was using an SSL certificate issued by an untrusted CA. Here&rsquo;s what I did to get it working.</p>
 <p>First, you will need the CA certificate so android can trust the SSL cert. If you don&rsquo;t have the cert, you can export it using <a href=https://stackoverflow.com/questions/25940396/how-to-export-certificate-from-chrome-on-a-mac>Chrome on mac</a> or Chrome on windows:</p>
-<p><img loading=lazy src=/images/posts/ExportCertificate.gif alt="Export Certificate">
+<p><img loading=lazy src=../../images/posts/ExportCertificate.gif alt="Export Certificate">
 <em>Exporting certificate using chrome</em></p>
 <p>Next, push the .cer to the emulator using adb push command. Note that even though I&rsquo;m pushing the cert to the sdcard it actually shows in a different location. I&rsquo;m not sure why my emulator is doing that but I&rsquo;ve seen others that work just fine. Just make sure to search in all folders when installing the cert in the emulator.</p>
 <p>Before installing the certificate, you will need to enable device lockscreen security. Finally, install the certificate using Settings app:</p>
-<p><img loading=lazy src=/images/posts/ImportCertificateAndroid.gif alt="Import Certificate">
+<p><img loading=lazy src=../../images/posts/ImportCertificateAndroid.gif alt="Import Certificate">
 <em>Importing certificate to Android Emulator</em></p>
 <p>After import, you can check your certs in User credentials under Encryption & credentials and more importantly, navigate to the SSL site without errors.</p>
 <p>Cheers!</p>
