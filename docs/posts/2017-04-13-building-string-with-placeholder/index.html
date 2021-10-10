@@ -11,13 +11,13 @@
 <meta name=google-site-verification content="XYZabc">
 <meta name=yandex-verification content="XYZabc">
 <meta name=msvalidate.01 content="XYZabc">
-<link crossorigin=anonymous href=../../assets/css/stylesheet.min.a55403b274160144f1f4fb29543f794f06b1561b637a7408213ef03c48b4999b.css integrity="sha256-pVQDsnQWAUTx9PspVD95TwaxVhtjenQIIT7wPEi0mZs=" rel="preload stylesheet" as=style>
-<script defer crossorigin=anonymous src=../../assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
-<link rel=icon href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
-<link rel=icon type=image/png sizes=16x16 href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
-<link rel=icon type=image/png sizes=32x32 href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
-<link rel=apple-touch-icon href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
-<link rel=mask-icon href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.a55403b274160144f1f4fb29543f794f06b1561b637a7408213ef03c48b4999b.css integrity="sha256-pVQDsnQWAUTx9PspVD95TwaxVhtjenQIIT7wPEi0mZs=" rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://lpains.net/images/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://lpains.net/images/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://lpains.net/images/favicon-32x32.png>
+<link rel=apple-touch-icon href="https://lpains.net/images/apple-touch=icon.png">
+<link rel=mask-icon href=https://lpains.net/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.88.1">
@@ -25,18 +25,18 @@
 <style>#theme-toggle,.top-link{display:none}</style>
 <style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
 </noscript>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-123-45','auto'),ga('send','pageview'))</script><meta property="og:title" content="Building string with placeholders">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-44645930-2','auto'),ga('send','pageview'))</script><meta property="og:title" content="Building string with placeholders">
 <meta property="og:description" content="Last post I showed a cool way to parse strings into typed objects. In this one, I want to show the opposite. How to build strings using a template and an object.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://lpains.net/posts/2017-04-13-building-string-with-placeholder/"><meta property="og:image" content="https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts">
+<meta property="og:url" content="https://lpains.net/posts/2017-04-13-building-string-with-placeholder/"><meta property="og:image" content="https://lpains.net/images/lpains.jpg"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2017-04-13T00:00:00+00:00">
 <meta property="article:modified_time" content="2017-04-13T00:00:00+00:00"><meta property="og:site_name" content="Pains.net">
 <meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
+<meta name=twitter:image content="https://lpains.net/images/lpains.jpg">
 <meta name=twitter:title content="Building string with placeholders">
 <meta name=twitter:description content="Last post I showed a cool way to parse strings into typed objects. In this one, I want to show the opposite. How to build strings using a template and an object.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://lpains.net/posts/"},{"@type":"ListItem","position":2,"name":"Building string with placeholders","item":"https://lpains.net/posts/2017-04-13-building-string-with-placeholder/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Building string with placeholders","name":"Building string with placeholders","description":"Last post I showed a cool way to parse strings into typed objects. In this one, I want to show the opposite. How to build strings using a template and an object.","keywords":[],"articleBody":"Last post I showed a cool way to parse strings into typed objects. In this one, I want to show the opposite. How to build strings using a template and an object.\nThe idea is to use a template like {BirthDate:D} My name is {FirstName} {LastName} and I'm cool. and an object with properties BirthDate, FirstName and LastName to fill in the placeholder values and apply optional formatting. There are several uses for a utility like this but my favorite use is templated email messages.\nKudos to Scott Hanselman for this solution.\nThe nice part about this solution is that it won’t throw any exceptions if it can’t correctly build the string. It will just leave the bad part of the template in the result. Also, it supports Format Providers which also allows for specific culture targeting:\n You can find the code in Scott’s git hub repo\nPS: I know that Scott posted about this years ago but I use this so often that I felt like it deserved another blog post…\nHappy coding!\n","wordCount":"174","inLanguage":"en","datePublished":"2017-04-13T00:00:00Z","dateModified":"2017-04-13T00:00:00Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://lpains.net/posts/2017-04-13-building-string-with-placeholder/"},"publisher":{"@type":"Organization","name":"Pains.net","logo":{"@type":"ImageObject","url":"https://lpains.net/%3Clink%20/%20abs%20url%3E"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Building string with placeholders","name":"Building string with placeholders","description":"Last post I showed a cool way to parse strings into typed objects. In this one, I want to show the opposite. How to build strings using a template and an object.","keywords":[],"articleBody":"Last post I showed a cool way to parse strings into typed objects. In this one, I want to show the opposite. How to build strings using a template and an object.\nThe idea is to use a template like {BirthDate:D} My name is {FirstName} {LastName} and I'm cool. and an object with properties BirthDate, FirstName and LastName to fill in the placeholder values and apply optional formatting. There are several uses for a utility like this but my favorite use is templated email messages.\nKudos to Scott Hanselman for this solution.\nThe nice part about this solution is that it won’t throw any exceptions if it can’t correctly build the string. It will just leave the bad part of the template in the result. Also, it supports Format Providers which also allows for specific culture targeting:\n You can find the code in Scott’s git hub repo\nPS: I know that Scott posted about this years ago but I use this so often that I felt like it deserved another blog post…\nHappy coding!\n","wordCount":"174","inLanguage":"en","datePublished":"2017-04-13T00:00:00Z","dateModified":"2017-04-13T00:00:00Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://lpains.net/posts/2017-04-13-building-string-with-placeholder/"},"publisher":{"@type":"Organization","name":"Pains.net","logo":{"@type":"ImageObject","url":"https://lpains.net/images/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -94,15 +94,15 @@ Building string with placeholders
 </div>
 <footer class=post-footer>
 <nav class=paginav>
-<a class=prev href=https://lpains.net/posts/2018-07-15-migrating-from-tfs-to-vsts-git/>
+<a class=prev href=https://lpains.net/posts/2018-07-7-install-root-ca-in-android/>
 <span class=title>« Prev Page</span>
 <br>
-<span>Migrating from TFS + TFVC to VSTS + git</span>
+<span>Install Root CA cert in Android emulator</span>
 </a>
-<a class=next href=https://lpains.net/posts/2017-01-31-using-canvas-to-design-label/>
+<a class=next href=https://lpains.net/posts/2017-04-6-parsing-text-using-regex/>
 <span class=title>Next Page »</span>
 <br>
-<span>Using html5 canvas to build a WYSIWYG label designer</span>
+<span>Parsing text into typed objects using RegEx named groups</span>
 </a>
 </nav>
 <div class=share-buttons>

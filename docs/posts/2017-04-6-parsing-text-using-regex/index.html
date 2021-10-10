@@ -11,13 +11,13 @@
 <meta name=google-site-verification content="XYZabc">
 <meta name=yandex-verification content="XYZabc">
 <meta name=msvalidate.01 content="XYZabc">
-<link crossorigin=anonymous href=../../assets/css/stylesheet.min.a55403b274160144f1f4fb29543f794f06b1561b637a7408213ef03c48b4999b.css integrity="sha256-pVQDsnQWAUTx9PspVD95TwaxVhtjenQIIT7wPEi0mZs=" rel="preload stylesheet" as=style>
-<script defer crossorigin=anonymous src=../../assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
-<link rel=icon href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
-<link rel=icon type=image/png sizes=16x16 href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
-<link rel=icon type=image/png sizes=32x32 href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
-<link rel=apple-touch-icon href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
-<link rel=mask-icon href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.a55403b274160144f1f4fb29543f794f06b1561b637a7408213ef03c48b4999b.css integrity="sha256-pVQDsnQWAUTx9PspVD95TwaxVhtjenQIIT7wPEi0mZs=" rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://lpains.net/images/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://lpains.net/images/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://lpains.net/images/favicon-32x32.png>
+<link rel=apple-touch-icon href="https://lpains.net/images/apple-touch=icon.png">
+<link rel=mask-icon href=https://lpains.net/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.88.1">
@@ -25,17 +25,18 @@
 <style>#theme-toggle,.top-link{display:none}</style>
 <style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
 </noscript>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-123-45','auto'),ga('send','pageview'))</script><meta property="og:title" content="Parsing text into typed objects using RegEx named groups">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-44645930-2','auto'),ga('send','pageview'))</script><meta property="og:title" content="Parsing text into typed objects using RegEx named groups">
 <meta property="og:description" content="Using regex to capture and parse text into objects.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://lpains.net/posts/2017-04-6-parsing-text-using-regex/"><meta property="og:image" content="https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts">
-<meta property="og:site_name" content="Pains.net">
+<meta property="og:url" content="https://lpains.net/posts/2017-04-6-parsing-text-using-regex/"><meta property="og:image" content="https://lpains.net/images/lpains.jpg"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2017-04-06T00:00:00+00:00">
+<meta property="article:modified_time" content="2017-04-06T00:00:00+00:00"><meta property="og:site_name" content="Pains.net">
 <meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
+<meta name=twitter:image content="https://lpains.net/images/lpains.jpg">
 <meta name=twitter:title content="Parsing text into typed objects using RegEx named groups">
 <meta name=twitter:description content="Using regex to capture and parse text into objects.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://lpains.net/posts/"},{"@type":"ListItem","position":2,"name":"Parsing text into typed objects using RegEx named groups","item":"https://lpains.net/posts/2017-04-6-parsing-text-using-regex/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Parsing text into typed objects using RegEx named groups","name":"Parsing text into typed objects using RegEx named groups","description":"Using regex to capture and parse text into objects.","keywords":[],"articleBody":"A little while ago, I had to build a desktop app that received input from devices which I had no control of. Although each implementation had similar requirements, the devices connected to the app were slightly different and so were the inputs received from them. I’ve looked for other similar implementations and found that some people implemented device specific parsers. Furthermore, they used configuration to select the correct parser. I think there is at least one issue with this approach: any change to the known inputs would require the application to change as well. Maybe there is a better way…\nThe trick I want to demonstrate relies on named group capturing from Regular Expression and a little fiddling with reflection.\n Note: this technique works great for most scenarios but if you are looking for a super high performance solution, this is not for you.\n Alright! Let’s see some code.\n So with above code you can, for instance, parse a string that represents Product and Price into a typed object:\n I find this most useful when you don’t really have control of the input, maybe it is a device input or a legacy system that just drop you some info. Regardless, this can save a bunch of time when the input changes or a new device needs to be supported.\nYou can find samples at my github repo.\nHappy coding!\n","wordCount":"229","inLanguage":"en","datePublished":"0001-01-01T00:00:00Z","dateModified":"0001-01-01T00:00:00Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://lpains.net/posts/2017-04-6-parsing-text-using-regex/"},"publisher":{"@type":"Organization","name":"Pains.net","logo":{"@type":"ImageObject","url":"https://lpains.net/%3Clink%20/%20abs%20url%3E"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Parsing text into typed objects using RegEx named groups","name":"Parsing text into typed objects using RegEx named groups","description":"Using regex to capture and parse text into objects.","keywords":[],"articleBody":"A little while ago, I had to build a desktop app that received input from devices which I had no control of. Although each implementation had similar requirements, the devices connected to the app were slightly different and so were the inputs received from them. I’ve looked for other similar implementations and found that some people implemented device specific parsers. Furthermore, they used configuration to select the correct parser. I think there is at least one issue with this approach: any change to the known inputs would require the application to change as well. Maybe there is a better way…\nThe trick I want to demonstrate relies on named group capturing from Regular Expression and a little fiddling with reflection.\n Note: this technique works great for most scenarios but if you are looking for a super high performance solution, this is not for you.\n Alright! Let’s see some code.\n So with above code you can, for instance, parse a string that represents Product and Price into a typed object:\n I find this most useful when you don’t really have control of the input, maybe it is a device input or a legacy system that just drop you some info. Regardless, this can save a bunch of time when the input changes or a new device needs to be supported.\nYou can find samples at my github repo.\nHappy coding!\n","wordCount":"229","inLanguage":"en","datePublished":"2017-04-06T00:00:00Z","dateModified":"2017-04-06T00:00:00Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://lpains.net/posts/2017-04-6-parsing-text-using-regex/"},"publisher":{"@type":"Organization","name":"Pains.net","logo":{"@type":"ImageObject","url":"https://lpains.net/images/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -79,7 +80,7 @@
 <h1 class=post-title>
 Parsing text into typed objects using RegEx named groups
 </h1>
-<div class=post-meta>2 min&nbsp;·&nbsp;Me
+<div class=post-meta>April 6, 2017&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Me
 </div>
 </header>
 <div class=post-content><p>A little while ago, I had to build a desktop app that received input from devices which I had no control of. Although each implementation had similar requirements, the devices connected to the app were slightly different and so were the inputs received from them. I&rsquo;ve looked for other similar implementations and found that some people implemented device specific parsers. Furthermore, they used configuration to select the correct parser. I think there is at least one issue with this approach: any change to the known inputs would require the application to change as well. Maybe there is a better way&mldr;</p>
@@ -97,15 +98,15 @@ Parsing text into typed objects using RegEx named groups
 </div>
 <footer class=post-footer>
 <nav class=paginav>
-<a class=prev href=https://lpains.net/posts/2018-07-7-install-root-ca-in-android/>
+<a class=prev href=https://lpains.net/posts/2017-04-13-building-string-with-placeholder/>
 <span class=title>« Prev Page</span>
 <br>
-<span>Install Root CA cert in Android emulator</span>
+<span>Building string with placeholders</span>
 </a>
-<a class=next href=https://lpains.net/posts/2019-07-26-simple-vue-directive-for-hotkeys/>
+<a class=next href=https://lpains.net/posts/2017-01-31-using-canvas-to-design-label/>
 <span class=title>Next Page »</span>
 <br>
-<span>Simple Vue directive for hotkeys</span>
+<span>Using html5 canvas to build a WYSIWYG label designer</span>
 </a>
 </nav>
 <div class=share-buttons>

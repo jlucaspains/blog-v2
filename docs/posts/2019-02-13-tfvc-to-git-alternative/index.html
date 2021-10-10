@@ -11,13 +11,13 @@
 <meta name=google-site-verification content="XYZabc">
 <meta name=yandex-verification content="XYZabc">
 <meta name=msvalidate.01 content="XYZabc">
-<link crossorigin=anonymous href=../../assets/css/stylesheet.min.a55403b274160144f1f4fb29543f794f06b1561b637a7408213ef03c48b4999b.css integrity="sha256-pVQDsnQWAUTx9PspVD95TwaxVhtjenQIIT7wPEi0mZs=" rel="preload stylesheet" as=style>
-<script defer crossorigin=anonymous src=../../assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
-<link rel=icon href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
-<link rel=icon type=image/png sizes=16x16 href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
-<link rel=icon type=image/png sizes=32x32 href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
-<link rel=apple-touch-icon href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
-<link rel=mask-icon href=https://lpains.net/%3Clink%20/%20abs%20url%3E>
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.a55403b274160144f1f4fb29543f794f06b1561b637a7408213ef03c48b4999b.css integrity="sha256-pVQDsnQWAUTx9PspVD95TwaxVhtjenQIIT7wPEi0mZs=" rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://lpains.net/images/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://lpains.net/images/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://lpains.net/images/favicon-32x32.png>
+<link rel=apple-touch-icon href="https://lpains.net/images/apple-touch=icon.png">
+<link rel=mask-icon href=https://lpains.net/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.88.1">
@@ -25,17 +25,18 @@
 <style>#theme-toggle,.top-link{display:none}</style>
 <style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
 </noscript>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-123-45','auto'),ga('send','pageview'))</script><meta property="og:title" content="TFVC to git import alternative">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-44645930-2','auto'),ga('send','pageview'))</script><meta property="og:title" content="TFVC to git import alternative">
 <meta property="og:description" content="Previously, I've shown how to import source from TFVC to git using git-tfs tool. There is another way to do it right in Azure DevOps and I show it here.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://lpains.net/posts/2019-02-13-tfvc-to-git-alternative/"><meta property="og:image" content="https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts">
-<meta property="og:site_name" content="Pains.net">
+<meta property="og:url" content="https://lpains.net/posts/2019-02-13-tfvc-to-git-alternative/"><meta property="og:image" content="https://lpains.net/images/lpains.jpg"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2019-02-13T00:00:00+00:00">
+<meta property="article:modified_time" content="2019-02-13T00:00:00+00:00"><meta property="og:site_name" content="Pains.net">
 <meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
+<meta name=twitter:image content="https://lpains.net/images/lpains.jpg">
 <meta name=twitter:title content="TFVC to git import alternative">
 <meta name=twitter:description content="Previously, I've shown how to import source from TFVC to git using git-tfs tool. There is another way to do it right in Azure DevOps and I show it here.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://lpains.net/posts/"},{"@type":"ListItem","position":2,"name":"TFVC to git import alternative","item":"https://lpains.net/posts/2019-02-13-tfvc-to-git-alternative/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"TFVC to git import alternative","name":"TFVC to git import alternative","description":"Previously, I've shown how to import source from TFVC to git using git-tfs tool. There is another way to do it right in Azure DevOps and I show it here.","keywords":[],"articleBody":"On [Migrating from TFS + TFVC to VSTS + git]({{ site.baseurl }}{% link _posts/2018-7-15-migrating-from-tfs-to-vsts-git.md %}) post I showed how to export your TFVC repository, or a part of it, to a git repository using git-tfs tool. Today, I found an alternative totally by chance and it might be just what you needed to finally move to git.\nTFS 2018 and Azure DevOps offers an option called Import Repository located at Code in TFS or Repos Azure DevOps. This option will import or create a git repository from another host such as github or a local TFVC repository. While Microsoft does caution against importing history from TFVC into your new git repository, they actually provide an option to import up to 180 days of history.\n![Import Repository]({{ site.url }}/images/posts/azure-devops-import-repository.png) Where to find Import Repository - Image borrowed from MS documentation linked to below\n![Import TFVC Repository as GIT]({{ site.url }}/images/posts/import-tfvc-as-git.png) Very simple import TFVC to GIT dialog\nRemember that this is a very simple option and won’t give you the customization offered by git-tfs. Also, you can use TFS to export a repository, download it to your computer, modify the remote and push it somewhere else.\nHere is MS Documentation.\nCheers\n","wordCount":"200","inLanguage":"en","datePublished":"0001-01-01T00:00:00Z","dateModified":"0001-01-01T00:00:00Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://lpains.net/posts/2019-02-13-tfvc-to-git-alternative/"},"publisher":{"@type":"Organization","name":"Pains.net","logo":{"@type":"ImageObject","url":"https://lpains.net/%3Clink%20/%20abs%20url%3E"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"TFVC to git import alternative","name":"TFVC to git import alternative","description":"Previously, I've shown how to import source from TFVC to git using git-tfs tool. There is another way to do it right in Azure DevOps and I show it here.","keywords":[],"articleBody":"On [Migrating from TFS + TFVC to VSTS + git]({{ site.baseurl }}{% link _posts/2018-7-15-migrating-from-tfs-to-vsts-git.md %}) post I showed how to export your TFVC repository, or a part of it, to a git repository using git-tfs tool. Today, I found an alternative totally by chance and it might be just what you needed to finally move to git.\nTFS 2018 and Azure DevOps offers an option called Import Repository located at Code in TFS or Repos Azure DevOps. This option will import or create a git repository from another host such as github or a local TFVC repository. While Microsoft does caution against importing history from TFVC into your new git repository, they actually provide an option to import up to 180 days of history.\n![Import Repository]({{ site.url }}/images/posts/azure-devops-import-repository.png) Where to find Import Repository - Image borrowed from MS documentation linked to below\n![Import TFVC Repository as GIT]({{ site.url }}/images/posts/import-tfvc-as-git.png) Very simple import TFVC to GIT dialog\nRemember that this is a very simple option and won’t give you the customization offered by git-tfs. Also, you can use TFS to export a repository, download it to your computer, modify the remote and push it somewhere else.\nHere is MS Documentation.\nCheers\n","wordCount":"200","inLanguage":"en","datePublished":"2019-02-13T00:00:00Z","dateModified":"2019-02-13T00:00:00Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://lpains.net/posts/2019-02-13-tfvc-to-git-alternative/"},"publisher":{"@type":"Organization","name":"Pains.net","logo":{"@type":"ImageObject","url":"https://lpains.net/images/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -79,7 +80,7 @@
 <h1 class=post-title>
 TFVC to git import alternative
 </h1>
-<div class=post-meta>1 min&nbsp;·&nbsp;Me
+<div class=post-meta>February 13, 2019&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Me
 </div>
 </header>
 <div class=post-content><p>On [Migrating from TFS + TFVC to VSTS + git]({{ site.baseurl }}{% link _posts/2018-7-15-migrating-from-tfs-to-vsts-git.md %}) post I showed how to export your TFVC repository, or a part of it, to a git repository using <a href=http://git-tfs.com/>git-tfs</a> tool. Today, I found an alternative totally by chance and it might be just what you needed to finally move to git.</p>
@@ -94,15 +95,15 @@ TFVC to git import alternative
 </div>
 <footer class=post-footer>
 <nav class=paginav>
-<a class=prev href=https://lpains.net/posts/2019-07-26-simple-vue-directive-for-hotkeys/>
+<a class=prev href=https://lpains.net/posts/2019-02-18-tips-tricks-typescript-vue/>
 <span class=title>« Prev Page</span>
 <br>
-<span>Simple Vue directive for hotkeys</span>
+<span>Tips and tricks for vue with typescript</span>
 </a>
-<a class=next href=https://lpains.net/posts/2019-02-18-tips-tricks-typescript-vue/>
+<a class=next href=https://lpains.net/posts/2019-02-11-blog-changes/>
 <span class=title>Next Page »</span>
 <br>
-<span>Tips and tricks for vue with typescript</span>
+<span>Blog Changes</span>
 </a>
 </nav>
 <div class=share-buttons>

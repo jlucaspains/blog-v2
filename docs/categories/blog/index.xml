@@ -5,8 +5,8 @@
     <link>https://lpains.net/categories/blog/</link>
     <description>Recent content in blog on Pains.net</description>
     <image>
-      <url>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://lpains.net/images/lpains.jpg</url>
+      <link>https://lpains.net/images/lpains.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 10 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/categories/blog/index.xml" rel="self" type="application/rss+xml" />
@@ -22,7 +22,7 @@
     <item>
       <title>Blog Changes</title>
       <link>https://lpains.net/posts/2019-02-11-blog-changes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://lpains.net/posts/2019-02-11-blog-changes/</guid>
       <description>A round of improvements for this blog occurred. Commenting have been temporarily disabled due to Disqus new policies and SyntaxHighlighter was also replaced with gist for better code snippets and a faster page load.</description>

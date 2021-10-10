@@ -5,8 +5,8 @@
     <link>https://lpains.net/posts/</link>
     <description>Recent content in Posts on Pains.net</description>
     <image>
-      <url>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://lpains.net/images/lpains.jpg</url>
+      <link>https://lpains.net/images/lpains.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 10 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -146,6 +146,60 @@
     </item>
     
     <item>
+      <title>Simple Vue directive for hotkeys</title>
+      <link>https://lpains.net/posts/2019-07-26-simple-vue-directive-for-hotkeys/</link>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2019-07-26-simple-vue-directive-for-hotkeys/</guid>
+      <description>vue-mouseless is a tiny Vue directive for hotkey handling using mousetrap.</description>
+    </item>
+    
+    <item>
+      <title>Tips and tricks for vue with typescript</title>
+      <link>https://lpains.net/posts/2019-02-18-tips-tricks-typescript-vue/</link>
+      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2019-02-18-tips-tricks-typescript-vue/</guid>
+      <description>My top 5 Vue tips and tricks for an easier and faster development experience</description>
+    </item>
+    
+    <item>
+      <title>TFVC to git import alternative</title>
+      <link>https://lpains.net/posts/2019-02-13-tfvc-to-git-alternative/</link>
+      <pubDate>Wed, 13 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2019-02-13-tfvc-to-git-alternative/</guid>
+      <description>Previously, I&amp;#39;ve shown how to import source from TFVC to git using git-tfs tool. There is another way to do it right in Azure DevOps and I show it here.</description>
+    </item>
+    
+    <item>
+      <title>Blog Changes</title>
+      <link>https://lpains.net/posts/2019-02-11-blog-changes/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2019-02-11-blog-changes/</guid>
+      <description>A round of improvements for this blog occurred. Commenting have been temporarily disabled due to Disqus new policies and SyntaxHighlighter was also replaced with gist for better code snippets and a faster page load.</description>
+    </item>
+    
+    <item>
+      <title>Build and Deploy Xamarin.iOS to Test Flight with Azure DevOps</title>
+      <link>https://lpains.net/posts/2019-01-31-build-deploy-xamarin-ios-azure-devops/</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2019-01-31-build-deploy-xamarin-ios-azure-devops/</guid>
+      <description>Everybody knows how hard it is to work with iOS apps from a windows environment (mostly). I&amp;#39;ve had to deal with it and here is my experience building and deploying iOS app from a build/release pipeline in Azure DevOps.</description>
+    </item>
+    
+    <item>
+      <title>FreshMVVM master/detail page lazy loaded</title>
+      <link>https://lpains.net/posts/2018-07-29-xamarin-forms-master-detail-lazy-loaded/</link>
+      <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2018-07-29-xamarin-forms-master-detail-lazy-loaded/</guid>
+      <description>Custom implementation of a lazy loaded master/detail page for FreshMVVM framework. Working coding sample included.</description>
+    </item>
+    
+    <item>
       <title>Install root CA in iOS 11&#43;</title>
       <link>https://lpains.net/posts/2018-07-23-install-root-ca-in-ios/</link>
       <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
@@ -164,12 +218,30 @@
     </item>
     
     <item>
+      <title>Install Root CA cert in Android emulator</title>
+      <link>https://lpains.net/posts/2018-07-7-install-root-ca-in-android/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2018-07-7-install-root-ca-in-android/</guid>
+      <description>You if you need to access intranet TLS applications from an Android emulator, you will need to install your CA certs. This is how you can do it.</description>
+    </item>
+    
+    <item>
       <title>Building string with placeholders</title>
       <link>https://lpains.net/posts/2017-04-13-building-string-with-placeholder/</link>
       <pubDate>Thu, 13 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://lpains.net/posts/2017-04-13-building-string-with-placeholder/</guid>
       <description>Last post I showed a cool way to parse strings into typed objects. In this one, I want to show the opposite. How to build strings using a template and an object.</description>
+    </item>
+    
+    <item>
+      <title>Parsing text into typed objects using RegEx named groups</title>
+      <link>https://lpains.net/posts/2017-04-6-parsing-text-using-regex/</link>
+      <pubDate>Thu, 06 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2017-04-6-parsing-text-using-regex/</guid>
+      <description>Using regex to capture and parse text into objects.</description>
     </item>
     
     <item>
@@ -197,78 +269,6 @@
       
       <guid>https://lpains.net/posts/2016-06-18-a-different-approach-for-auth/</guid>
       <description>I&amp;#39;ve seen way too many applications using Role Based Authentication where the code check if user is Admin. This is not a good practice at all. Here is a better way.</description>
-    </item>
-    
-    <item>
-      <title>Blog Changes</title>
-      <link>https://lpains.net/posts/2019-02-11-blog-changes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lpains.net/posts/2019-02-11-blog-changes/</guid>
-      <description>A round of improvements for this blog occurred. Commenting have been temporarily disabled due to Disqus new policies and SyntaxHighlighter was also replaced with gist for better code snippets and a faster page load.</description>
-    </item>
-    
-    <item>
-      <title>Build and Deploy Xamarin.iOS to Test Flight with Azure DevOps</title>
-      <link>https://lpains.net/posts/2019-01-31-build-deploy-xamarin-ios-azure-devops/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lpains.net/posts/2019-01-31-build-deploy-xamarin-ios-azure-devops/</guid>
-      <description>Everybody knows how hard it is to work with iOS apps from a windows environment (mostly). I&amp;#39;ve had to deal with it and here is my experience building and deploying iOS app from a build/release pipeline in Azure DevOps.</description>
-    </item>
-    
-    <item>
-      <title>FreshMVVM master/detail page lazy loaded</title>
-      <link>https://lpains.net/posts/2018-07-29-xamarin-forms-master-detail-lazy-loaded/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lpains.net/posts/2018-07-29-xamarin-forms-master-detail-lazy-loaded/</guid>
-      <description>Custom implementation of a lazy loaded master/detail page for FreshMVVM framework. Working coding sample included.</description>
-    </item>
-    
-    <item>
-      <title>Install Root CA cert in Android emulator</title>
-      <link>https://lpains.net/posts/2018-07-7-install-root-ca-in-android/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lpains.net/posts/2018-07-7-install-root-ca-in-android/</guid>
-      <description>You if you need to access intranet TLS applications from an Android emulator, you will need to install your CA certs. This is how you can do it.</description>
-    </item>
-    
-    <item>
-      <title>Parsing text into typed objects using RegEx named groups</title>
-      <link>https://lpains.net/posts/2017-04-6-parsing-text-using-regex/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lpains.net/posts/2017-04-6-parsing-text-using-regex/</guid>
-      <description>Using regex to capture and parse text into objects.</description>
-    </item>
-    
-    <item>
-      <title>Simple Vue directive for hotkeys</title>
-      <link>https://lpains.net/posts/2019-07-26-simple-vue-directive-for-hotkeys/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lpains.net/posts/2019-07-26-simple-vue-directive-for-hotkeys/</guid>
-      <description>vue-mouseless is a tiny Vue directive for hotkey handling using mousetrap.</description>
-    </item>
-    
-    <item>
-      <title>TFVC to git import alternative</title>
-      <link>https://lpains.net/posts/2019-02-13-tfvc-to-git-alternative/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lpains.net/posts/2019-02-13-tfvc-to-git-alternative/</guid>
-      <description>Previously, I&amp;#39;ve shown how to import source from TFVC to git using git-tfs tool. There is another way to do it right in Azure DevOps and I show it here.</description>
-    </item>
-    
-    <item>
-      <title>Tips and tricks for vue with typescript</title>
-      <link>https://lpains.net/posts/2019-02-18-tips-tricks-typescript-vue/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lpains.net/posts/2019-02-18-tips-tricks-typescript-vue/</guid>
-      <description>My top 5 Vue tips and tricks for an easier and faster development experience</description>
     </item>
     
   </channel>

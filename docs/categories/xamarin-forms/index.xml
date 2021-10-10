@@ -5,8 +5,8 @@
     <link>https://lpains.net/categories/xamarin-forms/</link>
     <description>Recent content in xamarin-forms on Pains.net</description>
     <image>
-      <url>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://lpains.net/images/lpains.jpg</url>
+      <link>https://lpains.net/images/lpains.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/categories/xamarin-forms/index.xml" rel="self" type="application/rss+xml" />
@@ -22,7 +22,7 @@
     <item>
       <title>FreshMVVM master/detail page lazy loaded</title>
       <link>https://lpains.net/posts/2018-07-29-xamarin-forms-master-detail-lazy-loaded/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://lpains.net/posts/2018-07-29-xamarin-forms-master-detail-lazy-loaded/</guid>
       <description>Custom implementation of a lazy loaded master/detail page for FreshMVVM framework. Working coding sample included.</description>

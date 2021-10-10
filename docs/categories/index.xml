@@ -5,8 +5,8 @@
     <link>https://lpains.net/categories/</link>
     <description>Recent content in Categories on Pains.net</description>
     <image>
-      <url>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://lpains.net/images/lpains.jpg</url>
+      <link>https://lpains.net/images/lpains.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 10 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/categories/index.xml" rel="self" type="application/rss+xml" />
@@ -92,6 +92,33 @@
     </item>
     
     <item>
+      <title>git</title>
+      <link>https://lpains.net/categories/git/</link>
+      <pubDate>Wed, 13 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VSTS</title>
+      <link>https://lpains.net/categories/vsts/</link>
+      <pubDate>Wed, 13 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/vsts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xamarin-iOS</title>
+      <link>https://lpains.net/categories/xamarin-ios/</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/xamarin-ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>iOS</title>
       <link>https://lpains.net/categories/ios/</link>
       <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
@@ -101,20 +128,11 @@
     </item>
     
     <item>
-      <title>git</title>
-      <link>https://lpains.net/categories/git/</link>
-      <pubDate>Sun, 15 Jul 2018 00:00:00 +0000</pubDate>
+      <title>xamarin-android</title>
+      <link>https://lpains.net/categories/xamarin-android/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://lpains.net/categories/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>VSTS</title>
-      <link>https://lpains.net/categories/vsts/</link>
-      <pubDate>Sun, 15 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://lpains.net/categories/vsts/</guid>
+      <guid>https://lpains.net/categories/xamarin-android/</guid>
       <description></description>
     </item>
     
@@ -124,24 +142,6 @@
       <pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate>
       
       <guid>https://lpains.net/categories/auth/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>xamarin-android</title>
-      <link>https://lpains.net/categories/xamarin-android/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lpains.net/categories/xamarin-android/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>xamarin-iOS</title>
-      <link>https://lpains.net/categories/xamarin-ios/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lpains.net/categories/xamarin-ios/</guid>
       <description></description>
     </item>
     

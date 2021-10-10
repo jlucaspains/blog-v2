@@ -15,14 +15,14 @@ cover:
     caption: "Photo by [Markus Spiske on Unsplash](https://unsplash.com/photos/C0koz3G1I4I)"
 ---
 
-In January last year, I wrote about [building and deploying Xamarin iOS apps using Azure DevOps]({{< ref "/posts/2019-1-31-build-deploy-xamarin-ios-azure-devops" >}}). I wanted to write about the Android process but never mustered the energy to do it. Nevertheless, today is the day I will.
+In January last year, I wrote about [building and deploying Xamarin iOS apps using Azure DevOps]({{< ref "/posts/2019-01-31-build-deploy-xamarin-ios-azure-devops" >}}). I wanted to write about the Android process but never mustered the energy to do it. Nevertheless, today is the day I will.
 
 Not a ton has changed since then. Perhaps, the most relevant change is that last time I showed how to deploy directly to the store and this time I want to show how to deploy as an Enterprise app. Also, the build will use the somewhat new yml build pipeline instead of the visual build.
 
 Enough said, let's get to it.
 
 ## Requirements
-* Since not much changed, check [the original post]({{< ref "/posts/2019-1-31-build-deploy-xamarin-ios-azure-devops" >}}) for the iOS requirements.
+* Since not much changed, check [the original post]({{< ref "/posts/2019-01-31-build-deploy-xamarin-ios-azure-devops" >}}) for the iOS requirements.
 * For Android, you need to create a keystore file to sign the apk. Follow instructions in [this document](https://docs.microsoft.com/en-us/xamarin/android/deploy-test/signing/?tabs=windows) to do it.
 * A website to publish the apk/ipa and any other necessary resources for distribution.
 

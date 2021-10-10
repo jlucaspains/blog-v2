@@ -5,8 +5,8 @@
     <link>https://lpains.net/tags/</link>
     <description>Recent content in Tags on Pains.net</description>
     <image>
-      <url>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://lpains.net/images/lpains.jpg</url>
+      <link>https://lpains.net/images/lpains.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://lpains.net/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>

@@ -80,7 +80,7 @@ cover:
 I've been using a lot of gists in my posts. With Jekyll, you need to drop the script tag in the post, with Hugo, you need to use a special notation:
 
 ```
-{{< gist jlucaspains e8c05c31501be81302c766b7de185652 >}}
+{{</* gist jlucaspains e8c05c31501be81302c766b7de185652 */>}}
 ```
 
 ## 6. Move and review other pages

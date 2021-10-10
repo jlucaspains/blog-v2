@@ -5,11 +5,20 @@
     <link>https://lpains.net/categories/git/</link>
     <description>Recent content in git on Pains.net</description>
     <image>
-      <url>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://lpains.net/images/lpains.jpg</url>
+      <link>https://lpains.net/images/lpains.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 15 Jul 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TFVC to git import alternative</title>
+      <link>https://lpains.net/posts/2019-02-13-tfvc-to-git-alternative/</link>
+      <pubDate>Wed, 13 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2019-02-13-tfvc-to-git-alternative/</guid>
+      <description>Previously, I&amp;#39;ve shown how to import source from TFVC to git using git-tfs tool. There is another way to do it right in Azure DevOps and I show it here.</description>
+    </item>
+    
     <item>
       <title>Migrating from TFS &#43; TFVC to VSTS &#43; git</title>
       <link>https://lpains.net/posts/2018-07-15-migrating-from-tfs-to-vsts-git/</link>
@@ -17,15 +26,6 @@
       
       <guid>https://lpains.net/posts/2018-07-15-migrating-from-tfs-to-vsts-git/</guid>
       <description>It is time to start migration your TFVC repository to git repos. In this post, I will show how to do just that using git-tfs.</description>
-    </item>
-    
-    <item>
-      <title>TFVC to git import alternative</title>
-      <link>https://lpains.net/posts/2019-02-13-tfvc-to-git-alternative/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lpains.net/posts/2019-02-13-tfvc-to-git-alternative/</guid>
-      <description>Previously, I&amp;#39;ve shown how to import source from TFVC to git using git-tfs tool. There is another way to do it right in Azure DevOps and I show it here.</description>
     </item>
     
   </channel>

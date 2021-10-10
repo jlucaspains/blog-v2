@@ -5,8 +5,8 @@
     <link>https://lpains.net/categories/util/</link>
     <description>Recent content in util on Pains.net</description>
     <image>
-      <url>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://lpains.net/images/lpains.jpg</url>
+      <link>https://lpains.net/images/lpains.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/categories/util/index.xml" rel="self" type="application/rss+xml" />
@@ -65,6 +65,15 @@
     </item>
     
     <item>
+      <title>FreshMVVM master/detail page lazy loaded</title>
+      <link>https://lpains.net/posts/2018-07-29-xamarin-forms-master-detail-lazy-loaded/</link>
+      <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2018-07-29-xamarin-forms-master-detail-lazy-loaded/</guid>
+      <description>Custom implementation of a lazy loaded master/detail page for FreshMVVM framework. Working coding sample included.</description>
+    </item>
+    
+    <item>
       <title>Building string with placeholders</title>
       <link>https://lpains.net/posts/2017-04-13-building-string-with-placeholder/</link>
       <pubDate>Thu, 13 Apr 2017 00:00:00 +0000</pubDate>
@@ -74,18 +83,9 @@
     </item>
     
     <item>
-      <title>FreshMVVM master/detail page lazy loaded</title>
-      <link>https://lpains.net/posts/2018-07-29-xamarin-forms-master-detail-lazy-loaded/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lpains.net/posts/2018-07-29-xamarin-forms-master-detail-lazy-loaded/</guid>
-      <description>Custom implementation of a lazy loaded master/detail page for FreshMVVM framework. Working coding sample included.</description>
-    </item>
-    
-    <item>
       <title>Parsing text into typed objects using RegEx named groups</title>
       <link>https://lpains.net/posts/2017-04-6-parsing-text-using-regex/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 06 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://lpains.net/posts/2017-04-6-parsing-text-using-regex/</guid>
       <description>Using regex to capture and parse text into objects.</description>

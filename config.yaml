@@ -1,4 +1,4 @@
-baseURL: "http://lpains.net/"
+baseURL: "https://lpains.net/"
 title: Pains.net
 paginate: 5
 theme: PaperMod
