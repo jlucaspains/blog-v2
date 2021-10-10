@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on Pains.net</title>
+    <link>https://lpains.net/categories/</link>
+    <description>Recent content in Categories on Pains.net</description>
+    <image>
+      <url>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 23 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DevOps</title>
+      <link>https://lpains.net/categories/devops/</link>
+      <pubDate>Thu, 23 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>util</title>
+      <link>https://lpains.net/categories/util/</link>
+      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/util/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>https://lpains.net/categories/web/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xamarin-forms</title>
+      <link>https://lpains.net/categories/xamarin-forms/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/xamarin-forms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQLServer</title>
+      <link>https://lpains.net/categories/sqlserver/</link>
+      <pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/sqlserver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xamarin</title>
+      <link>https://lpains.net/categories/xamarin/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/xamarin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>typescript</title>
+      <link>https://lpains.net/categories/typescript/</link>
+      <pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/typescript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vue</title>
+      <link>https://lpains.net/categories/vue/</link>
+      <pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/vue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iOS</title>
+      <link>https://lpains.net/categories/ios/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://lpains.net/categories/git/</link>
+      <pubDate>Sun, 15 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VSTS</title>
+      <link>https://lpains.net/categories/vsts/</link>
+      <pubDate>Sun, 15 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/vsts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>auth</title>
+      <link>https://lpains.net/categories/auth/</link>
+      <pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/auth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>https://lpains.net/categories/blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xamarin-android</title>
+      <link>https://lpains.net/categories/xamarin-android/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/xamarin-android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xamarin-iOS</title>
+      <link>https://lpains.net/categories/xamarin-ios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/xamarin-ios/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

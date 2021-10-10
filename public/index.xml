@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pains.net</title>
+    <link>https://lpains.net/</link>
+    <description>Recent content on Pains.net</description>
+    <image>
+      <url>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 23 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Environment per PR the old fashioned way</title>
+      <link>https://lpains.net/posts/2021-09-23-env-per-pr-no-containers/</link>
+      <pubDate>Thu, 23 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2021-09-23-env-per-pr-no-containers/</guid>
+      <description>If you cannot or will not use containers but still want to have environment per PR, you can still do it with VMs and IIS. I will show you how.</description>
+    </item>
+    
+    <item>
+      <title>Simple prevent write commands in SQL Server</title>
+      <link>https://lpains.net/posts/2021-05-25-simple-prevent-write-commands-in-sql/</link>
+      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2021-05-25-simple-prevent-write-commands-in-sql/</guid>
+      <description>Some times you just need to check whether a script will try to mess with your DB. In this post, I show you a regex that can help you check for that.</description>
+    </item>
+    
+    <item>
+      <title>Date input placeholder hack</title>
+      <link>https://lpains.net/posts/2021-2-5-date-input-placeholder/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2021-2-5-date-input-placeholder/</guid>
+      <description>The input type date is a very nice control introduced in html5. The problem is that it is very limited at this point and features such as placeholder are not available. Thus, let&amp;#39;s hack it!</description>
+    </item>
+    
+    <item>
+      <title>Xamarin Forms Collection View Multi-Selection Binding</title>
+      <link>https://lpains.net/posts/2020-11-1-xamarin-forms-collection-view-selected-items/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2020-11-1-xamarin-forms-collection-view-selected-items/</guid>
+      <description>Two way binding on Collection Views has a small quirk that is not immediately obvious. In this post, I will show you how to get it working.</description>
+    </item>
+    
+    <item>
+      <title>Automatic release notes on Azure DevOps - an update</title>
+      <link>https://lpains.net/posts/2020-10-27-automatic-release-notes-take-2/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2020-10-27-automatic-release-notes-take-2/</guid>
+      <description>6 months ago I posted about how to generate release notes based on a good development process. Since then, I was able to make the automatic release notes generation even better. In this post, I will show you how.</description>
+    </item>
+    
+    <item>
+      <title>Enforce read only access in SQL Server queries</title>
+      <link>https://lpains.net/posts/2020-07-07-enforce-read-only-access-in-sql-server/</link>
+      <pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2020-07-07-enforce-read-only-access-in-sql-server/</guid>
+      <description>If you run dynamic or configurable SQL queries and you need to ensure that writes are denied, this post is for you.</description>
+    </item>
+    
+    <item>
+      <title>Xamarin Forms Azure DevOps build/release for Enterprise apps</title>
+      <link>https://lpains.net/posts/2020-04-19-xamarin-forms-build-release-for-enterprise/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2020-04-19-xamarin-forms-build-release-for-enterprise/</guid>
+      <description>Having a reliable pipeline that builds your Xamarin Forms apps in multiple configurations is beautiful. In this post, I will show you how to create a yml pipeline to build your iOS and Android app and release it to your Enterprise users.  </description>
+    </item>
+    
+    <item>
+      <title>Setting up an Azure DevOps agent behind a proxy with self-signed certificate.</title>
+      <link>https://lpains.net/posts/2020-04-07-azure-devops-agent-behind-proxy/</link>
+      <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2020-04-07-azure-devops-agent-behind-proxy/</guid>
+      <description>Installing your own Azure DevOps is not too hard. Installing it when you are behind a proxy that replaces cert with a self-signed certificate is. This post will show you how to configure an agent with this extra complication.</description>
+    </item>
+    
+    <item>
+      <title>Automatic release notes on Azure DevOps</title>
+      <link>https://lpains.net/posts/2020-04-02-automatic-release-notes-azure-devops/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2020-04-02-automatic-release-notes-azure-devops/</guid>
+      <description>Release notes are one of those things that we typically leave for last. In this post I will show you how to completely forget about it and still get great release notes.</description>
+    </item>
+    
+    <item>
+      <title>Xamarin Forms Handle Android Key Up event</title>
+      <link>https://lpains.net/posts/2020-03-20-xamarin-forms-convert-global-keyup/</link>
+      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2020-03-20-xamarin-forms-convert-global-keyup/</guid>
+      <description>Yet another post about date and time. Need to convert a date from a specific time zone in Xamarin Forms? No problem, this post will show you exactly how.</description>
+    </item>
+    
+    <item>
+      <title>Xamarin Forms converting from one timezone to another</title>
+      <link>https://lpains.net/posts/2020-03-16-xamarin-forms-convert-between-timezones/</link>
+      <pubDate>Mon, 16 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2020-03-16-xamarin-forms-convert-between-timezones/</guid>
+      <description>Yet another post about date and time. Need to convert a date from a specific time zone in Xamarin Forms? No problem, this post will show you exactly how.</description>
+    </item>
+    
+    <item>
+      <title>Overriding standard date formatting of axios for post/put/patch</title>
+      <link>https://lpains.net/posts/2020-02-13-overriding-axios-date-on-posts/</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2020-02-13-overriding-axios-date-on-posts/</guid>
+      <description>Working with date and time is very painful. This post demonstrates a simple way to make axios POST/PUT/PATCH requests to automatically send local time instead of UTC to a server.</description>
+    </item>
+    
+    <item>
+      <title>Vue router dirty checking before navigation</title>
+      <link>https://lpains.net/posts/2020-01-11-vue-is-dirty/</link>
+      <pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2020-01-11-vue-is-dirty/</guid>
+      <description>Ever lost some data because a website didn&amp;#39;t ask if you wanted to save your changes? That&amp;#39;s frustrating. Learn how to implement dirty checking before navigation using Vue and typescript in this post</description>
+    </item>
+    
+    <item>
+      <title>Simple concurrency tester</title>
+      <link>https://lpains.net/posts/2019-09-06-simple-concurrency-test/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2019-09-06-simple-concurrency-test/</guid>
+      <description>The simplest possible way to perform concurrent testing for API developers.</description>
+    </item>
+    
+    <item>
+      <title>Install root CA in iOS 11&#43;</title>
+      <link>https://lpains.net/posts/2018-07-23-install-root-ca-in-ios/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2018-07-23-install-root-ca-in-ios/</guid>
+      <description>Using regex to capture and parse text into objects.</description>
+    </item>
+    
+    <item>
+      <title>Migrating from TFS &#43; TFVC to VSTS &#43; git</title>
+      <link>https://lpains.net/posts/2018-07-15-migrating-from-tfs-to-vsts-git/</link>
+      <pubDate>Sun, 15 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2018-07-15-migrating-from-tfs-to-vsts-git/</guid>
+      <description>It is time to start migration your TFVC repository to git repos. In this post, I will show how to do just that using git-tfs.</description>
+    </item>
+    
+    <item>
+      <title>Building string with placeholders</title>
+      <link>https://lpains.net/posts/2017-04-13-building-string-with-placeholder/</link>
+      <pubDate>Thu, 13 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2017-04-13-building-string-with-placeholder/</guid>
+      <description>Last post I showed a cool way to parse strings into typed objects. In this one, I want to show the opposite. How to build strings using a template and an object.</description>
+    </item>
+    
+    <item>
+      <title>Using html5 canvas to build a WYSIWYG label designer</title>
+      <link>https://lpains.net/posts/2017-01-31-using-canvas-to-design-label/</link>
+      <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2017-01-31-using-canvas-to-design-label/</guid>
+      <description>How hard can it be to write my own thermal label design application? Turns out that it is very hard indeed.</description>
+    </item>
+    
+    <item>
+      <title>MVC with Windows Authentication and WIF</title>
+      <link>https://lpains.net/posts/2016-10-20-mvc-with-wif-and-claims-security/</link>
+      <pubDate>Thu, 20 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2016-10-20-mvc-with-wif-and-claims-security/</guid>
+      <description>In this post I will show how to achieve something rather common in corporate intranets: How to integrate Windows Authentication for web applications using MVC, Windows Identity Foundation 4.5 (WIF) and Claims based auth. </description>
+    </item>
+    
+    <item>
+      <title>A better approach for auth</title>
+      <link>https://lpains.net/posts/2016-06-18-a-different-approach-for-auth/</link>
+      <pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2016-06-18-a-different-approach-for-auth/</guid>
+      <description>I&amp;#39;ve seen way too many applications using Role Based Authentication where the code check if user is Admin. This is not a good practice at all. Here is a better way.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://lpains.net/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/about/</guid>
+      <description>I&amp;rsquo;m Pains, yes that&amp;rsquo;s my real last name, a coder, enthusiast, and sometimes a blogger. I&amp;rsquo;ve been coding for way too long now so a day without code is just not a good day. How can it be?
+I live in the USA, was born in Brazil and miss living in Australia. Confusing? Yes.
+I code anything, really. But there is nothing better than design a full enterprise architecture and see the many pieces working nicely together and evolving.</description>
+    </item>
+    
+    <item>
+      <title>Blog Changes</title>
+      <link>https://lpains.net/posts/2019-02-11-blog-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2019-02-11-blog-changes/</guid>
+      <description>A round of improvements for this blog occurred. Commenting have been temporarily disabled due to Disqus new policies and SyntaxHighlighter was also replaced with gist for better code snippets and a faster page load.</description>
+    </item>
+    
+    <item>
+      <title>Build and Deploy Xamarin.iOS to Test Flight with Azure DevOps</title>
+      <link>https://lpains.net/posts/2019-01-31-build-deploy-xamarin-ios-azure-devops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2019-01-31-build-deploy-xamarin-ios-azure-devops/</guid>
+      <description>Everybody knows how hard it is to work with iOS apps from a windows environment (mostly). I&amp;#39;ve had to deal with it and here is my experience building and deploying iOS app from a build/release pipeline in Azure DevOps.</description>
+    </item>
+    
+    <item>
+      <title>FreshMVVM master/detail page lazy loaded</title>
+      <link>https://lpains.net/posts/2018-07-29-xamarin-forms-master-detail-lazy-loaded/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2018-07-29-xamarin-forms-master-detail-lazy-loaded/</guid>
+      <description>Custom implementation of a lazy loaded master/detail page for FreshMVVM framework. Working coding sample included.</description>
+    </item>
+    
+    <item>
+      <title>Install Root CA cert in Android emulator</title>
+      <link>https://lpains.net/posts/2018-07-7-install-root-ca-in-android/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2018-07-7-install-root-ca-in-android/</guid>
+      <description>You if you need to access intranet TLS applications from an Android emulator, you will need to install your CA certs. This is how you can do it.</description>
+    </item>
+    
+    <item>
+      <title>Parsing text into typed objects using RegEx named groups</title>
+      <link>https://lpains.net/posts/2017-04-6-parsing-text-using-regex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2017-04-6-parsing-text-using-regex/</guid>
+      <description>Using regex to capture and parse text into objects.</description>
+    </item>
+    
+    <item>
+      <title>Simple Vue directive for hotkeys</title>
+      <link>https://lpains.net/posts/2019-07-26-simple-vue-directive-for-hotkeys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2019-07-26-simple-vue-directive-for-hotkeys/</guid>
+      <description>vue-mouseless is a tiny Vue directive for hotkey handling using mousetrap.</description>
+    </item>
+    
+    <item>
+      <title>Terms of use</title>
+      <link>https://lpains.net/terms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/terms/</guid>
+      <description>Privacy Long story short, this blog does not collect any data about you. However, it does use google analytics which may collect some information about you. Please verify google&amp;rsquo;s privacy policies.
+Licenses This blog content is licensed under the Creative Commons Attribution 4.0 International License.
+Any code samples provided are licensed under the MIT license.</description>
+    </item>
+    
+    <item>
+      <title>TFVC to git import alternative</title>
+      <link>https://lpains.net/posts/2019-02-13-tfvc-to-git-alternative/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2019-02-13-tfvc-to-git-alternative/</guid>
+      <description>Previously, I&amp;#39;ve shown how to import source from TFVC to git using git-tfs tool. There is another way to do it right in Azure DevOps and I show it here.</description>
+    </item>
+    
+    <item>
+      <title>Tips and tricks for vue with typescript</title>
+      <link>https://lpains.net/posts/2019-02-18-tips-tricks-typescript-vue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2019-02-18-tips-tricks-typescript-vue/</guid>
+      <description>My top 5 Vue tips and tricks for an easier and faster development experience</description>
+    </item>
+    
+  </channel>
+</rss>
