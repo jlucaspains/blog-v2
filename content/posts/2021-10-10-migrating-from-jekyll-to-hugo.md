@@ -9,6 +9,7 @@ description: >-
 cover:
     image: "/images/posts/hugo-logo-wide.png"
     alt: "Hugo"
+    caption: "Hugo"
 ---
 
 So, the first obvious question is: what's wrong with Jekyll?
