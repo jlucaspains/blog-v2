@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>web on Pains.net</title>
-    <link>https://lpains.net/categories/web/</link>
+    <link>https://jlucaspains.github.io/blog-v2/categories/web/</link>
     <description>Recent content in web on Pains.net</description>
     <image>
-      <url>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://jlucaspains.github.io/blog-v2/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://jlucaspains.github.io/blog-v2/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/categories/web/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jlucaspains.github.io/blog-v2/categories/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Date input placeholder hack</title>
-      <link>https://lpains.net/posts/2021-2-5-date-input-placeholder/</link>
+      <link>https://jlucaspains.github.io/blog-v2/posts/2021-2-5-date-input-placeholder/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://lpains.net/posts/2021-2-5-date-input-placeholder/</guid>
+      <guid>https://jlucaspains.github.io/blog-v2/posts/2021-2-5-date-input-placeholder/</guid>
       <description>The input type date is a very nice control introduced in html5. The problem is that it is very limited at this point and features such as placeholder are not available. Thus, let&amp;#39;s hack it!</description>
     </item>
     
     <item>
       <title>Using html5 canvas to build a WYSIWYG label designer</title>
-      <link>https://lpains.net/posts/2017-01-31-using-canvas-to-design-label/</link>
+      <link>https://jlucaspains.github.io/blog-v2/posts/2017-01-31-using-canvas-to-design-label/</link>
       <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://lpains.net/posts/2017-01-31-using-canvas-to-design-label/</guid>
+      <guid>https://jlucaspains.github.io/blog-v2/posts/2017-01-31-using-canvas-to-design-label/</guid>
       <description>How hard can it be to write my own thermal label design application? Turns out that it is very hard indeed.</description>
     </item>
     

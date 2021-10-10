@@ -2,65 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>DevOps on Pains.net</title>
-    <link>https://lpains.net/categories/devops/</link>
+    <link>https://jlucaspains.github.io/blog-v2/categories/devops/</link>
     <description>Recent content in DevOps on Pains.net</description>
     <image>
-      <url>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://jlucaspains.github.io/blog-v2/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://jlucaspains.github.io/blog-v2/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 23 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jlucaspains.github.io/blog-v2/categories/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Environment per PR the old fashioned way</title>
-      <link>https://lpains.net/posts/2021-09-23-env-per-pr-no-containers/</link>
+      <link>https://jlucaspains.github.io/blog-v2/posts/2021-09-23-env-per-pr-no-containers/</link>
       <pubDate>Thu, 23 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://lpains.net/posts/2021-09-23-env-per-pr-no-containers/</guid>
+      <guid>https://jlucaspains.github.io/blog-v2/posts/2021-09-23-env-per-pr-no-containers/</guid>
       <description>If you cannot or will not use containers but still want to have environment per PR, you can still do it with VMs and IIS. I will show you how.</description>
     </item>
     
     <item>
       <title>Automatic release notes on Azure DevOps - an update</title>
-      <link>https://lpains.net/posts/2020-10-27-automatic-release-notes-take-2/</link>
+      <link>https://jlucaspains.github.io/blog-v2/posts/2020-10-27-automatic-release-notes-take-2/</link>
       <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://lpains.net/posts/2020-10-27-automatic-release-notes-take-2/</guid>
+      <guid>https://jlucaspains.github.io/blog-v2/posts/2020-10-27-automatic-release-notes-take-2/</guid>
       <description>6 months ago I posted about how to generate release notes based on a good development process. Since then, I was able to make the automatic release notes generation even better. In this post, I will show you how.</description>
     </item>
     
     <item>
       <title>Xamarin Forms Azure DevOps build/release for Enterprise apps</title>
-      <link>https://lpains.net/posts/2020-04-19-xamarin-forms-build-release-for-enterprise/</link>
+      <link>https://jlucaspains.github.io/blog-v2/posts/2020-04-19-xamarin-forms-build-release-for-enterprise/</link>
       <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://lpains.net/posts/2020-04-19-xamarin-forms-build-release-for-enterprise/</guid>
+      <guid>https://jlucaspains.github.io/blog-v2/posts/2020-04-19-xamarin-forms-build-release-for-enterprise/</guid>
       <description>Having a reliable pipeline that builds your Xamarin Forms apps in multiple configurations is beautiful. In this post, I will show you how to create a yml pipeline to build your iOS and Android app and release it to your Enterprise users.</description>
     </item>
     
     <item>
       <title>Setting up an Azure DevOps agent behind a proxy with self-signed certificate.</title>
-      <link>https://lpains.net/posts/2020-04-07-azure-devops-agent-behind-proxy/</link>
+      <link>https://jlucaspains.github.io/blog-v2/posts/2020-04-07-azure-devops-agent-behind-proxy/</link>
       <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://lpains.net/posts/2020-04-07-azure-devops-agent-behind-proxy/</guid>
+      <guid>https://jlucaspains.github.io/blog-v2/posts/2020-04-07-azure-devops-agent-behind-proxy/</guid>
       <description>Installing your own Azure DevOps is not too hard. Installing it when you are behind a proxy that replaces cert with a self-signed certificate is. This post will show you how to configure an agent with this extra complication.</description>
     </item>
     
     <item>
       <title>Automatic release notes on Azure DevOps</title>
-      <link>https://lpains.net/posts/2020-04-02-automatic-release-notes-azure-devops/</link>
+      <link>https://jlucaspains.github.io/blog-v2/posts/2020-04-02-automatic-release-notes-azure-devops/</link>
       <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://lpains.net/posts/2020-04-02-automatic-release-notes-azure-devops/</guid>
+      <guid>https://jlucaspains.github.io/blog-v2/posts/2020-04-02-automatic-release-notes-azure-devops/</guid>
       <description>Release notes are one of those things that we typically leave for last. In this post I will show you how to completely forget about it and still get great release notes.</description>
     </item>
     
     <item>
       <title>MVC with Windows Authentication and WIF</title>
-      <link>https://lpains.net/posts/2016-10-20-mvc-with-wif-and-claims-security/</link>
+      <link>https://jlucaspains.github.io/blog-v2/posts/2016-10-20-mvc-with-wif-and-claims-security/</link>
       <pubDate>Thu, 20 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://lpains.net/posts/2016-10-20-mvc-with-wif-and-claims-security/</guid>
+      <guid>https://jlucaspains.github.io/blog-v2/posts/2016-10-20-mvc-with-wif-and-claims-security/</guid>
       <description>In this post I will show how to achieve something rather common in corporate intranets: How to integrate Windows Authentication for web applications using MVC, Windows Identity Foundation 4.5 (WIF) and Claims based auth. </description>
     </item>
     

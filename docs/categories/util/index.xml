@@ -2,92 +2,92 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>util on Pains.net</title>
-    <link>https://lpains.net/categories/util/</link>
+    <link>https://jlucaspains.github.io/blog-v2/categories/util/</link>
     <description>Recent content in util on Pains.net</description>
     <image>
-      <url>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://lpains.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://jlucaspains.github.io/blog-v2/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://jlucaspains.github.io/blog-v2/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/categories/util/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jlucaspains.github.io/blog-v2/categories/util/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Simple prevent write commands in SQL Server</title>
-      <link>https://lpains.net/posts/2021-05-25-simple-prevent-write-commands-in-sql/</link>
+      <link>https://jlucaspains.github.io/blog-v2/posts/2021-05-25-simple-prevent-write-commands-in-sql/</link>
       <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://lpains.net/posts/2021-05-25-simple-prevent-write-commands-in-sql/</guid>
+      <guid>https://jlucaspains.github.io/blog-v2/posts/2021-05-25-simple-prevent-write-commands-in-sql/</guid>
       <description>Some times you just need to check whether a script will try to mess with your DB. In this post, I show you a regex that can help you check for that.</description>
     </item>
     
     <item>
       <title>Date input placeholder hack</title>
-      <link>https://lpains.net/posts/2021-2-5-date-input-placeholder/</link>
+      <link>https://jlucaspains.github.io/blog-v2/posts/2021-2-5-date-input-placeholder/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://lpains.net/posts/2021-2-5-date-input-placeholder/</guid>
+      <guid>https://jlucaspains.github.io/blog-v2/posts/2021-2-5-date-input-placeholder/</guid>
       <description>The input type date is a very nice control introduced in html5. The problem is that it is very limited at this point and features such as placeholder are not available. Thus, let&amp;#39;s hack it!</description>
     </item>
     
     <item>
       <title>Enforce read only access in SQL Server queries</title>
-      <link>https://lpains.net/posts/2020-07-07-enforce-read-only-access-in-sql-server/</link>
+      <link>https://jlucaspains.github.io/blog-v2/posts/2020-07-07-enforce-read-only-access-in-sql-server/</link>
       <pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://lpains.net/posts/2020-07-07-enforce-read-only-access-in-sql-server/</guid>
+      <guid>https://jlucaspains.github.io/blog-v2/posts/2020-07-07-enforce-read-only-access-in-sql-server/</guid>
       <description>If you run dynamic or configurable SQL queries and you need to ensure that writes are denied, this post is for you.</description>
     </item>
     
     <item>
       <title>Xamarin Forms converting from one timezone to another</title>
-      <link>https://lpains.net/posts/2020-03-16-xamarin-forms-convert-between-timezones/</link>
+      <link>https://jlucaspains.github.io/blog-v2/posts/2020-03-16-xamarin-forms-convert-between-timezones/</link>
       <pubDate>Mon, 16 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://lpains.net/posts/2020-03-16-xamarin-forms-convert-between-timezones/</guid>
+      <guid>https://jlucaspains.github.io/blog-v2/posts/2020-03-16-xamarin-forms-convert-between-timezones/</guid>
       <description>Yet another post about date and time. Need to convert a date from a specific time zone in Xamarin Forms? No problem, this post will show you exactly how.</description>
     </item>
     
     <item>
       <title>Overriding standard date formatting of axios for post/put/patch</title>
-      <link>https://lpains.net/posts/2020-02-13-overriding-axios-date-on-posts/</link>
+      <link>https://jlucaspains.github.io/blog-v2/posts/2020-02-13-overriding-axios-date-on-posts/</link>
       <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://lpains.net/posts/2020-02-13-overriding-axios-date-on-posts/</guid>
+      <guid>https://jlucaspains.github.io/blog-v2/posts/2020-02-13-overriding-axios-date-on-posts/</guid>
       <description>Working with date and time is very painful. This post demonstrates a simple way to make axios POST/PUT/PATCH requests to automatically send local time instead of UTC to a server.</description>
     </item>
     
     <item>
       <title>Simple concurrency tester</title>
-      <link>https://lpains.net/posts/2019-09-06-simple-concurrency-test/</link>
+      <link>https://jlucaspains.github.io/blog-v2/posts/2019-09-06-simple-concurrency-test/</link>
       <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://lpains.net/posts/2019-09-06-simple-concurrency-test/</guid>
+      <guid>https://jlucaspains.github.io/blog-v2/posts/2019-09-06-simple-concurrency-test/</guid>
       <description>The simplest possible way to perform concurrent testing for API developers.</description>
     </item>
     
     <item>
       <title>Building string with placeholders</title>
-      <link>https://lpains.net/posts/2017-04-13-building-string-with-placeholder/</link>
+      <link>https://jlucaspains.github.io/blog-v2/posts/2017-04-13-building-string-with-placeholder/</link>
       <pubDate>Thu, 13 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://lpains.net/posts/2017-04-13-building-string-with-placeholder/</guid>
+      <guid>https://jlucaspains.github.io/blog-v2/posts/2017-04-13-building-string-with-placeholder/</guid>
       <description>Last post I showed a cool way to parse strings into typed objects. In this one, I want to show the opposite. How to build strings using a template and an object.</description>
     </item>
     
     <item>
       <title>FreshMVVM master/detail page lazy loaded</title>
-      <link>https://lpains.net/posts/2018-07-29-xamarin-forms-master-detail-lazy-loaded/</link>
+      <link>https://jlucaspains.github.io/blog-v2/posts/2018-07-29-xamarin-forms-master-detail-lazy-loaded/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lpains.net/posts/2018-07-29-xamarin-forms-master-detail-lazy-loaded/</guid>
+      <guid>https://jlucaspains.github.io/blog-v2/posts/2018-07-29-xamarin-forms-master-detail-lazy-loaded/</guid>
       <description>Custom implementation of a lazy loaded master/detail page for FreshMVVM framework. Working coding sample included.</description>
     </item>
     
     <item>
       <title>Parsing text into typed objects using RegEx named groups</title>
-      <link>https://lpains.net/posts/2017-04-6-parsing-text-using-regex/</link>
+      <link>https://jlucaspains.github.io/blog-v2/posts/2017-04-6-parsing-text-using-regex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lpains.net/posts/2017-04-6-parsing-text-using-regex/</guid>
+      <guid>https://jlucaspains.github.io/blog-v2/posts/2017-04-6-parsing-text-using-regex/</guid>
       <description>Using regex to capture and parse text into objects.</description>
     </item>
     
