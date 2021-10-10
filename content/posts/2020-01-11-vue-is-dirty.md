@@ -22,7 +22,7 @@ Code is available on [GitHub](https://github.com/jlucaspains/BlogSamples/tree/ma
 ## Expected behavior
 In a Vue app with Vue Router, when a user modifies data in a form and any navigation to another route occurs, the user should be notified and have the ability to cancel navigation.
 
-![Is Dirty Demo]({{ site.url }}/images/posts/IsDirtyDemo.gif)
+![Is Dirty Demo](/images/posts/IsDirtyDemo.gif)
 *Demo app running*
 
 ## FormEdit.vue

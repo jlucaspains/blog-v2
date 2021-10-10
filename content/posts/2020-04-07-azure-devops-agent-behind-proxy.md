@@ -35,7 +35,7 @@ First, export the cert root CA into a .cer or .pem file. Ensure you select Base 
 
 Save the cert file to your build server and set a variable ``NODE_EXTRA_CA_CERTS`` to point to it.
 
-```
+```cmd
 setx NODE_EXTRA_CA_CERTS "c:\AzureDevOpsAgent\ProxyCACert.cer"
 ```
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Install Root CA cert in Android emulator"
-date: 2018-7-7
+date: 2018-07-07
 comments: true
 sharing: true
 categories: 

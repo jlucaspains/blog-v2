@@ -12,7 +12,7 @@ description: >-
 published: true
 ---
 
-6 months ago I posted about [Automatic release notes on Azure DevOps]({{ site.baseurl }}{% link _posts/2020-04-02-automatic-release-notes-azure-devops.md %}). Since then, I was able to make the process a little more centric to Pull Requests and avoid the occasional incorrect work item showing up in the release notes.
+6 months ago I posted about [Automatic release notes on Azure DevOps]({{< ref "/posts/2020-04-02-automatic-release-notes-azure-devops" >}}). Since then, I was able to make the process a little more centric to Pull Requests and avoid the occasional incorrect work item showing up in the release notes.
 
 The primary difference is that we will use the new [Cross Platform Generate Release Notes](https://github.com/rfennell/AzurePipelines/wiki/GenerateReleaseNotes---Node-based-Cross-Platform-Task) task instead of the original Powershell based task. This updated version offers a little more control via handlebars extensions that can help us filter out the undesired work items. Here is how the task looks like:
 

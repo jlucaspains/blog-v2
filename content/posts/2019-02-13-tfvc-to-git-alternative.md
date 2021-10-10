@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "TFVC to git import alternative"
-date: 2019-2-13
+date: 2019-02-13
 comments: true
 sharing: true
 categories: 

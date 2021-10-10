@@ -10,7 +10,7 @@ description: >-
   Using regex to capture and parse text into objects.
 ---
 
-This post is a follow up to [Install root CA in Android]({% post_url 2018-7-7-install-root-ca-in-android %}).
+This post is a follow up to [Install root CA in Android]({{< ref "/posts/2018-07-7-install-root-ca-in-android" >}}).
 
 The problem is the same here and the solution is somewhat similar too. First, export the CA certificate like explained in the Android specific post.
 

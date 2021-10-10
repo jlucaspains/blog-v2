@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Simple Vue directive for hotkeys"
-date: 2019-7-26
+date: 2019-07-26
 comments: true
 sharing: true
 categories:

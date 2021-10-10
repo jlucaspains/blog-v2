@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tips and tricks for vue with typescript"
-date: 2019-6-23
+date: 2019-06-23
 comments: true
 sharing: true
 categories:

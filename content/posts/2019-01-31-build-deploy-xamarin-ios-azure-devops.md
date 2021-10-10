@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Build and Deploy Xamarin.iOS to Test Flight with Azure DevOps"
-date: 2019-1-31
+date: 2019-01-31
 comments: true
 sharing: true
 categories: 

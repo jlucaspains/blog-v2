@@ -77,11 +77,17 @@ cover:
     caption: "Image by Luca Bravo on Unsplash"
 ```
 
+I've been using a lot of gists in my posts. With Jekyll, you need to drop the script tag in the post, with Hugo, you need to use a special notation:
+
+```
+{{< gist jlucaspains e8c05c31501be81302c766b7de185652 >}}
+```
+
 ## 6. Move and review other pages
 Move your .md files under content folder and check the built result. I only have two extra pages and they both worked without changes at all.
 
 ## 7. Hosting
-I've hosted my blog in github pages since the beginning. It is super convenient and the native support for Jekyll sites is sweet. This is one big difference between Jekyll and Hugo. Hugo is not supported in the same way by github pages. That shouldn't be a big problem though, you can pre-build the site with ``hugo`` command and publish the files generated in ``public`` folder. Alternatively, you can use a github workflow to do the same. See [Hugo documentation](https://gohugo.io/hosting-and-deployment/hosting-on-github/) for using github workflow.
+I've hosted my blog in github pages since the beginning. It is super convenient and the native support for Jekyll sites is sweet. This is one big difference between Jekyll and Hugo. Hugo is not supported in the same way by github pages. That shouldn't be a big problem though, you can pre-build the site with ``hugo`` command and publish the files generated. Alternatively, you can use a github workflow to do the same. See [Hugo documentation](https://gohugo.io/hosting-and-deployment/hosting-on-github/) for using github workflow.
 
 A few lessons learned here:
 

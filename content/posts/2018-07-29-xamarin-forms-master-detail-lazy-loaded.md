@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "FreshMVVM master/detail page lazy loaded"
-date: 2018-7-29
+date: 2018-07-29
 comments: true
 sharing: true
 categories:

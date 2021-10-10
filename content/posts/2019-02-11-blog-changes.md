@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Blog Changes"
-date: 2019-2-11
+date: 2019-02-11
 comments: true
 sharing: true
 categories: 

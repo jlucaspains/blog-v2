@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Parsing text into typed objects using RegEx named groups"
-date: 2017-4-6
+date: 2017-04-06
 comments: true
 sharing: true
 categories: 
