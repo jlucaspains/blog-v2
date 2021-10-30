@@ -9,7 +9,16 @@
       <link>https://lpains.net/images/lpains.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 10 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Detecting changes on SQL Server Temporal Changes</title>
+      <link>https://lpains.net/posts/2021-10-29-detect-changes-on-sql-temporal-tables/</link>
+      <pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2021-10-29-detect-changes-on-sql-temporal-tables/</guid>
+      <description>SQL Server temporal tables are a great way to build data audit and to see the state of data at a point in time. However, if you want to calculate what changed over a period of time, it gets a little trickier. Keep reading to see how.</description>
+    </item>
+    
     <item>
       <title>Migrating from jekyll to Hugo</title>
       <link>https://lpains.net/posts/2021-10-10-migrating-from-jekyll-to-hugo/</link>

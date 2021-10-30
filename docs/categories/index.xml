@@ -9,7 +9,16 @@
       <link>https://lpains.net/images/lpains.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 10 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQLServer</title>
+      <link>https://lpains.net/categories/sqlserver/</link>
+      <pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/sqlserver/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>blog</title>
       <link>https://lpains.net/categories/blog/</link>
@@ -52,15 +61,6 @@
       <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://lpains.net/categories/xamarin-forms/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SQLServer</title>
-      <link>https://lpains.net/categories/sqlserver/</link>
-      <pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://lpains.net/categories/sqlserver/</guid>
       <description></description>
     </item>
     

@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://lpains.net/categories/</loc>
+    <lastmod>2021-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lpains.net/posts/2021-10-29-detect-changes-on-sql-temporal-tables/</loc>
+    <lastmod>2021-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lpains.net/</loc>
+    <lastmod>2021-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lpains.net/posts/</loc>
+    <lastmod>2021-10-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lpains.net/categories/sqlserver/</loc>
+    <lastmod>2021-10-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://lpains.net/categories/blog/</loc>
     <lastmod>2021-10-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://lpains.net/categories/</loc>
-    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://lpains.net/posts/2021-10-10-migrating-from-jekyll-to-hugo/</loc>
-    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://lpains.net/</loc>
-    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://lpains.net/posts/</loc>
     <lastmod>2021-10-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lpains.net/categories/devops/</loc>
@@ -45,9 +51,6 @@
     <lastmod>2020-10-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lpains.net/posts/2020-07-07-enforce-read-only-access-in-sql-server/</loc>
-    <lastmod>2020-07-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://lpains.net/categories/sqlserver/</loc>
     <lastmod>2020-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lpains.net/categories/xamarin/</loc>
