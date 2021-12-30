@@ -9,7 +9,16 @@
       <link>https://lpains.net/images/lpains.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 29 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vue</title>
+      <link>https://lpains.net/categories/vue/</link>
+      <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/categories/vue/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>SQLServer</title>
       <link>https://lpains.net/categories/sqlserver/</link>
@@ -79,15 +88,6 @@
       <pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://lpains.net/categories/typescript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vue</title>
-      <link>https://lpains.net/categories/vue/</link>
-      <pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://lpains.net/categories/vue/</guid>
       <description></description>
     </item>
     

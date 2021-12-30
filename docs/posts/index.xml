@@ -9,7 +9,16 @@
       <link>https://lpains.net/images/lpains.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 29 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lpains.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Removing node-sass from VueJS project</title>
+      <link>https://lpains.net/posts/2021-12-29-deprecating-node-sass/</link>
+      <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lpains.net/posts/2021-12-29-deprecating-node-sass/</guid>
+      <description>I&amp;#39;ve dreaded the npm install command for a while now and most of my grief was caused by node-sass. I finally took the time to remove it in favor of dart-sass and I couldn&amp;#39;t be happier. Let&amp;#39;s talk about why and how in this post.</description>
+    </item>
+    
     <item>
       <title>Detecting changes on SQL Server Temporal Changes</title>
       <link>https://lpains.net/posts/2021-10-29-detect-changes-on-sql-temporal-tables/</link>
