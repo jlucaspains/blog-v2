@@ -30,21 +30,21 @@ The build pipeline is the heart of this post. I'm assuming you are familiar with
 1. Create a new build pipeline using the visual designer (it is easier to import the certificate and provisioning profile this way)
 2. These are all the steps you will need in your pipeline
 
-![Build Steps]({{ site.url }}/images/posts/iOSAzureDevOpsBuildAllSteps.png)
+![Build Steps](/images/posts/iOSAzureDevOpsBuildAllSteps.png)
 *All build steps needed to build the iOS app*
 
 3. Install the distribution certificate
    1. Import your .p12 file in the Certificate field
    2. Create a pipeline variable named P12Password with the .p12 password and set it as secret
 
-![Install Distribution Certificate]({{ site.url }}/images/posts/iOSAzureDevOpsBuildInstallCert.png)
+![Install Distribution Certificate](/images/posts/iOSAzureDevOpsBuildInstallCert.png)
 *Install Apple Certificate step configuration*
 
 4. Install the provisioning profile
    1. Upload your .mobileprovisioning
    2. If you are using Hosted builds, ensure to check the Remove Profile After Build option
 
-![Install Provisioning Profile]({{ site.url }}/images/posts/iOSAzureDevOpsBuildInstallProfile.png)
+![Install Provisioning Profile](/images/posts/iOSAzureDevOpsBuildInstallProfile.png)
 *Install Apple Provisioning Profile step configuration*
 
 5. Modify the info.plist file (optional)
@@ -52,7 +52,7 @@ The build pipeline is the heart of this post. I'm assuming you are familiar with
    2. To use the BuildNumber in the app version, you will need to set the Build Number Format to `$(date:yyyy.MM)$(rev:.r)`.
    3. You may add or remove steps in the bash script below (provided for easy copy/paste)
 
-![Modify info.plist]({{ site.url }}/images/posts/iOSAzureDevOpsBuildInfoPlist.png)
+![Modify info.plist](/images/posts/iOSAzureDevOpsBuildInfoPlist.png)
 *Ensuring the info.plist matches your app settings*
 
 
@@ -60,12 +60,12 @@ The build pipeline is the heart of this post. I'm assuming you are familiar with
 
 6. Install the version of nuget your project needs
 
-![Nuget Install]({{ site.url }}/images/posts/iOSAzureDevOpsBuildNugetInstall.png)
+![Nuget Install](/images/posts/iOSAzureDevOpsBuildNugetInstall.png)
 *Nuget install step configuration*
 
 7. Restore packages
 
-![Nuget restore]({{ site.url }}/images/posts/iOSAzureDevOpsBuildNugetRestore.png)
+![Nuget restore](/images/posts/iOSAzureDevOpsBuildNugetRestore.png)
 *Nuget restore step configuration*
 
 8. Build!
@@ -74,17 +74,17 @@ The build pipeline is the heart of this post. I'm assuming you are familiar with
    3. Provide `$(APPLE_CERTIFICATE_SIGNING_IDENTITY)` in Signing Identity. This is an automatic variable output from the Install Certificate step
    4. Provide `$(APPLE_PROV_PROFILE_UUID)` in the Provisioning Profile UUID. This is an automatic variable output from the Install Provisioning Profile step
 
-![Build Project]({{ site.url }}/images/posts/iOSAzureDevOpsBuildBuild.png)
+![Build Project](/images/posts/iOSAzureDevOpsBuildBuild.png)
 *Build Project (not solution) step configuration*
 
 9. Copy the .ipa to staging
 
-![Copy Files to Staging]({{ site.url }}/images/posts/iOSAzureDevOpsBuildCopyFiles.png)
+![Copy Files to Staging](/images/posts/iOSAzureDevOpsBuildCopyFiles.png)
 *Copy files to staging directory step configuration*
 
 10. Publish Artifacts 
 
-![Publish staging]({{ site.url }}/images/posts/iOSAzureDevOpsBuildPublishArtifacts.png)
+![Publish staging](/images/posts/iOSAzureDevOpsBuildPublishArtifacts.png)
 *Publish build artifacts step configuration*
 
 ## Create a release
@@ -95,7 +95,7 @@ The release is much simpler. All you need is to push the `.ipa` to Test Flight. 
 * The release uses fastlane so if you use a private MacOS for builds you may need to install it. Check the fastline [guide](https://docs.fastlane.tools/getting-started/ios/setup/).
 
 The release will look like something like this:
-![Release]({{ site.url }}/images/posts/iOSAzureDevOpsRelease.png)
+![Release](/images/posts/iOSAzureDevOpsRelease.png)
 *One step Release pipeline configuration*
 
 ## Special considerations
