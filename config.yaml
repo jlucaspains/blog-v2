@@ -58,7 +58,7 @@ params:
         enabled: true # needs to be explicitly set
         title: Pains
         subtitle: "Coder | Geek"
-        imageUrl: "https://www.gravatar.com/avatar/0ce5a3e31c584a3c81fa6a458810f2be?s=240&d=mp"
+        imageUrl: "/images/lpains.jpg"
         imageWidth: 160
         imageHeight: 160
         imageTitle: gravatar
