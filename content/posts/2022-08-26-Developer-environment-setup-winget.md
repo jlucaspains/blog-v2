@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Automated and repeatable Developer Environment setup - winget"
-date: 2022-08-26
+date: 2022-08-25
 categories:
   - util
   - DevOps
@@ -14,46 +14,55 @@ cover:
     caption: "Photo by Fotis Fotopoulos on [Unsplash](https://unsplash.com/photos/6sAl6aQ4OWI)"
 ---
 
-Back in March I posted about [Automated and repeatable Environment Setup]({{< ref "/posts/2022-03-07-Developer-environment-setup" >}}). In that version of the environment setup, I used [chocolatey](https://chocolatey.org/) which remains as a good option now. However, the latest versions of Windows 10 and 11 comes with winget pre-installed. In this post, I will show how to setup a similar developer environment but using [winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/) instead of chocolatey. 
+Back in March I posted about [Automated and repeatable Environment Setup]({{< ref "/posts/2022-03-07-Developer-environment-setup" >}}). In that version of the environment setup, I used [Chocolatey](https://chocolatey.org/) because it has always been my go-to Windows app installer. However, the latest versions of Windows 10 and 11 comes with [winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/) pre-installed. In this post, I will show how to setup a similar developer environment but using winget instead of chocolatey. 
 
 Similarly to the last post, I will focus on a typical .NET + Node developer environment.
 
 ## Install winget
 Newer versions of Windows 10 and 11 will already have winget installed. If you don't have it, you can install from the [Microsoft Store](https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1?hl=en-us&gl=US).
 
-## Install powershell
-First, let's install PowerShell 7+ using winget.
+## Install PowerShell and Terminal
+First, let's install [PowerShell 7+](https://github.com/PowerShell/PowerShell) and [Windows Terminal](https://github.com/microsoft/terminal) using winget.
+
+Note that we add ``--accept-source-agreements`` and ``--accept-package-agreements`` options. The former is only needed once to accept the agreeement to use winget repository. the later is used in each package install to accept any agreement required by the package.
+
+Run these commands as admin in either preinstalled Command Prompt or PowerShell:
 
 ```cmd
-winget install Microsoft.PowerShell
+winget install Microsoft.PowerShell -e -h --accept-source-agreements --accept-package-agreements
+winget install Microsoft.WindowsTerminal -e -h --accept-package-agreements
 ```
 
 ## Install the apps
-From the newly installed powershell running as an admin, run the remaining commands:
+From the newly installed Windows Terminal + Powershell 7+ running as an admin, run the remaining commands:
 
 ```powershell
-winget install Microsoft.VisualStudioCode
-winget install Git.Git
-winget install OpenJS.NodeJS
-winget install Microsoft.AzureDataStudio
-winget install Microsoft.DotNet.SDK
-winget install Microsoft.WindowsTerminal
-winget install JanDeDobbeleer.OhMyPosh
-winget install Microsoft.VisualStudio.2022.Enterprise --silent --override "--add Microsoft.VisualStudio.Workload.CoreEditor --add Microsoft.VisualStudio.Workload.Data --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.NetWeb --passive --norestart --wait"
-winget install Postman.Postman
+winget install Git.Git -e -h --accept-package-agreements
+winget install OpenJS.NodeJS -e -h --accept-package-agreements
+winget install Microsoft.VisualStudioCode -e -h --accept-package-agreements
+winget install Microsoft.AzureDataStudio -e -h --accept-package-agreements
+winget install Microsoft.DotNet.SDK.6 -e -h --accept-package-agreements
+winget install JanDeDobbeleer.OhMyPosh -e -h --accept-package-agreements
+winget install Postman.Postman -e -h --accept-package-agreements
+winget install Microsoft.VisualStudio.2022.Enterprise -e -h --accept-package-agreements --override "--add Microsoft.VisualStudio.Workload.CoreEditor --add Microsoft.VisualStudio.Workload.Data --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.NetWeb --passive --norestart --wait"
 ```
 
 ## Configure oh-my-posh
-To ensure the environment variables are all set for oh-my-posh, restart powershell and run the following commands
+To ensure the environment variables are all set for oh-my-posh, restart terminal as admin and run the following commands
 
 ```powershell
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\marcduiker.omp.json"
+Add-Content -Path $PROFILE -Value 'oh-my-posh --init --shell pwsh --config https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/v$(oh-my-posh --version)/themes/marcduiker.omp.json | Invoke-Expression'
 oh-my-posh font install Meslo
 
-## USE AT YOUR OWN RISK, if the file structure changes, this could break your environment
+# USE AT YOUR OWN RISK, if the file structure changes, this could break your environment
+# This will modify the profile settings file to use the downloaded nerd font
 $json = Get-Content "$env:LocalAppData\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" | ConvertFrom-Json
-$json.profiles.defaults.font.face = "MesloLGM NF"
-
+$json.profiles.defaults = @{font = @{face = "MesloLGM NF"}}
 $json | ConvertTo-Json -depth 10 | Out-File "$env:LocalAppData\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
 ```
 
+## That's it
+Using winget is very similar to chocolatey. The primary difference at this moment is in package offering in favor of Chocolatey and the need to install another tool in favor of winget. At this point, both can do the job and they can do it quite well.
+
+Cheers,
+Lucas
