@@ -2,25 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://lpains.net/posts/2022-08-25-developer-environment-setup-winget/</loc>
-    <lastmod>2022-08-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://lpains.net/categories/</loc>
-    <lastmod>2022-08-25T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lpains.net/categories/devops/</loc>
-    <lastmod>2022-08-25T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lpains.net/</loc>
-    <lastmod>2022-08-25T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lpains.net/posts/</loc>
-    <lastmod>2022-08-25T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lpains.net/categories/powershell/</loc>
-    <lastmod>2022-08-25T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lpains.net/posts/2022-08-28-setting-up-hyper-v-vm-powershell/</loc>
+    <lastmod>2022-08-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lpains.net/categories/util/</loc>
+    <lastmod>2022-08-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lpains.net/posts/2022-08-25-developer-environment-setup-winget/</loc>
     <lastmod>2022-08-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lpains.net/categories/blog/</loc>

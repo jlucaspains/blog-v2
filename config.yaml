@@ -1,5 +1,5 @@
 baseURL: "https://lpains.net/"
-title: Pains.net
+title: LPains.net
 paginate: 5
 theme: PaperMod
 
@@ -16,7 +16,7 @@ minify:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: Pains.net
+    title: LPains.net
     description: "Pains of a geek"
     keywords: [Blog, Personal, LPains, Pains, .NET, Technology, Development, Code]
     author: Me
@@ -49,7 +49,7 @@ params:
         apple_touch_icon: "/images/apple-touch=icon.png"
 
     label:
-        text: "Pains.net"
+        text: "LPains.net"
         # icon: "/images/apple-touch-icon.png"
         #iconHeight: 35
 
