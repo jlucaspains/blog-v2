@@ -14,10 +14,10 @@ On [Migrating from TFS + TFVC to VSTS + git]({{ site.baseurl }}{% link _posts/20
 
 TFS 2018 and Azure DevOps offers an option called _Import Repository_ located at Code  in TFS or Repos Azure DevOps. This option will import or create a git repository from another host such as github or a local TFVC repository. While Microsoft does caution against importing history from TFVC into your new git repository, they actually provide an option to import up to 180 days of history.
 
-![Import Repository]({{ site.url }}/images/posts/azure-devops-import-repository.png)
+![Import Repository](/images/posts/azure-devops-import-repository.png)
 *Where to find Import Repository - Image borrowed from MS documentation linked to below*
 
-![Import TFVC Repository as GIT]({{ site.url }}/images/posts/import-tfvc-as-git.png)
+![Import TFVC Repository as GIT](/images/posts/import-tfvc-as-git.png)
 *Very simple import TFVC to GIT dialog*
 
 Remember that this is a very simple option and won't give you the customization offered by git-tfs. Also, you can use TFS to export a repository, download it to your computer, modify the remote and push it somewhere else.

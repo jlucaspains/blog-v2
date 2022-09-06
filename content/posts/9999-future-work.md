@@ -1,19 +1,4 @@
----
-layout: post
-title: "5 easy ways to improve our Azure workload security"
-date: 2022-08-28
-draft: true
-categories:
-  - Azure
-  - DevOps
-  - Security
-description: >-
-  TBD
-cover:
-    image: "/images/posts/azure-security.jpg"
-    alt: "Azure Security"
-    caption: "TBD"
----
+# 5 easy ways to improve our Azure workload security
 
 ## #1 - use managed identities whenever possible
 Why?
@@ -29,3 +14,5 @@ api
 ## #4 - audit your app dependencies
 
 ## #5 - 
+
+# Using GitHub actions to compile and publish hugo static site
