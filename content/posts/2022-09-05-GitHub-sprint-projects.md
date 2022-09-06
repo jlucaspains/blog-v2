@@ -2,7 +2,6 @@
 layout: post
 title: "Running Agile projects in GitHub Projects"
 date: 2022-09-05
-draft: true
 categories:
   - DevOps
 description: >-
