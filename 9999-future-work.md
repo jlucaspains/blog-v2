@@ -16,3 +16,6 @@ api
 ## #5 - 
 
 # Using GitHub actions to compile and publish hugo static site
+
+# How to find unused Azure resources
+https://github.com/scautomation/AzureResourceGraph-Examples/blob/master/resourceQueries/Orphaned%20Resources/OrphanedResource.MD
