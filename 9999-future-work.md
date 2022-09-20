@@ -19,3 +19,5 @@ api
 
 # How to find unused Azure resources
 https://github.com/scautomation/AzureResourceGraph-Examples/blob/master/resourceQueries/Orphaned%20Resources/OrphanedResource.MD
+
+# Environment per PR in Azure using Bicep and GitHub Actions
