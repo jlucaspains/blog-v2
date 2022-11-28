@@ -5,7 +5,7 @@ date: 2022-11-23
 categories:
   - azure
 description: >-
-  I have built the simplest possible rating editor in Vue 3 composition API an this is how I've done it.
+  Azure key vaults can store many certificates but moving them around can be hard. Using Powershell, it is not so hard anymore.
 cover:
     image: "/images/posts/security.jpg"
     alt: "Photo by Pixabay"
