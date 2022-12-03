@@ -3,6 +3,5 @@
   "features": {
     "ghcr.io/devcontainers/features/hugo:1": {}
   },
-  "postCreateCommand": "git submodule update --init",
-  "postStartCommand": "URL=$(jq -r \".CODESPACE_NAME\" /workspaces/.codespaces/shared/environment-variables.json) && hugo server -D -F --baseUrl \"https://$URL-1313.preview.app.github.dev\" -liveReloadPort=443 --appendPort=false --bind=0.0.0.0"
+  "postCreateCommand": "git submodule update --init"
 }

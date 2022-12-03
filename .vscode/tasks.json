@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start",
+            "type": "shell",
+            "command": "URL=$(jq -r \".CODESPACE_NAME\" /workspaces/.codespaces/shared/environment-variables.json) && hugo server -D -F --baseUrl \"https://$URL-1313.preview.app.github.dev\" -liveReloadPort=443 --appendPort=false --bind=0.0.0.0",
+            "problemMatcher": [],
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        }
+    ]
+  }
