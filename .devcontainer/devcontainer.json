@@ -3,5 +3,8 @@
   "features": {
     "ghcr.io/devcontainers/features/hugo:1": {}
   },
-  "postCreateCommand": "git submodule update --init"
+  "postCreateCommand": "git submodule update --init",
+  "forwardPorts": [
+    1313
+  ]
 }
