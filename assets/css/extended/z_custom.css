@@ -1,3 +1,11 @@
 :root {
     --main-width: 1024px;
 }
+img[alt="Get it on Google Play"] {
+    width: 140px;
+}
+
+img[alt="Get it on Apple Store"] {
+    width: 120px;
+    margin: 10px;
+}
