@@ -4,9 +4,11 @@ title: "Rewriting SharpCooking from Xamarin to PWA - Part 1"
 date: 2023-01-01
 categories:
   - xamarin
+  - iOS
+  - android
   - series
 description: >-
-  TBD
+  I have maintained a personal mobile app written with Xamarin for a few years now and it is time to move it to a PWA. This is the first post in a series to describe the process and reasons
 cover:
     image: "/images/posts/sharp-cooking.png"
     alt: "Sharp Cooking"
