@@ -1,5 +1,5 @@
 baseURL: "https://lpains.net/"
-title: LPains.net
+title: lpains
 paginate: 5
 theme: PaperMod
 
@@ -8,18 +8,16 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-44645930-2
-
 minify:
     disableXML: true
     minifyOutput: true
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: LPains.net
+    title: Pains
     description: "Pains of a geek"
     keywords: [Blog, Personal, LPains, Pains, .NET, Technology, Development, Code]
-    author: Me
+    author: lpains
     # author: ["Me", "You"] # multiple authors
     images: ["/images/lpains.jpg"]
     DateFormat: "January 2, 2006"
@@ -30,18 +28,17 @@ params:
     ShowShareButtons: true
     ShowPostNavLinks: true
     ShowBreadCrumbs: true
-    ShowCodeCopyButtons: false
+    ShowCodeCopyButtons: true
     disableSpecial1stPost: false
     disableScrollToTop: false
     comments: true
     hidemeta: false
     hideSummary: false
     hideDescription: true
-    showtoc: false
+    showtoc: true
     tocopen: false
 
     assets:
-        # disableHLJS: true # to disable highlight.js
         # disableFingerprinting: true
         favicon: "/images/favicon.ico"
         favicon16x16: "/images/favicon-16x16.png"
@@ -49,15 +46,15 @@ params:
         apple_touch_icon: "/images/apple-touch=icon.png"
 
     label:
-        text: "LPains.net"
+        text: "lpains"
         # icon: "/images/apple-touch-icon.png"
         #iconHeight: 35
 
     # profile-mode
     profileMode:
         enabled: true # needs to be explicitly set
-        title: Pains
-        subtitle: "Coder | Geek"
+        title: lpains
+        subtitle: "On the 'Pains' of building software"
         imageUrl: "/images/lpains.jpg"
         imageWidth: 160
         imageHeight: 160
@@ -69,9 +66,9 @@ params:
         #       url: categories
 
     # home-info mode
-    homeInfoParams:
-        Title: "Hi there \U0001F44B"
-        Content: Welcome to my blog
+    # homeInfoParams:
+    #     Title: "lpains"
+    #     Content: On the pains of building software
 
     socialIcons:
         - name: twitter
@@ -81,23 +78,15 @@ params:
         - name: github
           url: "https://github.com/jlucaspains"
 
-    analytics:
-        google:
-            SiteVerificationTag: "XYZabc"
-        bing:
-            SiteVerificationTag: "XYZabc"
-        yandex:
-            SiteVerificationTag: "XYZabc"
-
     cover:
         hidden: false # hide everywhere but not in structured data
         hiddenInList: false # hide on list pages and home
         hiddenInSingle: false # hide on single page
 
-    # editPost:
-    #     URL: "https://github.com/<path_to_repo>/content"
-    #     Text: "Suggest Changes" # edit text
-    #     appendFilePath: true # to append file path to Edit link
+    editPost:
+        URL: "https://github.com/jlucaspains/blog-v2/blob/main/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
 
     # for search
     # https://fusejs.io/api/options.html
