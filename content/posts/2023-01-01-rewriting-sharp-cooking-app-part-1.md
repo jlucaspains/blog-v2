@@ -47,7 +47,7 @@ If you are ok with an early version that may break your recipes, feel free to tr
 ## Next up
 I am still working on the app and will write a post to describe how I decided which tools and frameworks I was going to use as I rewrote the app.
 
-Next: Tools and frameworks (coming soon)
+Next: [Tools and frameworks]({{< ref "/posts/2023-01-15-rewriting-sharp-cooking-app-part-2" >}})
 
 Cheers,
 
