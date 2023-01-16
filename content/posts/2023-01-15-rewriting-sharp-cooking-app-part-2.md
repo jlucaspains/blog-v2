@@ -1,5 +1,4 @@
 ---
-draft: true
 layout: post
 title: "Rewriting SharpCooking from Xamarin to PWA - Part 2"
 date: 2023-01-08
