@@ -153,4 +153,4 @@ This was a long post and I hope you got this far. Instead of just listing the to
 
 As always, feel free to check the progress, log issues, or contribute in the [GitHub repo](https://github.com/jlucaspains/sharp-cooking-web).
 
-Next: Sharp Cooking API (Coming soon)
+Next: [The unplanned API]({{< ref "/posts/2023-01-29-rewriting-sharp-cooking-app-part-3" >}})
