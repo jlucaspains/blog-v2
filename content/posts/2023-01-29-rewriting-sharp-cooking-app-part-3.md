@@ -24,24 +24,24 @@ This is the third post in the series. If you haven't seen the first two posts ye
 Sharp Cooking allows for recipe extraction from many websites. The original app makes a web request that loads the HTML page and parses the content to identify a recipe. The parsing is done using XPath and a configuration file determining the XPATH queries to be used. The config looked like this:
 
 ```json
-{
-        "hostname": "www.allrecipes.com",
-        "titleXPath": [
-            "//h1"
-        ],
-        "imageXPath": [
-            "//meta[@property=\"og:image\"]"
-        ],
-        "imageAttribute": "content",
-        "ingredientsXPath": [
-            "//fieldset[@class=\"ingredients-section__fieldset\"]/ul/li",
-            "//ul/li[@class=\"checkList__line\"]/label/span[@itemprop=\"recipeIngredient\"]"
-        ],
-        "preparationXPath": [
-            "//fieldset[@class=\"instructions-section__fieldset\"]/ul/li/div[@class=\"section-body\"]",
-            "//ol[@itemprop=\"recipeInstructions\"]/li[@class=\"step\"]"
-        ]
-    }
+[{
+    "hostname": "www.allrecipes.com",
+    "titleXPath": [
+        "//h1"
+    ],
+    "imageXPath": [
+        "//meta[@property=\"og:image\"]"
+    ],
+    "imageAttribute": "content",
+    "ingredientsXPath": [
+        "//fieldset[@class=\"ingredients-section__fieldset\"]/ul/li",
+        "//ul/li[@class=\"checkList__line\"]/label/span[@itemprop=\"recipeIngredient\"]"
+    ],
+    "preparationXPath": [
+        "//fieldset[@class=\"instructions-section__fieldset\"]/ul/li/div[@class=\"section-body\"]",
+        "//ol[@itemprop=\"recipeInstructions\"]/li[@class=\"step\"]"
+    ]
+}]
 ```
 
 I was forcibly reminded that a Web app running solely on the browser is under higher security limitations. In this context, CORS (Cross Origin Request Sharing) applies when executing fetch requests such as loading a web page. While each website might have different requirements, it is very typical to enforce a same-origin policy that prevents a javascript-based application (from a different origin) from making the fetch request to load HTML content. Therefore, the recipe import feature in the new SPA app was broken. Badly. 
@@ -216,4 +216,4 @@ Long story short: CORS prevented me from scraping web pages directly from the SP
 
 As always, feel free to check the progress, log issues, or contribute in the [GitHub repo](https://github.com/jlucaspains/sharp-cooking-web).
 
-Next: Devops (Coming Soon)
+Next: [Devops]({{< ref "/posts/2023-02-15-rewriting-sharp-cooking-app-part-4" >}})
