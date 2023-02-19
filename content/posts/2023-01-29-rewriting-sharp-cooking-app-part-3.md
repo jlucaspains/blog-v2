@@ -216,4 +216,4 @@ Long story short: CORS prevented me from scraping web pages directly from the SP
 
 As always, feel free to check the progress, log issues, or contribute in the [GitHub repo](https://github.com/jlucaspains/sharp-cooking-web).
 
-Next: [Devops]({{< ref "/posts/2023-02-15-rewriting-sharp-cooking-app-part-4" >}})
+Next: [The Devops]({{< ref "/posts/2023-02-19-rewriting-sharp-cooking-app-part-4" >}})
