@@ -248,4 +248,4 @@ And a traditional documentation page where topics are on the left and content is
 ## Closing
 This was one of the longest posts I've ever written. I love DevOps in general and I had a lot of fun setting this up for Sharp Cooking. I also had quite a bit of fun writing this post.
 
-Next and last post on the series: The fun with Playwright
+Next and last post on the series: [The fun with Playwright]({{< ref "/posts/2023-03-05-rewriting-sharp-cooking-app-part-5" >}})
