@@ -10,7 +10,8 @@ description: >-
 cover:
     image: "/images/posts/ocr_cover.jpg"
     alt: "Recipe Book"
-    caption: "Recipe Book"
+    caption: "Photo by [S O C I A L . C U T](https://unsplash.com/@socialcut?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/hwy3W3qFjgM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+  "
 ---
 
 Sharp Cooking app can currently import recipes directly from websites and backup files, making it easy to create a personal collection of recipes. However, it does not currently provide an option to scan recipes from a book or an image. This has been a long-requested feature that I am now attempting to add to the app, and will document the experience in this post.
