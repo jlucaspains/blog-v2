@@ -5,6 +5,9 @@
             "label": "Start",
             "type": "shell",
             "command": "hugo server -D -F --baseUrl \"https://$CODESPACE_NAME-1313.preview.app.github.dev\" -liveReloadPort=443 --appendPort=false --bind=0.0.0.0",
+            "windows": {
+                "command": "hugo server -D -F"
+            },
             "problemMatcher": [],
             "runOptions": {
                 "runOn": "folderOpen"
