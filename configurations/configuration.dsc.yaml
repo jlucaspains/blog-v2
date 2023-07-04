@@ -5,7 +5,7 @@ properties:
       id: hugo
       directives:
         description: Install Hugo
-        allowPrerelease: false
+        allowPrerelease: true
       settings:
         id: Hugo.Hugo.Extended
         source: winget
@@ -13,7 +13,7 @@ properties:
       id: vscode
       directives:
         description: Install VS Code
-        allowPrerelease: false
+        allowPrerelease: true
       settings:
         id: Microsoft.VisualStudioCode
         source: winget
@@ -21,7 +21,7 @@ properties:
       id: powershell
       directives:
         description: Install Powershell
-        allowPrerelease: false
+        allowPrerelease: true
       settings:
         id: Microsoft.PowerShell
         source: winget
@@ -29,7 +29,7 @@ properties:
       id: ohmyposh
       directives:
         description: Install OhMyPosh
-        allowPrerelease: false
+        allowPrerelease: true
       settings:
         id: JanDeDobbeleer.OhMyPosh
         source: winget
