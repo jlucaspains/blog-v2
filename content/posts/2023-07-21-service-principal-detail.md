@@ -21,8 +21,6 @@ There are a few ways to lookup the object ID. The easiest is to issue an `az ad 
 az ad principal --name MyServicePrincipal --query objectId
 ```
 
-For this command to work, however, it requires read access to Azure AD which is often not granted to service principals. There is a workaround for this though. The Azure Pipeline principal often have contributor role assigned in a subscription, thus, you can lookup that role assignment and pull the object id from there:
-
 However, for this command to work, it requires read access to Azure AD, which is often not granted to service principals. There is a workaround for this. The Azure Pipeline principal often has been assigned the Contributor role in a subscription. Thus, you can look up that role assignment and pull the object ID from there:
 
 ```yaml
