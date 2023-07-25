@@ -5,7 +5,7 @@
             "label": "Start",
             "type": "shell",
             "linux": {
-                "command": "hugo server -D -F --baseUrl \"https://$CODESPACE_NAME-1313.preview.app.github.dev\" -liveReloadPort=443 --appendPort=false --bind=0.0.0.0"
+                "command": "hugo server -D -F --baseURL \"https://$CODESPACE_NAME-1313.preview.app.github.dev\" -liveReloadPort=443 --appendPort=false --bind=0.0.0.0"
             },
             "windows": {
                 "command": "hugo server -D -F",
