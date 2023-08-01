@@ -33,7 +33,7 @@ The advantage of DYI is customization. You can use Windows 10 or 11 or even olde
 
 Before starting, you will need a windows installation file as an ``.iso``. You can download that from [MSDN](https://my.visualstudio.com) if you have a license. 
 
-This script will create the VM, its disk, and bind the iso as a DVD drive. When started, the VM will automatically start windows installation.
+This script will create the VM, its disk, and bind the iso as a DVD drive. When started, the VM will automatically start windows installation. Make sure to check on the requirements for Windows 11 [here](https://www.microsoft.com/en-us/windows/windows-11-specifications?r=1)
 
 ```powershell
 $VMName = "Win11Template" # you may have multiple template VMs, just ensure they have a good name
@@ -42,7 +42,7 @@ $InstallMedia = "C:\VMs\Win11_x64_BUS_21H2.iso" # the windows install media
 $VMRootPath = "c:\VMs"
 
 # The VM will use the default switch defined above
-New-VM -Name $VMName -MemoryStartupBytes 8GB -Generation 2 -NewVHDPath "$VMRootPath\$VMName\$VMName.vhdx" -NewVHDSizeBytes 50GB -Path $VMRootPath -SwitchName $Switch
+New-VM -Name $VMName -MemoryStartupBytes 8GB -Generation 2 -NewVHDPath "$VMRootPath\$VMName\$VMName.vhdx" -NewVHDSizeBytes 80GB -Path $VMRootPath -SwitchName $Switch
 
 # Add DVD Drive to VM
 Add-VMScsiController -VMName $VMName
