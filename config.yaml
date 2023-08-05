@@ -19,7 +19,7 @@ params:
     keywords: [Blog, Personal, LPains, Pains, .NET, Technology, Development, Code]
     author: lpains
     # author: ["Me", "You"] # multiple authors
-    images: ["/images/lpains.jpg"]
+    images: ["/images/lpains.webp"]
     DateFormat: "January 2, 2006"
     defaultTheme: auto # dark, light
     disableThemeToggle: false
@@ -55,7 +55,7 @@ params:
         enabled: true # needs to be explicitly set
         title: lpains
         subtitle: "On the 'Pains' of building software"
-        imageUrl: "/images/lpains.jpg"
+        imageUrl: "/images/lpains.webp"
         imageWidth: 160
         imageHeight: 160
         imageTitle: gravatar
