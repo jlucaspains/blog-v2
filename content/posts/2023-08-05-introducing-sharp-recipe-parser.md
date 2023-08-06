@@ -18,7 +18,7 @@ For almost four years now, I have maintained the [Sharp Cooking app](<https://sh
 
 Before we get into UOM conversion, we first need to break down an ingredient line into its components. Recipe ingredient lines primarily consist of the quantity, the UOM, the ingredient, and any additional instructions. It should look like this:
 
-![Ingredient Parts](/images/posts/ingredienitParts.png)
+![Ingredient Parts](/images/posts/ingredientParts.png)
 
 There are several options in JavaScript that are capable of breaking down an ingredient line into its components. While exploring the possibilities, I reviewed the following options:
 
