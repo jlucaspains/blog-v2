@@ -38,7 +38,7 @@ A few other notes:
 2. TTL is more about expiration than the exact delete time. You should expect your records to survive a bit longer than the TTL value.
 3. You can combine default TTL on the container with TTL on each item. The TTL from the item will win against the default TTL in these scenarios.
 
-That's it. Use TTL to clean up stale data and never build another scheduled task for this purpose again. For complete documentation on Cosmos DB TTL, see the [Azure Docs](ttps://learn.microsoft.com/en-us/azure/cosmos-db/nosql/time-to-live).
+That's it. Use TTL to clean up stale data and never build another scheduled task for this purpose again. For complete documentation on Cosmos DB TTL, see the [Azure Docs](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/time-to-live).
 
 Cheers,
 
