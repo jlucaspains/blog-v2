@@ -1,4 +1,4 @@
-baseURL: "https://blog.lpains.net/"
+baseURL: ""
 title: lpains
 paginate: 5
 theme: PaperMod
