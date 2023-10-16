@@ -5,20 +5,20 @@ date: 2023-10-10
 categories:
   - DevOps
 description: >-
-  TBD
+  Code reviews are centric to many modern software development processes. However, they are often not done properly. This article will discuss the importance of code reviews and how to perform them properly.
 cover:
-    image: "/images/posts/default.jpg"
-    alt: ""
-    caption: ""
+    image: "/images/posts/code-review.png"
+    alt: "Code Review in GitHub"
+    caption: "Code Reviews"
 ---
+
+Code reviews are centric to many modern software development processes. However, they are often considered a bother rather than something that can greatly improve code quality. I have been doing code reviews for many years and I have seen many different approaches. In this article, I will discuss the importance of code reviews and how to perform them properly. Obviously, this is a very opinionated post, but I think there is a bit of value for anyone interested in doing better code reviews.
 
 ## Why perform code reviews?
 In short, you should perform code reviews to ensure that the code being delivered is of high quality. Code debt accumulates slowly over time and eventually it is so large that even trivial changes become challenging. While it is hard to prevent this from happening, code reviews can greatly help reduce code debt and increase overall code quality.
 
 ## Who should perform code reviews?
 Everyone. There is a difference between reviewing code and approving code. The former should be done by everyone, the latter should be done by experienced team members. Note that experience here doesn't only mean years of general experience, but also experience with the code base and the business domain. This prevents the many memes out there where the intern approves a PR from another intern and it breaks production.
-
-<image>
 
 ## When to perform code reviews?
 Most modern projects uses git or something similar for source control. When an appropriate branching strategy is employed, it allows for new code to be reviewed just before merging back into the primary branch. Ideally, this is done with a Pull or Merge Request. A PR allows for a discussion to take place and for the code to be improved before it is merged. It also allows for the code to be reviewed by multiple people.
@@ -87,15 +87,22 @@ A linting tool can help catch syntax and style issues early. Add it to the valid
 
 For an example, see [sharp-recipe-parser PR Validation GitHub Action](https://github.com/jlucaspains/sharp-recipe-parser/blob/main/.github/workflows/pr-validation.yml).
 
+![Lint failure example](/images/posts/lint-failure-example.png)
+
+
 2\. Run a code quality tool
 
 This is one of my favorite ways to ensure code quality. It is almost "free lunch" in form of a review. Many of the options available perform deep code-analysis and identify code smells, bugs, vulnerabilities, etc. Again, there are many options available and they are language and framework dependent. For instance, I use [Sonar Cloud](https://www.sonarsource.com/products/sonarcloud/) very often since it is free for open-source projects.
 
 For an example, see [sharp-recipe-parser PR Validation GitHub Action](https://github.com/jlucaspains/sharp-recipe-parser/blob/main/.github/workflows/pr-validation.yml).
 
+![Code quality result](/images/posts/code-quality-result.png)
+
 3\. Run security scans
 
 Ensuring code changes don't introduce security issues is very important and very hard. Using a security scanner can help identify potential issues. Again, there are many options available and they are language and framework dependent. A great option for this is [Snyk](https://snyk.io/). Just like Sonar Cloud, it is free for open-source projects.
+
+![Security Scan result](/images/posts/security-scan-result.jpeg)
 
 4\. Deploy the code to a test environment
 
@@ -103,4 +110,20 @@ Deploying code from PRs can be very challenging. I only recommend this approch i
 
 For an example, see [sharp-cooking-web PR Validation GitHub Action](https://github.com/jlucaspains/sharp-cooking-web/blob/main/.github/workflows/azure-static-web-apps-delightful-flower-0c3edd710.yml). Every time a PR is created, it creates a new Azure App Service slot, deploys the code, and runs end-to-end tests. The results are then posted back to the PR.
 
-## Closing thoughts
+![Deployment result](/images/posts/environment-created-example.png)
+
+## Bonus tips
+### GitHub
+   1. Press dot (.) key in any PR to open VS Code on the web for code review.
+   2. Pull Request template
+   3. Use code recommendations for quick fixes
+   4. Details and summary tags
+### Azure DevOps
+   1. Pull request template
+   2. Use code recommendations for quick fixes
+
+## Conclusion
+I hope that you now have a better perspective of how to perform and receive code reviews.
+
+Cheers,
+Lucas
