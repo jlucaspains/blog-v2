@@ -32,8 +32,7 @@ This is a very broad question, and the answer will vary from project to project.
 
 The larger the change, the less relevant the review becomes. This is because it is difficult to understand the impact of a large change. It is better to split it into multiple changes. This also allows for each change to be reviewed in parallel.
 
-10 lines of code = 10 issues
-500 lines of code = looks good to me
+As the joke goes, submit 10 lines of code for review and get 10 issues; Submit 500 lines of code for review and get a "looks good to me" back.
 
 ### 2\. Does the code do what it is supposed to do?
 
