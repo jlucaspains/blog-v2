@@ -39,7 +39,6 @@ The larger the change, the less relevant the review becomes. This is because it 
 
 The best PR will implement/fix a single change/problem which should be well described in the context of the PR. Typically, binding the PR to a work item tracking software like GitHub, Azure DevOps, or Jira will help with this. The reviewer can then check the intended change against the code.
 
-WTFs/minute is a great metric to measure this. The lower the better.
 
 ### 3\. Does the code follow the coding styling rules?
 
