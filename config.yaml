@@ -1,4 +1,4 @@
-baseURL: "https://blog.lpains.net/"
+baseURL: ""
 title: lpains
 paginate: 5
 theme: PaperMod
@@ -127,3 +127,9 @@ markup:
         # guessSyntax: true
         lineNos: true
         # style: monokai
+  
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
