@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing azdiff: Simplifying Azure Environment Comparison"
-date: 2023-11-28
+date: 2023-12-10
 categories:
   - DevOps
   - Azure
