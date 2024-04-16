@@ -104,6 +104,10 @@ menu:
           name: posts
           url: /posts/
           weight: 10
+        - identifier: archive
+          name: archive
+          url: /archive/
+          weight: 15
         - identifier: categories
           name: categories
           url: /categories/
