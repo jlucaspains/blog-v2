@@ -3,6 +3,10 @@ layout: page
 title: "About"
 comments: false
 showtoc: false
+disableShare: true
+editPost.disabled: true
+ShowReadingTime: false
+author: " "
 ---
 
 I'm Pains, yes that's my last name and I build software stuff. Oh, I also sometimes blog about the stuff I build. I've been coding for way too long now so a day without code is just not a good day. How can it be?
@@ -16,3 +20,10 @@ What else do I do, you ask? I go home and code some more. However, I got some co
   * Kung Fu instructor. I studied under Grand Master Lopes in [Kung Fu Taisan](http://kungfutaisan.com.br/).
   * Snowboarder. Turn up the music and hit the slopes. 
   * Volleyball player. I really wanted to play professional, but apparently you need to be really good and ridiculous tall for that...
+
+## For fun projects
+sharp-cooking
+sharp-recipe-parser
+go-rest-template
+sharp-cert-manager
+great-resume

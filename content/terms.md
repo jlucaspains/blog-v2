@@ -3,6 +3,10 @@ layout: page
 title: Terms of use
 comments: false
 showtoc: false
+disableShare: true
+editPost.disabled: true
+ShowReadingTime: false
+author: " "
 ---
 
 ## Privacy
