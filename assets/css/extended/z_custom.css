@@ -3,6 +3,14 @@ html {
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
+.header {
+    padding-top: max(.625rem, env(safe-area-inset-top));
+}
+
+.main {
+    min-height: calc(100vh - var(--header-height) - var(--footer-height) - 60px);
+}
+
 :root {
     --main-width: 1024px;
 }
