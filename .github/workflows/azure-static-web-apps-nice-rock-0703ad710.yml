@@ -15,8 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     env:
-      PRBaseURL: "https://nice-rock-0703ad710-${{github.event.number}}.centralus.3.azurestaticapps.net/"
-      ProdBaseURL: "https://blog.lpains.net/"
+      PRBaseURL: "https://nice-rock-0703ad710-${{github.event.number}}.centralus.3.azurestaticapps.net"
+      ProdBaseURL: "https://blog.lpains.net"
     steps:
       - uses: actions/checkout@v3
         with:
