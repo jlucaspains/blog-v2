@@ -34,7 +34,7 @@ jobs:
           app_location: "/" # App source code path
           api_location: "api" # Api source code path - optional
           output_location: "public" # Built app content directory - optional
-          app_build_command: "hugo --gc --baseURL '${{ github.event_name == 'pull_request' && env.PRBaseURL || env.ProdBaseURL }}'"
+          app_build_command: "hugo --gc --baseURL ${{ github.event_name == 'pull_request' && env.PRBaseURL || env.ProdBaseURL }}"
           ###### End of Repository/Build Configurations ######
         env:
           HUGO_VERSION: 0.114.1
