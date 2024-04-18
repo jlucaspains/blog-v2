@@ -22,8 +22,9 @@ What else do I do, you ask? I go home and code some more. However, I got some co
   * Volleyball player. I really wanted to play professional, but apparently you need to be really good and ridiculous tall for that...
 
 ## For fun projects
-sharp-cooking
-sharp-recipe-parser
-go-rest-template
-sharp-cert-manager
-great-resume
+
+[![jlucaspains/azdiff - GitHub](https://gh-card.dev/repos/jlucaspains/azdiff.svg)](https://github.com/jlucaspains/azdiff)
+[![jlucaspains/go-rest-template - GitHub](https://gh-card.dev/repos/jlucaspains/go-rest-template.svg)](https://github.com/jlucaspains/go-rest-template)
+[![jlucaspains/sharp-cert-manager - GitHub](https://gh-card.dev/repos/jlucaspains/sharp-cert-manager.svg)](https://github.com/jlucaspains/sharp-cert-manager)
+[![jlucaspains/sharp-cooking-web - GitHub](https://gh-card.dev/repos/jlucaspains/sharp-cooking-web.svg)](https://github.com/jlucaspains/sharp-cooking-web)
+[![jlucaspains/sharp-recipe-parser - GitHub](https://gh-card.dev/repos/jlucaspains/sharp-recipe-parser.svg)](https://github.com/jlucaspains/sharp-recipe-parser)
