@@ -61,11 +61,11 @@ params:
         imageTitle: gravatar
         buttons:
         - name: Recent
-          url: posts
+          url: /posts
         - name: Archive
-          url: archive
+          url: /archive
         - name: Categories
-          url: categories
+          url: /categories
 
     # home-info mode
     # homeInfoParams:
@@ -104,15 +104,15 @@ menu:
     main:
         - identifier: search
           name: search
-          url: /search/
+          url: /search
           weight: 10
         - identifier: about
           name: about
-          url: /about/
+          url: /about
           weight: 30
         - identifier: terms
           name: terms
-          url: /terms/
+          url: /terms
           weight: 40
 
 #Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
