@@ -4,7 +4,7 @@
 {{- /* Head custom content area end */ -}}
 
 {{- $manifestResource := resources.Get "manifest.webmanifest" }}
-{{- $manifest := (slice $manifestResource) | resources.Concat "assets/manifest.webmanifest" }}
+{{- $manifest := (slice $manifestResource) | resources.Concat "assets/manifest.webmanifest" | resources.ExecuteAsTemplate "assets/manifest.webmanifest" . }}
 <link rel="manifest" href="{{ $manifest.RelPermalink }}">
 
 {{- $serviceWorkerResource := resources.Get "js/service-worker.js" }}
