@@ -11,15 +11,21 @@
     "orientation": "any",
     "icons": [
         {
-            "src": "{{ .Site.BaseURL }}images/LPainsBlogLogo.avif",
+            "src": "{{ .Site.BaseURL }}images/Logo_512.webp",
             "sizes": "512x512",
-            "type": "image/avif",
+            "type": "image/webp",
             "purpose": "maskable"
         },
         {
-            "src": "{{ .Site.BaseURL }}images/LPainsBlogLogo.avif",
+            "src": "{{ .Site.BaseURL }}images/Logo_192.webp",
             "sizes": "192x192",
-            "type": "image/avif",
+            "type": "image/webp",
+            "purpose": "any"
+        }
+        {
+            "src": "{{ .Site.BaseURL }}images/Logo_512.png",
+            "sizes": "512x512",
+            "type": "image/png",
             "purpose": "any"
         }
     ],

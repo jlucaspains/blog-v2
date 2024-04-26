@@ -19,7 +19,7 @@ params:
     keywords: [Blog, Personal, LPains, Pains, .NET, Technology, Development, Code]
     author: LPains
     # author: ["Me", "You"] # multiple authors
-    images: ["/images/lpains.jpg"]
+    images: ["/images/lpains.webp"]
     DateFormat: "January 2, 2006"
     defaultTheme: auto # dark, light
     disableThemeToggle: false
@@ -40,7 +40,7 @@ params:
 
     assets:
         # disableFingerprinting: true
-        favicon: "/images/favicon.ico"
+        # favicon: "/images/logo.svg"
         favicon16x16: "/images/favicon-16x16.png"
         favicon32x32: "/images/favicon-32x32.png"
         apple_touch_icon: "/images/apple-touch=icon.png"
