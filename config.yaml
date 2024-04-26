@@ -55,7 +55,7 @@ params:
         enabled: true # needs to be explicitly set
         title: lpains
         subtitle: "On the 'Pains' of building software"
-        imageUrl: "/images/lpains.jpg"
+        imageUrl: "/images/lpains.webp"
         imageWidth: 160
         imageHeight: 160
         imageTitle: gravatar
