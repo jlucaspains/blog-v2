@@ -1,0 +1,12 @@
+{{- /* Head custom content area start */ -}}
+{{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the <head></head> section of every page. */ -}}
+{{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
+{{- /* Head custom content area end */ -}}
+
+{{- $manifestResource := resources.Get "manifest.webmanifest" }}
+{{- $manifest := (slice $manifestResource) | resources.Concat "assets/manifest.webmanifest" | resources.ExecuteAsTemplate "assets/manifest.webmanifest" . }}
+<link rel="manifest" href="{{ $manifest.RelPermalink }}">
+
+{{- $serviceWorkerResource := resources.Get "js/service-worker.js" }}
+{{- $serviceWorker := (slice $serviceWorkerResource) | resources.Concat "assets/js/service-worker.js" }}
+<script defer crossorigin="anonymous" src="{{ $serviceWorker.RelPermalink }}"></script>

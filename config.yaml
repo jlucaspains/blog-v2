@@ -1,7 +1,7 @@
-baseURL: ""
-title: lpains
+baseURL: "/"
+title: LPains
 paginate: 5
-theme: PaperMod
+theme: hugo-PaperMod
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -17,9 +17,9 @@ params:
     title: Pains
     description: "Pains of a geek"
     keywords: [Blog, Personal, LPains, Pains, .NET, Technology, Development, Code]
-    author: lpains
+    author: LPains
     # author: ["Me", "You"] # multiple authors
-    images: ["/images/lpains.jpg"]
+    images: ["/images/lpains.webp"]
     DateFormat: "January 2, 2006"
     defaultTheme: auto # dark, light
     disableThemeToggle: false
@@ -40,13 +40,13 @@ params:
 
     assets:
         # disableFingerprinting: true
-        favicon: "/images/favicon.ico"
+        # favicon: "/images/logo.svg"
         favicon16x16: "/images/favicon-16x16.png"
         favicon32x32: "/images/favicon-32x32.png"
         apple_touch_icon: "/images/apple-touch=icon.png"
 
     label:
-        text: "lpains"
+        text: "LPains"
         # icon: "/images/apple-touch-icon.png"
         #iconHeight: 35
 
@@ -55,15 +55,17 @@ params:
         enabled: true # needs to be explicitly set
         title: lpains
         subtitle: "On the 'Pains' of building software"
-        imageUrl: "/images/lpains.jpg"
+        imageUrl: "/images/lpains.webp"
         imageWidth: 160
         imageHeight: 160
         imageTitle: gravatar
-        # buttons:
-        #     - name: Posts
-        #       url: posts
-        #     - name: Categories
-        #       url: categories
+        buttons:
+        - name: Recent
+          url: /posts
+        - name: Archive
+          url: /archive
+        - name: Categories
+          url: /categories
 
     # home-info mode
     # homeInfoParams:
@@ -100,21 +102,17 @@ params:
         keys: ["title", "permalink", "summary", "content"]
 menu:
     main:
-        - identifier: posts
-          name: posts
-          url: /posts/
+        - identifier: search
+          name: search
+          url: /search
           weight: 10
-        - identifier: categories
-          name: categories
-          url: /categories/
-          weight: 20
         - identifier: about
           name: about
-          url: /about/
+          url: /about
           weight: 30
         - identifier: terms
           name: terms
-          url: /terms/
+          url: /terms
           weight: 40
 
 #Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma

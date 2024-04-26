@@ -1,6 +1,19 @@
+html {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+.main {
+    min-height: calc(100vh - var(--header-height) - var(--footer-height) - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+}
+
+.main .profile {
+    min-height: calc(100vh - var(--header-height) - var(--footer-height) - (var(--gap) * 2) - env(safe-area-inset-top) - env(safe-area-inset-bottom))
+}
+
 :root {
     --main-width: 1024px;
 }
+
 img[alt="Get it on Google Play"] {
     width: 140px;
 }
