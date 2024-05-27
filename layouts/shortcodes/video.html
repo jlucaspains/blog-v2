@@ -1,0 +1,12 @@
+{{- $url := (.Get "src") }}
+{{- $width := (.Get "width") }}
+{{- $height := (.Get "height") }}
+{{- $loop := (.Get "loop") }}
+{{- $autoplay := (.Get "autoplay") }}
+
+<video width="{{$width | default `640`}}" height="{{$height | default `360`}}" loop="{{$loop | default `1`}}" autoplay="{{$autoplay | default `1`}}" preload="metadata" playsinline="1"
+    muted="1">
+    <source type="video/mp4"
+        src="{{$url}}">
+    <a href="{{$url}}"></a>
+</video>
