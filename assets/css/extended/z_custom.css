@@ -22,3 +22,11 @@ img[alt="Get it on Apple Store"] {
     width: 120px;
     margin: 10px;
 }
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.m-2 {
+    margin: 8px;
+}
