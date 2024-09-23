@@ -7,6 +7,7 @@ categories:
   - iOS
   - android
   - series
+  - SharpCooking
 description: >-
   This is the third post on the rewriting SharpCooking series. In this post let's talk about the Sharp Cooking API introduced to overcome PWA security challenges.
 cover:

@@ -5,6 +5,7 @@ date: 2023-03-12
 categories:
   - vue
   - azure
+  - SharpCooking
 description: >-
   This post discusses coding a recipe scanning feature using OCR into Sharp Cooking app.
 cover:

@@ -5,6 +5,7 @@ date: 2024-09-10
 categories:
   - azure
   - python
+  - SharpCooking
 description: >-
     Upgrading Sharp Cooking API to Python Azure Functions v2 simplifies code, enhances organization, and enables new features like streaming.
 cover:

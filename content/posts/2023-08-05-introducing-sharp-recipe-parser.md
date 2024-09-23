@@ -5,6 +5,7 @@ date: 2023-08-05
 categories:
   - announcement
   - typescript
+  - SharpCooking
 description: >- 
   Introducing sharp-recipe-parser npm package. It is a new and small typescript package to extract information from recipe ingredient and instruction lines.
 cover:

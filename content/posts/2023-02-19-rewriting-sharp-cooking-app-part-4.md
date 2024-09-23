@@ -7,6 +7,7 @@ categories:
   - iOS
   - android
   - series
+  - SharpCooking
 description: >-
   This is the fourth post on the rewriting SharpCooking series. We've covered the coding parts this far, now, let's talk about DevOps.
 cover:

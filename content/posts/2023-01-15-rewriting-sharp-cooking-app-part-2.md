@@ -7,6 +7,7 @@ categories:
   - iOS
   - android
   - series
+  - SharpCooking
 description: >-
   This is the second post on the rewriting SharpCooking series. In this post let's talk about frameworks and the tools utilized.
 cover:

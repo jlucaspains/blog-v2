@@ -5,6 +5,7 @@ date: 2024-01-01
 categories:
   - typescript
   - javascript
+  - SharpCooking
 description: >-
     Exploring the conversion of a TypeScript project to JavaScript with JSDoc. Unveiling challenges in tooling, module adjustments, and insights on TypeScript's relevance in library development
 cover:

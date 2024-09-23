@@ -4,6 +4,7 @@ title: "Self destructing data with Cosmos DB"
 date: 2023-08-25
 categories:
   - azure
+  - SharpCooking
 description: >- 
   Let it blow with CosmosDB TTL feature.
 cover:

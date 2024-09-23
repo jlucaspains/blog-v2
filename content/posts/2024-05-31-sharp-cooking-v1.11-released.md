@@ -4,6 +4,7 @@ title: "Sharp Cooking v1.11.0 released!"
 date: 2024-05-31
 categories:
   - announcement
+  - SharpCooking
 description: >-
     TBD
 cover:

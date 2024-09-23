@@ -7,6 +7,7 @@ categories:
   - iOS
   - android
   - series
+  - SharpCooking
 description: >-
   This is the fifth post on the rewriting SharpCooking series. Playwright is a fundamental part of the app and we will deep dive into it in this post.
 cover:

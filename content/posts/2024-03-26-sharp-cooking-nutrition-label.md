@@ -4,6 +4,7 @@ title: "Sharp Cooking now displays nutrition labels"
 date: 2024-03-26
 categories:
   - announcement
+  - SharpCooking
 description: >-
     Sharp Cooking is now 4 years old and to celebrate we added a long waited feature, recipe nutrition labels.
 cover:
