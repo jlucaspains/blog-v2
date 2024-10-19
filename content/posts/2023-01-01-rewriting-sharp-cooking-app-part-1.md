@@ -7,6 +7,7 @@ categories:
   - iOS
   - android
   - series
+  - SharpCooking
 description: >-
   I have maintained a personal mobile app written with Xamarin for a few years now and it is time to move it to a PWA. This is the first post in a series to describe the process and reasons
 cover:
