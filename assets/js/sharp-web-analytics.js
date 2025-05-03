@@ -7,7 +7,7 @@ const pageViewData = {
     timestamp: new Date().toISOString(),
     referrer
 };
-fetch('https://sharp-web-insights.azurewebsites.net/api/V04xAkcndX/pageview', {
+fetch('https://sharp-web-insights.azurewebsites.net/api/VovhZggVR6/pageview', {
     method: 'POST',
     body: JSON.stringify(pageViewData),
     headers: { 'Content-Type': 'application/json' }
