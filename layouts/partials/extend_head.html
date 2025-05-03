@@ -10,3 +10,7 @@
 {{- $serviceWorkerResource := resources.Get "js/service-worker.js" }}
 {{- $serviceWorker := (slice $serviceWorkerResource) | resources.Concat "assets/js/service-worker.js" }}
 <script defer crossorigin="anonymous" src="{{ $serviceWorker.RelPermalink }}"></script>
+
+{{- $pageViewResource := resources.Get "js/sharp-web-analytics.js" }}
+{{- $pageView := (slice $pageViewResource) | resources.Concat "assets/js/sharp-web-analytics.js" }}
+<script defer crossorigin="anonymous" src="{{ $pageView.RelPermalink }}"></script>
