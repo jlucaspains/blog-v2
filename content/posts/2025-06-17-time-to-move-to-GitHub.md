@@ -3,13 +3,12 @@ layout: post
 title: "It's time to move from Azure DevOps to GitHub"
 date: 2025-06-17
 categories:
-  - azure
   - DevOps
 description: >-
     Why GitHub's rapid innovation and AI integration make it the better choice for modern software development teams
 cover:
-    image: "/images/posts/github-vs-azure-devops.png"
-    alt: "GitHub vs Azure DevOps comparison"
+    image: "/images/posts/move-from-ado-to-github.png"
+    alt: "Making the switch from Azure DevOps to GitHub"
     caption: "Making the switch from Azure DevOps to GitHub"
 ---
 
