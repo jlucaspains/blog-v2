@@ -31,7 +31,7 @@ Like every tech company today, GitHub is heavily investing in AI, and they're do
 
 ### 2. Built-in security and dependency management
 
-GitHub's security features are impressive out of the box. [CodeQL](https://docs.github.com/en/code-security/secure-coding/using-code-scanning-with-github-codeql/about-code-scanning) provides automated code analysis to catch vulnerabilities, while [Dependabot](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/about-dependency-updates) automatically monitors and updates your dependencies. Azure DevOps can achieve similar results through extensions, but GitHub's native integration is more powerful and user-friendly.
+GitHub's security features are impressive out of the box. [CodeQL](https://codeql.github.com/) provides automated code analysis to catch vulnerabilities, while [Dependabot](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide) automatically monitors and updates your dependencies. Azure DevOps can achieve similar results through extensions, but GitHub's native integration is more powerful and user-friendly.
 
 ![GitHub security features](/images/posts/github-security-dashboard.png "GitHub's security dashboard showing Dependabot alerts")
 *GitHub's integrated security dashboard with Dependabot dependency alerts*
