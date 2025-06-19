@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "It's time to move from Azure DevOps to GitHub"
-date: 2025-06-17
+date: 2025-06-18
 categories:
   - DevOps
 description: >-
@@ -75,6 +75,10 @@ flowchart TD
     L -->|Yes| N[Use Scrum]
     I -->|Yes| L
 ```
+
+As the diagram shows, most projects and teams are better suited to a Kanban approach, particularly when they don't need strict Scrum ceremonies or dedicated roles. GitHub's [Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) feature offers a flexible Kanban-style board that adapts to your workflow without Scrum's overhead. You can also run full Scrum with GitHub Projects, though the reporting and planning features aren't as comprehensive as Azure Boards.
+
+I've explored different approaches to running Scrum projects in GitHub in my post [Running Agile projects in GitHub Projects](/posts/2022-09-05-github-sprint-projects/). Last year, I revisited this topic in [Running Agile projects in GitHub Projects - 2024 review](/posts/2024-05-27-2024-review-github-sprint-projects/), which provides updated insights on managing agile projects in GitHub.
 
 ## What about Test Plans?
 
