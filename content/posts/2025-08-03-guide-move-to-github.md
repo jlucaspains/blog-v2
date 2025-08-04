@@ -14,7 +14,7 @@ cover:
 
 In [my previous post](/posts/2025-06-18-time-to-move-to-github/), I explained why many Azure DevOps users should consider moving to GitHub. This guide will help you make that transition smoothly and efficiently.
 
-This post focuses on helping you make informed decisions throughout the migration process. Rather than providing exhaustive step-by-step details for every scenario, I'll highlight key considerations and link to official documentation where appropriate. I'll also share my recommendations on what to move, how to structure your GitHub organization, and which approaches to use.
+This post focuses on helping you make informed decisions throughout the migration process. Rather than providing exhaustive step-by-step details for every scenario, I'll highlight key considerations and link to official documentation where appropriate. I'll also share my recommendations on what to move, how to structure your GitHub organization, and which migration approaches to use.
 
 > **Note:** This guide assumes you're migrating from Azure DevOps (ADO) to GitHub Enterprise Cloud, that you're familiar with both platforms, and that you have administrative access to both your ADO and GitHub accounts.
 
@@ -52,7 +52,7 @@ While no single structure fits all organizations, consider these [best practices
 Since GitHub doesn't have an exact equivalent to ADO projects, you need to decide where to migrate your work items and wiki content. Your approach should depend on the number of repositories in the project:
 
 - **Single repository project:** Import ADO work items into that repository's Issues
-- **Multiple repository project:** Either:
+- **Multiple repository project:** Choose one of these options:
   - Create a dedicated repository for the project's issues and wiki, or
   - Select one primary repository to host these elements
 
@@ -165,9 +165,9 @@ I've developed [adowi2gh](https://github.com/jlucaspains/adowi2gh), an open-sour
    - For GitHub: Use a [Personal Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with repo and project permissions
 
 3. **Adjust the configuration file**:
-   1. Add the PATs.
-   1. Configure the Source ADO organization and project, and the Target GitHub organization and repository.
-   2. Adjust the migration settings as needed, such as:
+   1. Add the PATs
+   2. Configure the Source ADO organization and project, and the Target GitHub organization and repository
+   3. Adjust the migration settings as needed, such as:
       - Source Azure DevOps organization and project
       - Target GitHub organization and repository
       - Work item query to filter items to migrate
@@ -179,12 +179,12 @@ I've developed [adowi2gh](https://github.com/jlucaspains/adowi2gh), an open-sour
    adowi2gh migrate --config .\configs\config.yaml --verbose --dry-run
    ```
 
-4. **Run the migration**:
+5. **Run the migration**:
    ```powershell
    adowi2gh migrate --config .\configs\config.yaml --verbose
    ```
 
-5. **Verify the migration** by checking the newly created GitHub Issues
+6. **Verify the migration** by checking the newly created GitHub Issues
 
 For more advanced options, refer to the [adowi2gh documentation](https://github.com/jlucaspains/adowi2gh/blob/main/README.md).
 
@@ -261,7 +261,7 @@ Package migration varies significantly based on the package type you're using. G
 
 Here's a detailed process for migrating a NuGet package from Azure Artifacts to GitHub Packages:
 
-1. **Create a `nuget.config` file to use your Azure DevOps feed**:
+1. **Create a `nuget.config` file to use your Azure DevOps feed** (refer to [Microsoft's documentation](https://learn.microsoft.com/en-us/azure/devops/artifacts/nuget/nuget-exe?view=azure-devops) for details)
 
 2. **Download the package from Azure DevOps**:
    ```powershell
@@ -276,7 +276,7 @@ Here's a detailed process for migrating a NuGet package from Azure Artifacts to 
    nuget pack ./extracted-package/YourPackageName.nuspec -OutputDirectory ./repacked
    ```
 
-4. **Create a `nuget.config` file for using GitHub Packages**:
+4. **Create a `nuget.config` file for using GitHub Packages** (refer to [GitHub's NuGet registry documentation](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-nuget-registry)):
 
 5. **Publish to GitHub Packages**:
    ```powershell
@@ -315,7 +315,7 @@ To migrate your Azure DevOps pipelines to GitHub Actions, the [GitHub Actions Im
 
 5. **Migrate the pipeline**:
    ```powershell
-   gh actions-importer migrate azure-devops - ./migrate-results
+   gh actions-importer migrate azure-devops -o ./migrate-results
    ```
 
 6. **Review and adjust** the generated workflow files:
@@ -359,7 +359,7 @@ Here's my recommended approach for a smooth transition:
 
 ### Next steps
 
-This guide provides a foundation for your migration from Azure DevOps to GitHub. Each organization's needs will vary, so adapt these recommendations to your specific requirements. The most successful migrations happen incrementally, with careful planning and testing at each stage.
+This guide provides a foundation for your migration from Azure DevOps to GitHub. Each organization's needs will vary, so adapt these recommendations to your specific requirements. The most successful migrations happen incrementally, with careful planning and testing at each stage. Consider starting with a small, non-critical project to build confidence in your migration process.
 
 For more guidance, check out [GitHub's official migration resources](https://docs.github.com/en/migrations) and consider engaging with the [GitHub Community Forum](https://github.community/) to learn from others' experiences.
 
