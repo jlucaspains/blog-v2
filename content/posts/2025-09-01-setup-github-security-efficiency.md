@@ -149,8 +149,8 @@ In Git, once data is committed, it remains in the repository history. Even if yo
    - **Secret protection**
    - **Push protection**
 
-![GitHub Push Protection Setting](/images/posts/github-push-protection.webp "GitHub's secret scanning and push protection settings")
-*GitHub's secret scanning and push protection settings in the repository security configuration*
+![GitHub Push Protection Setting](/images/posts/github-push-protection.webp "git push blocked by GitHub Push Protection")
+*git push blocked by GitHub Push Protection*
 
 Once enabled, GitHub will analyze code for secrets before they're pushed to your repository. When a potential secret is detected, the push is blocked with a detailed notification.
 
@@ -207,10 +207,7 @@ GitHub Copilot for PR reviews leverages AI to analyze pull requests, providing a
 1. Navigate to your repository on GitHub
 2. Go to **Settings** > **Copilot** > **Code review**
 3. Toggle "Copilot for code reviews" to **Enabled**
-4. Optionally configure when Copilot reviews are triggered:
-   - On every PR
-   - When requested with a specific label
-   - When requested via a comment
+4. Optionally configure Copilot reviews to be triggered On every PR
 
 ![GitHub Copilot Code Review](/images/posts/github-copilot-pr-review.png "GitHub Copilot providing intelligent code review suggestions")
 *GitHub Copilot automatically reviewing pull requests and providing intelligent suggestions for code improvements*
