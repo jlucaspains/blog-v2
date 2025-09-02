@@ -131,7 +131,7 @@ This project is a web application that allows users to manage their tasks and to
 - Application should have a modern and clean design.
 ```
 
-For more information, see [GitHub's documentation on Copilot instructions](https://docs.github.com/en/copilot/configuring-github-copilot/configuring-github-copilot-in-your-environment#creating-a-githubcopilot-instructionsmd-file-to-provide-additional-context).
+For more information, see [GitHub's documentation on Copilot instructions](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions).
 
 ## 3. Setup push protection for supported secrets
 
