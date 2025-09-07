@@ -12,6 +12,8 @@ cover:
     caption: "Securing your GitHub repositories with advanced features. Cover generated with ChatGPT."
 ---
 
+Originally posted at [Hitachi Solution's blog](https://global.hitachi-solutions.com/blog/setting-up-github-for-secure-and-efficient-development/).
+
 In my last post, I discussed migrating from Azure DevOps to GitHub. Whether you have just completed the migration or have been using GitHub for a while, GitHub offers many features that you might not be aware of. This guide walks you through five key GitHub features that most teams should configure:
 
 1. **Dependabot** for automated dependency management
