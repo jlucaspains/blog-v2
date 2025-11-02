@@ -76,9 +76,20 @@ jobs:
       with:
         azcliversion: latest
         inlineScript: |
-          az graph query -q "securityresources | extend tags = properties.additionalData.artifactDetails.tags[0] | extend artifactDetails = properties.additionalData.artifactDetails | extend image = strcat(artifactDetails.registryHost, '/', artifactDetails.repositoryName, ':', tags) | where type == 'microsoft.security/assessments/subassessments' | where properties.resourceDetails.ResourceName == 'acrmydev001' | where properties.status.code <> 'Healthy' | project image, displayName = properties.displayName, cveDescription = properties.additionalData.cveDescriptionAdditionalInformation, severity = properties.additionalData.vulnerabilityDetails.severity, packageName = properties.additionalData.softwareDetails.packageName, version = properties.additionalData.softwareDetails.version, fixedVersion= properties.additionalData.softwareDetails.fixedVersion, lastModifiedDate =properties.additionalData.vulnerabilityDetails.lastModifiedDate" --output json
+          query="securityresources | extend tags = properties.additionalData.artifactDetails.tags[0] | extend artifactDetails = properties.additionalData.artifactDetails | extend image = strcat(artifactDetails.registryHost, '/', artifactDetails.repositoryName, ':', tags) | where type == 'microsoft.security/assessments/subassessments' | where properties.resourceDetails.ResourceName == 'acrmydev001' | where properties.status.code <> 'Healthy' | project image, displayName = properties.displayName, cveDescription = properties.additionalData.cveDescriptionAdditionalInformation, severity = properties.additionalData.vulnerabilityDetails.severity, packageName = properties.additionalData.softwareDetails.packageName, version = properties.additionalData.softwareDetails.version, fixedVersion= properties.additionalData.softwareDetails.fixedVersion, lastModifiedDate =properties.additionalData.vulnerabilityDetails.lastModifiedDate" 
+          
+          results=$(az graph query -q "$query"--output json)
+          count=$(echo "$results" | jq -r '.count')
+          
+          if [[ $count -gt 0 ]]; then
+              echo "::error::Found $count security vulnerabilities in container images"
+              echo "| Image | App | Vulnerability | Severity | Package | Current Version | Fixed Version | CVE Description |"
+              echo "|-|-|-|-|-|-|-|-|"
+              echo "$results" | jq -r '.data[] | "| \(.image) | \(.app) | \(.displayName) | \(.severity) | \(.packageName) | \(.version) | \(.fixedVersion // "N/A") | \(.cveDescription // "N/A") |"'
+          else
+              echo "No Security Vulnerabilities Found"
+          fi
 ```
-
 
 
 Cheers,\
