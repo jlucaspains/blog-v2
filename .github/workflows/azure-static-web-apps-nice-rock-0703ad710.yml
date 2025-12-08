@@ -37,7 +37,7 @@ jobs:
           app_build_command: "hugo --gc --baseURL ${{ github.event_name == 'pull_request' && env.PRBaseURL || env.ProdBaseURL }}"
           ###### End of Repository/Build Configurations ######
         env:
-          HUGO_VERSION: 0.114.1
+          HUGO_VERSION: 0.146.0
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'

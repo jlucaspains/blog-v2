@@ -218,6 +218,12 @@ I built a real feature for a personal project to understand how SpecKit works in
 
 5. **Brownfield Challenges**: Integrating SpecKit into existing large codebases is difficult. It shines brightest on greenfield projects.
 
+## Additional Resources
+- [The ONLY guide you'll need for GitHub Spec Kit](https://www.youtube.com/watch?v=a9eR1xsfvHg&t=1s)
+- [Using GitHub Spec Kit with your EXISTING PROJECTS](Using GitHub Spec Kit with your EXISTING PROJECTS)
+- [GitHub Spec Kit DOES WHAT Under The Hood?](https://www.youtube.com/watch?v=o6SYjY1Bkzo&t=1270s)
+
+
 ## Conclusion
 SpecKit represents a significant evolution in AI-assisted development—it's not just about generating code faster, but about thinking through problems more systematically. By forcing you to define specifications, validate requirements, and create detailed plans before implementation, SpecKit can lead to higher-quality, better-documented software.
 
