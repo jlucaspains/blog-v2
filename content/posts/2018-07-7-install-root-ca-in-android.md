@@ -19,10 +19,9 @@ First, you will need the CA certificate so android can trust the SSL cert. If yo
 
 Next, push the .cer to the emulator using adb push command. Note that even though I'm pushing the cert to the sdcard it actually shows in a different location. I'm not sure why my emulator is doing that but I've seen others that work just fine. Just make sure to search in all folders when installing the cert in the emulator.
 
-<pre class="brush: ps">
+```powershell
 adb push path_to_cert\ca_cert_file.cer /sdcard/ca_cert_file.cer
-</pre>
-
+```
 Before installing the certificate, you will need to enable device lockscreen security. Finally, install the certificate using Settings app:
 
 ![Import Certificate](/images/posts/ImportCertificateAndroid.gif)

@@ -30,3 +30,12 @@ img[alt="Get it on Apple Store"] {
 .m-2 {
     margin: 8px;
 }
+
+.prompt {
+    margin-block: 0;
+}
+
+.prompt code {
+    margin: 0;
+    text-wrap: auto;
+}

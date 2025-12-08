@@ -8,7 +8,6 @@ categories:
   - xamarin-forms
 description: >-
   Two way binding on Collection Views has a small quirk that is not immediately obvious. In this post, I will show you how to get it working.
-published: true
 ---
 
 I spent a few too many hours fiddling with Xamarin Form's collection view and multi-selection binding. That was somewhat frustrating so I'm writing a little about it in the hopes that you don't have to deal with the same. 

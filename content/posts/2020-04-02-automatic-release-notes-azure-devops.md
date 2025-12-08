@@ -10,7 +10,6 @@ description: >-
   Release notes are one of those things that we typically leave for last. In
   this post I will show you how to completely forget about it and still get
   great release notes.
-published: true
 ---
 
 If you are neck-deep into DevOps using Azure DevOps, chances are that you have your code on a git repository, have PBIs or Stories, are using Pull requests, Builds, and releases. If you are doing all of this good stuff, great! Carry on and I will show you how to get that shiny cherry on top of your cake. If you are not, you can probably benefit from this post too, but you will have to figure out how to do the same using the tools you love.

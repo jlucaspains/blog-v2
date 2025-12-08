@@ -9,7 +9,6 @@ categories:
 description: >-
   6 months ago I posted about how to generate release notes based on a good development process.
   Since then, I was able to make the automatic release notes generation even better. In this post, I will show you how.
-published: true
 ---
 
 6 months ago I posted about [Automatic release notes on Azure DevOps]({{< ref "/posts/2020-04-02-automatic-release-notes-azure-devops" >}}). Since then, I was able to make the process a little more centric to Pull Requests and avoid the occasional incorrect work item showing up in the release notes.

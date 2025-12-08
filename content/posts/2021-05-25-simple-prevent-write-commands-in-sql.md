@@ -1,5 +1,4 @@
 ---
-published: true
 layout: post
 date: 2021-05-25
 title: "Simple prevent write commands in SQL Server"

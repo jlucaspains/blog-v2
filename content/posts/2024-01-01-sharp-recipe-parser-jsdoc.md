@@ -11,7 +11,6 @@ description: >-
 cover:
     image: "/images/posts/javascript-code.jpg"
     alt: "JavaScript code"
-    caption: "JavaScript code"
     caption: "Photo by [Pankaj Patel](https://unsplash.com/@pankajpatel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/person-sitting-in-front-of-computer-1IW4HQuauSU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 ---
 
