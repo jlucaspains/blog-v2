@@ -220,7 +220,7 @@ I built a real feature for a personal project to understand how SpecKit works in
 
 ## Additional Resources
 - [The ONLY guide you'll need for GitHub Spec Kit](https://www.youtube.com/watch?v=a9eR1xsfvHg&t=1s)
-- [Using GitHub Spec Kit with your EXISTING PROJECTS](Using GitHub Spec Kit with your EXISTING PROJECTS)
+- [Using GitHub Spec Kit with your EXISTING PROJECTS](https://www.youtube.com/watch?v=SGHIQTsPzuY)
 - [GitHub Spec Kit DOES WHAT Under The Hood?](https://www.youtube.com/watch?v=o6SYjY1Bkzo&t=1270s)
 
 
