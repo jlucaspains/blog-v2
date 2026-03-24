@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "Refining your Agile-based SDLC with Spec-Driven development"
+title: "Refining your Agile-based SDLC with Spec-Driven Development"
 date: 2026-03-08
 categories:
   - DevOps
   - AI
 description: >-
-    A practical guide to integrating spec-driven development into an Agile SDLC — covering process changes, spec ownership, the spec runway model, and how to update your Scrum ceremonies without losing velocity.
+    A practical guide to integrating spec-driven development into an Agile SDLC — covering the spec runway model, spec ownership, Scrum ceremony updates, Kanban adaptations, and how to sustain spec quality on long-running projects.
 cover:
-    image: "/images/posts/tbd.png"
-    alt: "TBD"
-    caption: "TBD"
+    image: "/images/posts/sharp-bite-iteration1.png"
+    alt: "Sprint Backlog"
+    caption: "Sprint Backlog"
 ---
 
-If your team is already running Agile and experimenting with AI-assisted development, you've probably felt the tension: AI tools are most effective when given the right context, but most backlogs are written in just enough detail for a human to interpret — not enough to drive generation. Spec-driven development addresses that gap. This post focuses on the *how* of integrating it into your existing process.
+If your team is already running Agile and experimenting with AI-assisted development, you've probably felt the tension: AI tools are most effective when given the right context, but most backlogs are written in just enough detail for a human to interpret — not enough to drive generation. Spec-Driven Development addresses that gap. This post focuses on the *how* of integrating it into your existing process.
 
 ## Value of Agile
 
@@ -23,7 +23,7 @@ That adaptability is worth protecting. Any process change — including adopting
 
 ## Value of Spec-Driven Development
 
-Spec-driven development shifts the team's focus from informally describing what to build to formally specifying it before implementation begins. A spec is a structured, reviewable document that defines the functional and technical requirements, system context, constraints, and acceptance criteria for a given unit of work.
+Spec-Driven Development shifts the team's focus from informally describing what to build to formally specifying it before implementation begins. A spec is a structured, reviewable document that defines the functional and technical requirements, system context, constraints, and acceptance criteria for a given unit of work.
 
 The practical benefits are significant:
 
@@ -38,7 +38,7 @@ Agile and spec-driven development solve different problems and complement each o
 
 Without specs, Agile teams often rely on implicit understanding and tribal knowledge to bridge the gap between a backlog item and working code. That works reasonably well with stable, experienced teams but breaks down as teams grow, turn over, or start leaning on AI to accelerate delivery.
 
-Without Agile, spec-driven development risks becoming waterfall with extra steps — heavy upfront documentation that grows stale before implementation catches up. The Agile cadence keeps specs lean, relevant, and anchored to actual delivery.
+Without Agile, Spec-Driven Development risks becoming waterfall with extra steps — heavy upfront documentation that grows stale before implementation catches up. The Agile cadence keeps specs lean, relevant, and anchored to actual delivery.
 
 Together, you get the adaptability of Agile with the intentionality of spec-driven work. AI assistance becomes a predictable accelerator rather than an unpredictable wildcard.
 
@@ -48,7 +48,7 @@ This process works best when starting a new project, but teams can enter at step
 
 ### 1. Define Product Scope and Vision
 
-Before any specs are written, capture the product vision in a lightweight document — not quite a spec, but close enough in format that every spec written later can trace back to it. This prevents individual specs from drifting in different directions over time. Think of it as the north star that architectural and functional decisions get validated against. If you are using GitHub SpecKit, this is your constitution.
+Before any specs are written, capture the product vision in a lightweight document — not quite a spec, but close enough in format that every spec written later can trace back to it. This prevents individual specs from drifting in different directions over time. Think of it as the north star that architectural and functional decisions get validated against. GitHub Spec Kit is a framework for managing specs as first-class artifacts in your repository. If you are using it, the product scope and vision document acts as its constitution — the root document that grounds all subsequent specs.
 
 Example prompt:
 
@@ -80,10 +80,10 @@ Example spec:
 
 Each iteration runs two workstreams in parallel: spec creation for the *next* iteration and implementation of the *current* iteration's approved specs. See the Spec Runway section below for detail on how these tracks interact.
 
-**[PO + Architect] Expand features into actionable Stories**
+**[PO + Architect] Expand features into actionable work items**
 - Decompose each feature into delivery-sized backlog items
-- Each story gets a description and acceptance criteria written from a business value perspective
-- Stories without an associated spec are not yet eligible for sprint planning
+- Each work item gets a description and acceptance criteria written from a business value perspective
+- Work items without an associated spec are not yet eligible for sprint planning
 
 ![sprint backlog](/images/posts/sharp-bite-story-backlog.png)
 
@@ -102,15 +102,16 @@ authors: [lead-architect, dev-name]
 ---
 ```
 
-**Ensure specs traceability**
-- There are 2 primary ways to tracking specs for stories
-   - Create a work item for the story and another for the spec. This will ensure velocity for spec writing is tracked on the right sprint but it will look unconventional with 2 very similar work items. A reference from the spec to story work items will help track related work items.
-   - Create a single work item for both story and spec. Create a task for the spec. It will look cleaner, but the story effort needs to account for both spec and implementation. The story will always be part of 2 sprints (spec sprint and implementation sprint).
+**Right-sizing specs:** A spec should be detailed enough that a developer unfamiliar with the work item could begin implementation without asking clarifying questions — but no longer than needed to achieve that. As a rule of thumb: if a spec exceeds roughly two pages, consider whether the story should be split. A well-sized spec typically covers functional requirements, technical approach, edge cases, error handling, and acceptance criteria.
+
+**Ensure Spec Traceability**
+- There are 2 primary ways to track specs for work items
+   - Create a work item for the requirement and another for the spec. This will ensure velocity for spec writing is tracked on the right sprint but it will look unconventional with 2 very similar work items. A reference from the spec to requirement work items will help track related work.
+   - Create a single work item for both requirement and spec. Create a task for the spec. It will look cleaner, but the work item effort needs to account for both spec and implementation. The work item will always be part of 2 sprints (spec sprint and implementation sprint).
 - A GitHub Actions workflow validates specs on pull requests: it checks that the referenced work item exists, posts a link back to the work item, and blocks merges when spec status is still `draft`
    - [Example GH Actions workflow](https://github.com/jlucaspains/sharp-bite/blob/main/.github/workflows/validate-specs.yml)
 - PR and commit messages carry the work item reference natively: `AB#1234` for Azure DevOps, `Closes #42` or `Refs #42` for GitHub Issues
-   - [Example PR](https://github.com/jlucaspains/sharp-bite/pull/67)
-— creating full traceability from spec to work item to PR to commit
+   - [Example PR](https://github.com/jlucaspains/sharp-bite/pull/67) — creating full traceability from spec to work item to PR to commit
 
 ## Distributing Spec Ownership
 
@@ -142,7 +143,7 @@ Impl Track                         [Implement            [Implement
 ```
 
 Every sprint has two concurrent workstreams:
-- **Spec track:** Author and approve specs for the *next* sprint's Stories
+- **Spec track:** Author and approve specs for the *next* sprint's work items
 - **Implementation track:** Build against the *current* sprint's already-approved specs
 
 Sprint planning is never blocked because approved specs are always ready — they were written last sprint. The spec approval gate at sprint planning becomes a quality check, not a last-minute scramble.
@@ -155,15 +156,53 @@ Sprint planning is never blocked because approved specs are always ready — the
 | Spec writing (next sprint prep) | ~25% |
 | Spec review and iteration | ~15% |
 
-These percentages shift as the team matures and templates are established.
+These percentages reflect early adoption. As the team builds templates and familiarity, the spec+review overhead tends to drop to ~10–15% of total capacity, with implementation recovering accordingly.
 
 **For existing projects**, a full spec runway from day one isn't realistic. Use a gradual onramp: start spec-driven on new features only. Existing in-flight Stories continue under the current process. Specs catch up to the backlog over time rather than blocking delivery now.
 
 ![sprint backlog](/images/posts/sharp-bite-iteration1.png)
 
+## Adapting for Kanban
+
+The spec runway model described above is sprint-centric. Kanban teams can achieve the same outcomes through a pull-based queue model that mirrors the underlying intent.
+
+### Board Column Structure
+
+```
+Spec Backlog → Spec In Progress → Spec Approved → Development → Done
+```
+
+The key policy: **a work item cannot enter the Development column until its spec reaches `Approved` status** — the direct equivalent of the sprint planning gate.
+
+### WIP Limits and the Spec Buffer
+
+WIP limits on spec columns replace sprint capacity allocation. Limiting spec work in progress to 2–3 items at a time prevents spec work from ballooning and blocking the Development column. The "spec runway" becomes a **lead time buffer**: target 2–5 items in the `Spec Approved` column at all times to ensure the Development column never starves for ready work.
+
+### Metrics
+
+Replace velocity-based metrics with flow metrics:
+
+| Metric | Definition |
+|---|---|
+| Spec cycle time | Time from `Spec In Progress` to `Spec Approved` |
+| Spec throughput | Specs approved per week |
+| Development cycle time | Time from `Development` to `Done` |
+
+### Ceremonies
+
+Kanban uses a different ceremony vocabulary, but the underlying objectives map directly:
+
+| Kanban Ceremony | Scrum Equivalent | Notes |
+|---|---|---|
+| Replenishment meeting | Backlog refinement + spec refinement | Pull new items into `Spec Backlog`; review `draft` specs for promotion |
+| Service delivery review | Sprint review | Review completed work and specs approved since the last review |
+| Retrospective | Retrospective | Same questions apply — replace velocity with throughput and cycle time |
+
+The Definition of Ready and Definition of Done criteria from the Scrum section apply equally in Kanban — applied at item pull time rather than sprint planning. The retrospective questions from the Scrum section apply as well; where those questions reference velocity, substitute throughput and cycle time.
+
 ## Updating Your Ceremonies
 
-When running Scrum, Spec-driven development touches every Scrum ceremony. The changes are additive — nothing gets removed, but new gates and artifacts become part of the rhythm.
+The following ceremony guidance is written in Scrum terms. Kanban teams should refer to the [Adapting for Kanban](#adapting-for-kanban) section for the equivalent mapping. The changes are additive — nothing gets removed, but new gates and artifacts become part of the rhythm.
 
 ### Definition of Ready (updated)
 
@@ -198,7 +237,7 @@ Ensure the story has enough information to create a spec from including the acce
 Review `draft` specs for next sprint. Blockers surfaced here (ambiguous requirements, missing architectural decisions) have time to be resolved before sprint planning.
 
 ### Sprint Planning
-Only Stories with `approved` specs are pulled into the sprint. Spec-writing tasks for next sprint's Stories are committed to as explicit capacity — not background work.
+Only work items with `approved` specs are pulled into the sprint. Spec-writing tasks for next sprint's work items are committed to as explicit capacity — not background work.
 
 ### Daily Standup
 Spec work is a visible work item on the board, not invisible preparation. "Writing spec for Story-1234" is a legitimate standup status.
@@ -213,6 +252,13 @@ Add these questions to the regular retro:
 - Were any deviations from spec caught early or late?
 - Is spec-writing effort correctly reflected in our velocity?
 
+For teams past sprint 10, add these supplementary questions:
+- Are we carrying spec debt from last quarter? What contributed to it?
+- Do our system context specs still accurately reflect the actual system?
+- Which implemented specs are now misleading or out of date?
+- Have new team members been able to use the spec library effectively?
+- Is our spec archive growing appropriately? Are we retiring specs as features are deprecated?
+
 ## Avoiding Common Pitfalls
 
 **Specs as shelfware.** The most common failure mode is specs that are written to clear the Definition of Ready gate but never actually referenced during implementation. AI output gets used as-is without being validated against the spec. Deviations go undocumented. The spec and the codebase drift apart. The fix: make spec review an explicit part of code review ("does this match the spec?"), require spec status to be updated to `implemented` as part of Done, and treat spec updates for approved deviations as non-optional.
@@ -221,7 +267,45 @@ Add these questions to the regular retro:
 
 **Estimating without accounting for spec work.** Estimate spec and implementation efforts separately. Given the efforts are done in different sprints, it will make for better velocity tracking.
 
-**Trying to spec everything immediately.** On active projects, requiring specs for all existing Stories before any sprint can proceed will paralyze delivery. Start with new work. Let specs fill in over time.
+**Trying to spec everything immediately.** On active projects, requiring specs for all existing work items before any sprint can proceed will paralyze delivery. Start with new work. Let specs fill in over time.
+
+**Applying the runway to all work types.** The spec runway is designed for feature work items. Bug fixes, security patches, and spikes operate on different timescales. Emergency bug fixes are exempt from the spec runway requirement — speed is the priority — but benefit from a lightweight post-implementation spec written within the same sprint. Spikes and investigations should have a spec capturing the question being asked and the outcome or decision reached.
+
+## Sustaining Spec Quality on Long-Running Projects
+
+Most of this post describes how to start. Projects running 30+ sprints face a different challenge: sustaining spec quality as the codebase and team evolve.
+
+### Spec Drift
+
+Specs drift not from negligence but from accumulated small decisions — a constraint relaxed, an edge case added, a third-party API that changed behavior. The spec and the code each remain correct but no longer describe the same thing.
+
+Detection strategies:
+- Include "spec review" as a checklist item in your PR template: "Does the code still match the spec?"
+- Schedule a quarterly spec health review where the team walks through all `implemented` specs in a recently changed area and flags any that are out of date.
+
+### Spec Debt
+
+Just like technical debt, spec debt grows under pressure. When deviations go unrecorded or refactors render older specs partially obsolete, the spec library becomes misleading. Treat spec debt as a first-class backlog concern: track it explicitly, review it in retrospectives, and reserve a portion of capacity each sprint to address it.
+
+### Team Turnover
+
+The text of a spec survives turnover; the *context* often doesn't. A constraint like "must complete in <200ms" without a recorded rationale becomes a puzzle two years later. Annotate specs with *why*, not just *what*. New team members should do a spec review rotation as part of onboarding — reading existing `approved` and `implemented` specs is the fastest way to understand the system's intent.
+
+### Archiving and Retiring Specs
+
+Long-running projects accumulate hundreds of `implemented` specs. Some will describe features that were later deprecated or fundamentally redesigned. Define a lifecycle:
+
+1. Specs for active features remain in `specs/` with `implemented` status.
+2. Specs for deprecated features move to `specs/archive/` with an `archived` status and a note on *why* the feature was retired.
+3. Specs invalidated by a major refactor should be updated to reflect the new design before the refactor PR is merged.
+
+### Runway Evolution
+
+As a project matures past the high-growth phase, the ratio of new feature work to maintenance, bugs, and refactors shifts. The spec runway doesn't disappear, but it adapts: the spec track shrinks as fewer new work items enter each sprint, and architectural decision records (ADRs) become more prominent than feature specs. At this stage, the architect's focus shifts from spec authorship and review toward maintaining the system context specs and ADR library.
+
+## Conclusion
+
+Spec-Driven Development isn't a replacement for Agile — it's a precision layer that makes Agile more effective at scale. The process described here is practical and adoptable today, whether your team runs Scrum sprints or a continuous Kanban flow, and whether you're on day one or sprint thirty-five. That said, treat it as a living framework rather than a finished prescription. AI-assisted development is evolving rapidly — new capabilities in code generation, spec authoring, compliance verification, and context retrieval are surfacing continuously — and as they do, the tooling, the automation hooks, and the capacity assumptions in this process will evolve with them. The fundamentals — clear specifications, shared ownership, traceable decisions, and sustainable cadence — will hold. How AI accelerates each of those fundamentals is still being written.
 
 ## Diagram: The Spec Runway
 
@@ -265,40 +349,6 @@ flowchart LR
        SN -- "Sprint N+1<br/>planning gate" --> SN2
 ```
 
-## Diagram: Spec and Story Lifecycle
-
-```mermaid
-stateDiagram-v2
-       Spec --> Draft: Engineer writes<br/>spec
-
-       Draft --> InReview: Engineer submits for review
-
-       InReview --> Approved: PO + Architect<br/>sign off
-
-       InReview --> Draft: Changes<br/>requested
-
-       Approved --> Implementing: Pulled into sprint<br/>AI scaffolding begins
-
-       Implementing --> Implemented: PR merged<br/>spec compliance verified
-
-       Implementing --> Approved: Implementation<br/>deviation — spec revised
-
-
-       Story --> New: Architect creates base Story
-
-       state "Approved" as Approved2
-
-       New --> Approved2: Refine with PO
-
-       Approved2 --> InProgress: Spec created, effort estimated and pulled into sprint
-
-       InProgress --> ReadyForAcceptance: Code and Quality checks complete
-
-       ReadyForAcceptance --> Done: Implementation reviewed by PO and approved
-
-       ReadyForAcceptance --> InProgress: Issues found
-```
-
 ## Diagram: Ceremony Touchpoints
 
 ```mermaid
@@ -311,3 +361,8 @@ flowchart TD
 
     planning --> standup --> refinement --> review --> retro --> planning
 ```
+
+---
+
+Cheers,\
+Lucas
