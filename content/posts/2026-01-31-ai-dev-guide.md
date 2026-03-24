@@ -9,8 +9,8 @@ description: >-
     TBD
 cover:
     image: "/images/posts/ai-assistant.jpg"
-    alt: "AI assisted human"
-    caption: "AI assisted human"
+    alt: "AI Assisted Development"
+    caption: "AI Assisted Development"
 ---
 
 I've been delegating more coding than ever to AI in the last few months. Over time, I noticed some common patterns that work and common pitfals. I've distilled what works for me when AI to do most of the heavy lifting. This isn't about prompt engineering tricks—it's about fundamentally rethinking your development workflow.
@@ -32,7 +32,7 @@ Before you start, a critical assessment is important. YOU are the Software Engin
 **What Good Looks Like:**
 1. Start with a rough outline that includes business context and constraints (1-2 paragraphs)
 2. Ask AI to expand it into a structured spec with requirements and acceptance criteria
-3. Iterate on the spec with AI—it's faster than implementation
+3. Iterate on the spec with AI—it's faster than implementation. Include edge-case checks, and conflicting requirements.
 4. **Critically review and add:** Performance requirements, security constraints, business priorities, integration complexity
 5. Once the spec is solid, hand it to AI for implementation
 
@@ -47,13 +47,13 @@ Before you start, a critical assessment is important. YOU are the Software Engin
 
 ---
 
-## 2. Your Context Window Is Smaller Than You Think
+## 2. Manage Context Aggressively
 
 **The Reality:** Claude Sonnet 4.5 advertises a 200K token context window. In practice, you get roughly 150K words before things break down. That's about 300 pages of dense technical documentation—sounds generous until you try to feed it your entire codebase.
 
 **The Nuance:** Different models handle context differently. Some engineers successfully run 50+ message conversations without catastrophic degradation. The key is understanding that context isn't just about size—it's about signal-to-noise ratio.
 
-**Why This Matters:** Most engineers assume "200K context" means "dump everything in and let AI figure it out." This leads to bloated prompts with redundant file reads, entire dependency trees, and tangential code that dilutes the signal.
+**Why This Matters:** "dumping everything and letting AI figure it out" leads to bloated prompts with redundant file reads, entire dependency trees, and tangential code that dilutes the signal.
 
 **What Good Looks Like:**
 - Be surgical about context. Only include files directly relevant to the task.
@@ -61,6 +61,10 @@ Before you start, a critical assessment is important. YOU are the Software Engin
 - Chunk large tasks into smaller, focused sessions with targeted context.
 - Think of context like RAM—every byte counts.
 - For critical architectural decisions, repeat them explicitly rather than relying on distant context.
+- Start fresh conversations for distinct features or bug fixes
+- Keep conversations focused on single objectives
+- Monitor conversation length and proactively reset before quality degrades
+- Trying to implement multiple unrelated features in one mega-conversation
 
 **Common Pitfalls:**
 - Reading entire files when you only need specific functions
@@ -68,37 +72,11 @@ Before you start, a critical assessment is important. YOU are the Software Engin
 - Letting AI explore freely without constraining its search space
 - Assuming AI remembers details from 40+ messages ago
 
-**Self-Assessment:** Are you regularly hitting context limits? Are you including files "just in case"? If yes, you're wasting precious context space.
+**Self-Assessment:** Are you regularly hitting context limits or noticing quality degrading mid conversation? If yes, you're not managing context well enough.
 
 ---
 
-## 3. Context Compaction Degrades Quality
-
-**The Reality:** When you approach context limits, AI systems compress or summarize earlier parts of the conversation. This compression is lossy—critical details may vanish, breaking the AI's mental model of your code.
-
-**The Nuance:** Not all information loss is equal. Some conversations naturally wrap up. Others need to continue. The trick is recognizing when quality starts degrading and acting preemptively.
-
-**Why This Matters:** You'll see AI make bizarre suggestions that contradict earlier context, forget architectural decisions you just discussed, or lose track of multi-step implementations. The AI isn't being careless—it literally doesn't have access to that information anymore.
-
-**What Good Looks Like:**
-- Start fresh conversations for distinct features or bug fixes
-- Keep conversations focused on single objectives
-- If a session is getting long, summarize key decisions in a new conversation
-- Monitor conversation length and proactively reset before quality degrades
-- For critical information, repeat it periodically rather than assuming AI remembers
-
-**Common Pitfalls:**
-- Trying to implement multiple unrelated features in one mega-conversation
-- Continuing a session after 50+ back-and-forth exchanges
-- Not noticing when AI starts contradicting itself or asking redundant questions
-- Assuming AI remembers everything from earlier in the conversation
-- Not testing whether the issue is context or just AI limitations
-
-**Self-Assessment:** Do you notice AI quality degrading mid-conversation? Does it forget decisions you made 20 messages ago? Time to manage context more aggressively. But don't obsess—some conversations can go longer than you think.
-
----
-
-## 4. The Specificity-Autonomy Balance Is Where Magic Happens
+## 3. The Specificity-Autonomy Balance Is Where Magic Happens
 
 **The Reality:** Being too vague ("add authentication") leaves AI guessing. Being too specific ("add a React hook called useAuth with methods login, logout, and refreshToken that stores JWT in localStorage") removes AI's ability to suggest better approaches.
 
@@ -120,42 +98,7 @@ Before you start, a critical assessment is important. YOU are the Software Engin
 
 ---
 
-## 5. Ask AI to Poke Holes in Your Specs
-
-**The Reality:** You'll miss edge cases, conflicting requirements, and integration issues. AI can help identify problems or good alternatives—if you explicitly ask it to find problems.
-
-**The Limitation:** AI reinforces patterns it's seen in training data. If your problem is novel or domain-specific, AI might miss critical issues or, worse, validate flawed assumptions because they "look reasonable."
-
-**Why This Matters:** AI can simulate multiple perspectives (security engineer, UX designer, performance expert) and identify common issues. But it's not a substitute for actual domain experts or your own critical thinking.
-
-**What Good Looks Like:**
-- After drafting a spec, explicitly ask: "What edge cases am I missing? What could go wrong?"
-- Request AI to critique from specific angles: security, performance, accessibility, maintainability
-- Have AI identify conflicting requirements or unclear acceptance criteria
-- **Then:** Review the critique skeptically. Does AI understand your domain? Is it hallucinating problems?
-
-**Example Prompt:**
-```
-Review this authentication spec and:
-1. Identify security vulnerabilities
-2. Find edge cases I haven't considered
-3. Point out performance bottlenecks
-4. Suggest improvements to error handling
-Be critical—I want to find problems now, not later.
-```
-
-**Common Pitfalls:**
-- Only asking AI to implement, never to critique
-- Taking AI's critique as gospel without verification
-- Not following up with domain experts who might catch what AI misses
-- Forgetting to ask domain-specific questions (accessibility, i18n, mobile)
-- Echo chamber effect: AI validates your assumptions because they seem "normal"
-
-**Self-Assessment:** Have you caught critical issues in specs before implementation? Good. But have you also caught issues that AI missed? If not, you're trusting AI critique too much.
-
----
-
-## 6. Limit AI's Blast Radius
+## 4. Limit AI's Blast Radius
 
 **The Reality:** AI with unlimited tool access can accidentally leak sensitive data, modify unrelated files, or make changes in production systems. Constraints aren't restrictions—they're safety rails.
 
@@ -182,7 +125,7 @@ Be critical—I want to find problems now, not later.
 
 ---
 
-## 7. Stay ON the Loop, Not IN the Loop
+## 5. Stay ON the Loop, Not IN the Loop
 
 **The Reality:** While important overall, the tools (Copilot, Cursor, Claude, ChatGPT) matter less than how you structure the workflow. The real leverage comes from setting up the right context and letting AI iterate autonomously.
 
@@ -214,7 +157,7 @@ Be critical—I want to find problems now, not later.
 
 ---
 
-## 8. Create a Project Navigation Guide
+## 6. Create a Project Navigation Guide
 
 **The Reality:** AI spends significant time searching for relevant files, understanding project structure, and locating existing implementations. A navigation README eliminates this wasteful exploration.
 
@@ -272,7 +215,7 @@ Then, start every AI conversation with: "Load AGENTS.md first, then proceed with
 
 ---
 
-## 9. Verify AI Code Quality Systematically
+## 7. Verify AI Code Quality Systematically
 
 **The Reality:** AI-generated code can be syntactically correct but semantically wrong, miss edge cases, or introduce subtle bugs. Trust, but verify—systematically.
 
@@ -310,7 +253,7 @@ Then, start every AI conversation with: "Load AGENTS.md first, then proceed with
 
 ---
 
-## 10. Understand the Cost-Performance Tradeoff
+## 8. Understand the Cost-Performance Tradeoff
 
 **The Reality:** Not all tasks are worth AI's time, and not all AI approaches are cost-effective. Being strategic about when and how to use AI maximizes value.
 
@@ -360,7 +303,7 @@ Is the task:
 
 ---
 
-## 11. Beware the Maintenance Debt You're Creating
+## 9. Beware the Maintenance Debt You're Creating
 
 **The Hard Truth:** AI-generated code often works beautifully on day one but creates maintenance headaches months later. This is the #1 complaint from teams using AI at scale.
 
@@ -403,7 +346,7 @@ After AI generates a feature, ask yourself:
 
 ---
 
-## 12. Team Dynamics: The Unsolved Problem
+## 10. Team Dynamics: The Unsolved Problem
 
 **The Reality:** AI-assisted development at the team level introduces challenges that aren't solved by better prompts or specs.
 
@@ -438,7 +381,7 @@ When one engineer + AI ships features rapidly, others on the team struggle to un
 
 ---
 
-## 13. The False Productivity Trap
+## 11. The False Productivity Trap
 
 **The Uncomfortable Truth:** AI makes it easy to build the wrong thing faster. Shipping more code doesn't mean delivering more value.
 
@@ -475,7 +418,7 @@ The teams that benefit most from AI aren't the ones shipping the most code. They
 
 ---
 
-## 14. AI Makes You a Different Kind of Engineer (For Better and Worse)
+## 12. AI Makes You a Different Kind of Engineer (For Better and Worse)
 
 **The Transformation:**
 After 6-12 months of heavy AI use, you're not the same engineer. Your skills have shifted.
