@@ -10,7 +10,8 @@ description: >-
 cover:
     image: "/images/posts/ai-assistant.jpg"
     alt: "AI Assisted Development"
-    caption: "AI Assisted Development"
+    caption: "Photo by [Daniil Komov](https://unsplash.com/@dkomow?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/computer-screen-displaying-code-with-a-context-menu-bglsBQQwMWA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+      "
 ---
 
 I've been delegating more coding than ever to AI in the last few months. Over time, I noticed some common patterns that work and common pitfalls. I've distilled what works for me when using AI for most of the heavy lifting. This isn't about prompt engineering tricks—it's about fundamentally rethinking your development workflow.
