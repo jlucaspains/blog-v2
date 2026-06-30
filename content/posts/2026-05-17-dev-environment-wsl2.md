@@ -161,6 +161,36 @@ autoMemoryReclaim=dropCache
 
 For a list of all options, see the docs at [Microsoft Learn](https://learn.microsoft.com/en-us/windows/wsl/wsl-config)
 
+## SSH without a password
+> Update: this section was added on 6/30/2026
+
+In the WSL distro:
+```bash
+mkdir ~/.ssh
+sudo nano /etc/ssh/sshd_config
+```
+
+Set:
+```
+PubkeyAuthentication yes
+PasswordAuthentication no
+```
+
+In your client machine, the one connecting to WSL:
+
+```powershell
+ssh-keygen -t rsa -b 4096
+cat $HOME\.ssh\id_rsa.pub | wsl -d DistroName sh -c "cat >> ~/.ssh/authorized_keys"
+```
+
+In the WSL distro:
+```bash
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+sudo systemctl restart ssh
+```
+
+When you first connect via Visual Studio Code, it will ask for the key passphrase. It will not ask again after the first time.
 
 Cheers,\
 Lucas
