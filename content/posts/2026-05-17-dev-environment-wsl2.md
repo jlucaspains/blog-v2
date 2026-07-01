@@ -171,7 +171,7 @@ sudo nano /etc/ssh/sshd_config
 ```
 
 Set:
-```
+```text
 PubkeyAuthentication yes
 PasswordAuthentication no
 ```
@@ -188,6 +188,14 @@ In the WSL distro:
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 sudo systemctl restart ssh
+```
+
+Start OpenSSH Agent and add the SSH Key to it:
+```powershell
+Set-Service -Name ssh-agent -StartupType Automatic
+Start-Service -Name ssh-agent
+Get-Service ssh-agent
+ssh-add $HOME\.ssh\id_rsa
 ```
 
 When you first connect via Visual Studio Code, it will ask for the key passphrase. It will not ask again after the first time.
