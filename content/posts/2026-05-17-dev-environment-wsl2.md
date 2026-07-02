@@ -2,10 +2,11 @@
 layout: post
 title: "Using WSL2 for Developer Environment VMs"
 date: 2026-05-17
+lastmod: 2026-07-02
 categories:
   - DevOps
 description: >-
-    Learn how to set up a secure, isolated WSL2 developer environment on Windows — with SSH access, VS Code integration, and optional multi-VM templates.
+    Learn how to set up a secure, isolated WSL2 developer environment on Windows - with SSH access, VS Code integration, and optional multi-VM templates.
 cover:
     image: "/images/posts/wsl2.png"
     alt: "WSL2 terminal showing a custom Linux developer environment on Windows"
@@ -161,6 +162,49 @@ autoMemoryReclaim=dropCache
 
 For a list of all options, see the docs at [Microsoft Learn](https://learn.microsoft.com/en-us/windows/wsl/wsl-config)
 
+## SSH without a password
+> Update: this section was added on 7/2/2026
+
+After you have SSH setup, you will need to provide a user password on every connection. To prevent that, you can register a SSH key in both WSL distro and windows host.
+
+1. In the WSL distro, change the `sshd_config values for `PubkeyAuthentication` and `PasswordAuthentication`:
+
+```bash
+mkdir ~/.ssh
+sudo nano /etc/ssh/sshd_config
+```
+
+Set:
+```text
+PubkeyAuthentication yes
+PasswordAuthentication no
+```
+
+2. Next, create a ssh key in your client machine, the one connecting to WSL, and copy it to the WSL Distro:
+
+```powershell
+ssh-keygen -t rsa -b 4096
+cat $HOME\.ssh\id_rsa.pub | wsl -d DistroName sh -c "cat >> ~/.ssh/authorized_keys"
+```
+
+3. Make sure the directory and files with the keys have appropriate permissions and restart the ssh service:
+
+```bash
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+sudo systemctl restart ssh
+```
+
+4. Finally, ensure OpenSSH Agent is started on your host and add the SSH Key to it:
+
+```powershell
+Set-Service -Name ssh-agent -StartupType Automatic
+Start-Service -Name ssh-agent
+Get-Service ssh-agent
+ssh-add $HOME\.ssh\id_rsa
+```
+
+This setup allows the trusted key to be used instead of a password.
 
 Cheers,\
 Lucas
